@@ -1,0 +1,51 @@
+# Ontolgias
+
+# O que são? 
+
+“Especificação formal de conhecimento de um determinado domínio.”
+
+
+# O que descrevem 
+
+Indivíduos: os objetos básicos;
+Classes: conjuntos, coleções ou tipos de objetos;
+Atributos: propriedades, características ou parâmetros que os objetos podem ter e compartilhar;
+Relacionamentos: as formas como os objetos podem se relacionar com outros objetos.”
+
+Ontologia = lista de triplos
+Triplo = (sujeito, predicado, objeto)
+	Exemplo:
+		O meu carro é verde.  --> :meuCarro :temCor “verde”
+
+
+ao misturar temos de utilizar prefixos
+
+relacionamento -> quando relacionamentos um individuo com outro
+
+# Qual a sua importância?
+
+Permitem-nos partilhar conhecimento duma forma clara e sem ambiguidades entre pessoas e/ou máquinas;
+Permitem-nos reutilizar conhecimento de um determinado domínio;
+Permitem-nos tornar explícito o conhecimento de um determinado domínio;
+Permitem-nos separar o conhecimento do domínio do conhecimento operacional;
+Ao especificá-las estamos a analisar o seu domínio.
+
+# Metodologia para especificação de Ontologias
+
+Especificar o domínio:
+    Para que é que vamos usá-la?
+    A que perguntas deve dar resposta?
+    Quem vai usá-la e mantê-la?
+Considerar a utilização de ontologias já existentes;
+Enumerar os termos mais importantes do domínio;
+Definir as classes e a sua hierarquia;
+Definir os atributos de cada classe;
+Definir restrições sobre os atributos: vocabulários controlados;
+Definir as relações que se podem estabelecer entre indivíduos;
+Definir os Indivíduos.
+
+# Ontologia 
+    Estrutural (classes,dataprop, objprop)
+    Populacional : individuos (com progamação)
+    
+epl.di.uminho.pt/~jcr/TRANSF/emd.json
