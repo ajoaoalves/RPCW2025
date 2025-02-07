@@ -1,0 +1,2551 @@
+@prefix : <http://www.semanticweb.org/ajr/ontologies/2025/desporto/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ajr/ontologies/2025/desporto/> .
+<http://www.semanticweb.org/ajr/ontologies/2025/desporto> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Pratica
+:Pratica rdf:type owl:ObjectProperty ;
+     rdfs:domain :Pessoa .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Realiza
+:Realiza rdf:type owl:ObjectProperty ;
+     rdfs:domain :Pessoa .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#temNome 
+:temNome rdf:type owl:DatatypeProperty ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf ( :Modalidade
+                                :Pessoa
+                              )
+                ] ;
+    rdfs:range xsd:string .
+
+    
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#temResultado 
+:temResultado rdf:type owl:DatatypeProperty ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf ( :Exame
+                                :Pessoa
+                              )
+                ] ;
+    rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Pessoa
+:Pessoa rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Modalidade
+:Modalidade rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Exame
+:Exame rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EmilyTerrell
+:EmilyTerrell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "EmilyTerrell" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MedinaHartman
+:MedinaHartman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "MedinaHartman" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AndrewsRivas
+:AndrewsRivas rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "AndrewsRivas" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MarcellaCombs
+:MarcellaCombs rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "MarcellaCombs" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MendozaBuckner
+:MendozaBuckner rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "MendozaBuckner" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SellersCopeland
+:SellersCopeland rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "SellersCopeland" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BernardStokes
+:BernardStokes rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "BernardStokes" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AlfredaRaymond
+:AlfredaRaymond rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "AlfredaRaymond" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AlstonGreen
+:AlstonGreen rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "AlstonGreen" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#PaigeMccarthy
+:PaigeMccarthy rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "PaigeMccarthy" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ClaudineGill
+:ClaudineGill rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "ClaudineGill" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SummerCalhoun
+:SummerCalhoun rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "SummerCalhoun" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SlaterDavid
+:SlaterDavid rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "SlaterDavid" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OpheliaBoyd
+:OpheliaBoyd rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "OpheliaBoyd" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EvansSingleton
+:EvansSingleton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "EvansSingleton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChurchBishop
+:ChurchBishop rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "ChurchBishop" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WoodardBennett
+:WoodardBennett rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "WoodardBennett" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#VasquezMichael
+:VasquezMichael rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "VasquezMichael" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HollowayMaxwell
+:HollowayMaxwell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "HollowayMaxwell" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MicheleBarber
+:MicheleBarber rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "MicheleBarber" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChambersBurton
+:ChambersBurton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "ChambersBurton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MasseyGoodman
+:MasseyGoodman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "MasseyGoodman" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KleinCameron
+:KleinCameron rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "KleinCameron" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LambertMueller
+:LambertMueller rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "LambertMueller" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EwingDrake
+:EwingDrake rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "EwingDrake" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LesterManning
+:LesterManning rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "LesterManning" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#NinaFowler
+:NinaFowler rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "NinaFowler" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LynnShaw
+:LynnShaw rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "LynnShaw" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BettyBlake
+:BettyBlake rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "BettyBlake" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OneillRoth
+:OneillRoth rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "OneillRoth" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RoxanneMiles
+:RoxanneMiles rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "RoxanneMiles" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CeceliaAdams
+:CeceliaAdams rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "CeceliaAdams" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#IrmaJacobs
+:IrmaJacobs rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "IrmaJacobs" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AngeliaNoel
+:AngeliaNoel rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "AngeliaNoel" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SallieShaffer
+:SallieShaffer rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "SallieShaffer" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JordanBonner
+:JordanBonner rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "JordanBonner" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BartlettSexton
+:BartlettSexton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "BartlettSexton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OpalStewart
+:OpalStewart rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "OpalStewart" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OlaGlover
+:OlaGlover rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "OlaGlover" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SheliaYork
+:SheliaYork rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "SheliaYork" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RaquelRatliff
+:RaquelRatliff rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "RaquelRatliff" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BurkeWeeks
+:BurkeWeeks rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "BurkeWeeks" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BestFrench
+:BestFrench rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "BestFrench" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#FowlerAlvarez
+:FowlerAlvarez rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "FowlerAlvarez" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TerriAvila
+:TerriAvila rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "TerriAvila" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AlfordSmall
+:AlfordSmall rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "AlfordSmall" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KeyArnold
+:KeyArnold rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "KeyArnold" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#NguyenDiaz
+:NguyenDiaz rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "NguyenDiaz" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SherryMorales
+:SherryMorales rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "SherryMorales" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CraneBallard
+:CraneBallard rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "CraneBallard" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TerryChaney
+:TerryChaney rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "TerryChaney" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SheppardBryant
+:SheppardBryant rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "SheppardBryant" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JanisMckinney
+:JanisMckinney rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "JanisMckinney" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SueWaters
+:SueWaters rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "SueWaters" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CynthiaPage
+:CynthiaPage rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "CynthiaPage" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MontgomeryRhodes
+:MontgomeryRhodes rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "MontgomeryRhodes" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ClaireJoyce
+:ClaireJoyce rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "ClaireJoyce" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EvangelinaKey
+:EvangelinaKey rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "EvangelinaKey" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EffieGibson
+:EffieGibson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "EffieGibson" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MaureenCobb
+:MaureenCobb rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "MaureenCobb" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DeeHolman
+:DeeHolman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "DeeHolman" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LarsonMorin
+:LarsonMorin rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "LarsonMorin" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#UrsulaMartinez
+:UrsulaMartinez rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "UrsulaMartinez" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EnglishClemons
+:EnglishClemons rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "EnglishClemons" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#StellaJackson
+:StellaJackson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "StellaJackson" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HaleyJoseph
+:HaleyJoseph rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "HaleyJoseph" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KelseyRoberts
+:KelseyRoberts rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "KelseyRoberts" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WatsonLynch
+:WatsonLynch rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "WatsonLynch" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChasityCoffey
+:ChasityCoffey rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "ChasityCoffey" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#PaulaDelaney
+:PaulaDelaney rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "PaulaDelaney" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GallowaySanders
+:GallowaySanders rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "GallowaySanders" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TinaBlankenship
+:TinaBlankenship rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "TinaBlankenship" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WhiteheadMontgomery
+:WhiteheadMontgomery rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "WhiteheadMontgomery" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DominguezChambers
+:DominguezChambers rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "DominguezChambers" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BoothEaton
+:BoothEaton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "BoothEaton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JoannaGrant
+:JoannaGrant rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "JoannaGrant" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JeriPearson
+:JeriPearson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "JeriPearson" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SanchezMcgee
+:SanchezMcgee rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "SanchezMcgee" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MagdalenaFrancis
+:MagdalenaFrancis rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "MagdalenaFrancis" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MorrisPoole
+:MorrisPoole rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "MorrisPoole" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RodriguezGonzalez
+:RodriguezGonzalez rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "RodriguezGonzalez" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChristineRice
+:ChristineRice rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "ChristineRice" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ValdezHarper
+:ValdezHarper rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "ValdezHarper" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BertaClay
+:BertaClay rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "BertaClay" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BonnieSandoval
+:BonnieSandoval rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "BonnieSandoval" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SteinWiggins
+:SteinWiggins rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "SteinWiggins" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TanyaMcclain
+:TanyaMcclain rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "TanyaMcclain" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#PerrySanford
+:PerrySanford rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "PerrySanford" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MaxineRutledge
+:MaxineRutledge rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "MaxineRutledge" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TuckerMorse
+:TuckerMorse rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "TuckerMorse" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ThelmaSchmidt
+:ThelmaSchmidt rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "ThelmaSchmidt" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CharlesKim
+:CharlesKim rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "CharlesKim" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DuncanDavidson
+:DuncanDavidson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "DuncanDavidson" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GertrudeDillon
+:GertrudeDillon rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "GertrudeDillon" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BrennanSantana
+:BrennanSantana rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "BrennanSantana" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BallBarlow
+:BallBarlow rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "BallBarlow" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OneilBaxter
+:OneilBaxter rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "OneilBaxter" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HelenaMayo
+:HelenaMayo rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "HelenaMayo" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MartinBrewer
+:MartinBrewer rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "MartinBrewer" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WilderGreene
+:WilderGreene rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "WilderGreene" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HarrisonFinch
+:HarrisonFinch rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "HarrisonFinch" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JordanAlvarez
+:JordanAlvarez rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "JordanAlvarez" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LaneNorton
+:LaneNorton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "LaneNorton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CarrilloMunoz
+:CarrilloMunoz rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "CarrilloMunoz" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BarrettFrederick
+:BarrettFrederick rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "BarrettFrederick" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HarmonStone
+:HarmonStone rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "HarmonStone" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChandraPotts
+:ChandraPotts rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "ChandraPotts" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JohnWarner
+:JohnWarner rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "JohnWarner" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CaseyBowman
+:CaseyBowman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "CaseyBowman" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#McculloughPena
+:McculloughPena rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "McculloughPena" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BriannaBentley
+:BriannaBentley rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "BriannaBentley" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#NixonHendrix
+:NixonHendrix rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "NixonHendrix" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BucknerLuna
+:BucknerLuna rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "BucknerLuna" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BrittZamora
+:BrittZamora rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "BrittZamora" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HendrixBauer
+:HendrixBauer rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "HendrixBauer" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TravisSampson
+:TravisSampson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "TravisSampson" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DarlaWare
+:DarlaWare rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "DarlaWare" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#PetersVaughn
+:PetersVaughn rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "PetersVaughn" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LawrenceHerman
+:LawrenceHerman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "LawrenceHerman" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChangOneill
+:ChangOneill rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "ChangOneill" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#PatrickMcintyre
+:PatrickMcintyre rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "PatrickMcintyre" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JoyceEvans
+:JoyceEvans rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "JoyceEvans" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LarsenVillarreal
+:LarsenVillarreal rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "LarsenVillarreal" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MorrowYang
+:MorrowYang rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "MorrowYang" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DunnHorn
+:DunnHorn rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "DunnHorn" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ViolaMedina
+:ViolaMedina rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "ViolaMedina" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ValdezBarnes
+:ValdezBarnes rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "ValdezBarnes" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SweetGibbs
+:SweetGibbs rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "SweetGibbs" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AddieHayes
+:AddieHayes rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "AddieHayes" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MayHolt
+:MayHolt rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "MayHolt" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChristensenBoyd
+:ChristensenBoyd rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "ChristensenBoyd" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WorkmanFranks
+:WorkmanFranks rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "WorkmanFranks" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LucileUnderwood
+:LucileUnderwood rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "LucileUnderwood" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HeathBishop
+:HeathBishop rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "HeathBishop" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RosalesMejia
+:RosalesMejia rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "RosalesMejia" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RayHowe
+:RayHowe rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "RayHowe" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SuarezCampbell
+:SuarezCampbell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "SuarezCampbell" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ShafferLe
+:ShafferLe rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "ShafferLe" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JustineWise
+:JustineWise rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "JustineWise" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#VillarrealTucker
+:VillarrealTucker rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "VillarrealTucker" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MonicaNeal
+:MonicaNeal rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "MonicaNeal" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LloydDotson
+:LloydDotson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "LloydDotson" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MccrayBarker
+:MccrayBarker rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "MccrayBarker" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SellersHunter
+:SellersHunter rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "SellersHunter" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CathrynFletcher
+:CathrynFletcher rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "CathrynFletcher" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DeeLowery
+:DeeLowery rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "DeeLowery" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#FreemanWyatt
+:FreemanWyatt rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "FreemanWyatt" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GuyDrake
+:GuyDrake rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "GuyDrake" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MendezGood
+:MendezGood rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "MendezGood" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BurnettHogan
+:BurnettHogan rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "BurnettHogan" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JamieCherry
+:JamieCherry rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "JamieCherry" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BirdNoble
+:BirdNoble rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "BirdNoble" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BurgessBradshaw
+:BurgessBradshaw rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "BurgessBradshaw" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LauraJacobson
+:LauraJacobson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "LauraJacobson" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BlairSherman
+:BlairSherman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "BlairSherman" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BobbiHawkins
+:BobbiHawkins rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "BobbiHawkins" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MontoyaAnthony
+:MontoyaAnthony rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "MontoyaAnthony" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HooperKirby
+:HooperKirby rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "HooperKirby" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WolfeBaird
+:WolfeBaird rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "WolfeBaird" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LambGraham
+:LambGraham rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "LambGraham" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ValentineFitzgerald
+:ValentineFitzgerald rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "ValentineFitzgerald" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HerminiaMooney
+:HerminiaMooney rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "HerminiaMooney" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GoldenHopkins
+:GoldenHopkins rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "GoldenHopkins" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LancasterAndrews
+:LancasterAndrews rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "LancasterAndrews" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ElenaSullivan
+:ElenaSullivan rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "ElenaSullivan" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DeanaRamsey
+:DeanaRamsey rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "DeanaRamsey" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MayraRose
+:MayraRose rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "MayraRose" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TinaSalinas
+:TinaSalinas rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "TinaSalinas" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SheilaCaldwell
+:SheilaCaldwell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "SheilaCaldwell" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HudsonDuffy
+:HudsonDuffy rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "HudsonDuffy" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GuzmanDouglas
+:GuzmanDouglas rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "GuzmanDouglas" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EthelBartlett
+:EthelBartlett rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "EthelBartlett" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DoyleOdom
+:DoyleOdom rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "DoyleOdom" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AraceliCastaneda
+:AraceliCastaneda rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "AraceliCastaneda" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#FuentesWalker
+:FuentesWalker rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "FuentesWalker" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SarahMoore
+:SarahMoore rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "SarahMoore" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CherylWatson
+:CherylWatson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "CherylWatson" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LangleyVelez
+:LangleyVelez rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "LangleyVelez" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AlisaMorrison
+:AlisaMorrison rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "AlisaMorrison" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MalindaMerritt
+:MalindaMerritt rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "MalindaMerritt" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LenoraKane
+:LenoraKane rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "LenoraKane" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CabreraCurtis
+:CabreraCurtis rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "CabreraCurtis" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RoseannBenjamin
+:RoseannBenjamin rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "RoseannBenjamin" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#StaffordRay
+:StaffordRay rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "StaffordRay" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JewelTrevino
+:JewelTrevino rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "JewelTrevino" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MckenzieWoods
+:MckenzieWoods rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "MckenzieWoods" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JeanConley
+:JeanConley rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "JeanConley" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ConwayAlexander
+:ConwayAlexander rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "ConwayAlexander" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MaryannJoyce
+:MaryannJoyce rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "MaryannJoyce" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AyersCarroll
+:AyersCarroll rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "AyersCarroll" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BonitaMccormick
+:BonitaMccormick rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "BonitaMccormick" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KathyKramer
+:KathyKramer rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "KathyKramer" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ToniaBryan
+:ToniaBryan rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "ToniaBryan" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BarkerMercer
+:BarkerMercer rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "BarkerMercer" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#McfarlandTyson
+:McfarlandTyson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "McfarlandTyson" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MeaganCarter
+:MeaganCarter rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "MeaganCarter" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CatalinaWebb
+:CatalinaWebb rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "CatalinaWebb" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MosesSargent
+:MosesSargent rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "MosesSargent" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#PrestonMccall
+:PrestonMccall rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "PrestonMccall" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChristianClements
+:ChristianClements rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "ChristianClements" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JeanineHester
+:JeanineHester rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "JeanineHester" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ToniaEspinoza
+:ToniaEspinoza rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "ToniaEspinoza" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AlyssaHoward
+:AlyssaHoward rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "AlyssaHoward" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MerrillFulton
+:MerrillFulton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "MerrillFulton" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JaimeErickson
+:JaimeErickson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "JaimeErickson" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#FeliciaSkinner
+:FeliciaSkinner rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "FeliciaSkinner" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MargaretBray
+:MargaretBray rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "MargaretBray" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#EttaCotton
+:EttaCotton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "EttaCotton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KelleyDavidson
+:KelleyDavidson rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "KelleyDavidson" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CrawfordMerritt
+:CrawfordMerritt rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "CrawfordMerritt" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KimBuck
+:KimBuck rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "KimBuck" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GildaSchmidt
+:GildaSchmidt rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "GildaSchmidt" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#McintoshAguirre
+:McintoshAguirre rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "McintoshAguirre" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#IdaBradshaw
+:IdaBradshaw rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "IdaBradshaw" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JeffersonPacheco
+:JeffersonPacheco rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "JeffersonPacheco" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OlsonHickman
+:OlsonHickman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "OlsonHickman" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MalindaMccall
+:MalindaMccall rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "MalindaMccall" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RaquelDejesus
+:RaquelDejesus rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "RaquelDejesus" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DanielChambers
+:DanielChambers rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "DanielChambers" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SamanthaSharp
+:SamanthaSharp rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "SamanthaSharp" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RobertHerman
+:RobertHerman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "RobertHerman" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OliveChapman
+:OliveChapman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "OliveChapman" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MccoyBlackburn
+:MccoyBlackburn rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "MccoyBlackburn" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LambertFerrell
+:LambertFerrell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "LambertFerrell" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SmallCoffey
+:SmallCoffey rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "SmallCoffey" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HicksDaniels
+:HicksDaniels rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "HicksDaniels" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MeghanCabrera
+:MeghanCabrera rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "MeghanCabrera" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HubbardHart
+:HubbardHart rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "HubbardHart" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ChelseaGallegos
+:ChelseaGallegos rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "ChelseaGallegos" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#NatalieFigueroa
+:NatalieFigueroa rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "NatalieFigueroa" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HayesWard
+:HayesWard rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "HayesWard" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GravesMccray
+:GravesMccray rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "GravesMccray" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MavisRiley
+:MavisRiley rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "MavisRiley" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SalasJoseph
+:SalasJoseph rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "SalasJoseph" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CarlyPeck
+:CarlyPeck rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "CarlyPeck" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RamirezBlevins
+:RamirezBlevins rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "RamirezBlevins" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ParksSaunders
+:ParksSaunders rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "ParksSaunders" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LeanneArmstrong
+:LeanneArmstrong rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "LeanneArmstrong" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KlineStark
+:KlineStark rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "KlineStark" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ElliottGuzman
+:ElliottGuzman rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "ElliottGuzman" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LizBaldwin
+:LizBaldwin rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "LizBaldwin" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WarnerBullock
+:WarnerBullock rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "WarnerBullock" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SantanaHarper
+:SantanaHarper rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "SantanaHarper" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ImeldaOdonnell
+:ImeldaOdonnell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "ImeldaOdonnell" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LilaCurry
+:LilaCurry rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "LilaCurry" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MilagrosEllis
+:MilagrosEllis rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "MilagrosEllis" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#StaffordHale
+:StaffordHale rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "StaffordHale" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BlevinsCline
+:BlevinsCline rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Triatlo ;
+      :temNome "BlevinsCline" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MarisolOwen
+:MarisolOwen rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "MarisolOwen" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#McintyreWalsh
+:McintyreWalsh rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "McintyreWalsh" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ValarieSilva
+:ValarieSilva rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "ValarieSilva" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JimmieBeck
+:JimmieBeck rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "JimmieBeck" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AmparoPrice
+:AmparoPrice rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "AmparoPrice" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SusannaLowery
+:SusannaLowery rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "SusannaLowery" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#FlynnHuber
+:FlynnHuber rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "FlynnHuber" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ElaineAllen
+:ElaineAllen rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "ElaineAllen" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#GwenPate
+:GwenPate rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "GwenPate" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LeilaSolis
+:LeilaSolis rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "LeilaSolis" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MercedesHeath
+:MercedesHeath rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "MercedesHeath" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AltheaFitzpatrick
+:AltheaFitzpatrick rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Basquetebol ;
+      :temNome "AltheaFitzpatrick" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ArleneMorton
+:ArleneMorton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "ArleneMorton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MosleyGonzales
+:MosleyGonzales rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "MosleyGonzales" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TorresHardy
+:TorresHardy rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "TorresHardy" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AnnmariePetersen
+:AnnmariePetersen rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "AnnmariePetersen" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OsbornGreen
+:OsbornGreen rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Karaté ;
+      :temNome "OsbornGreen" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DavenportDominguez
+:DavenportDominguez rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "DavenportDominguez" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BartonMassey
+:BartonMassey rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "BartonMassey" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HollyBowen
+:HollyBowen rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "HollyBowen" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#DennisCrawford
+:DennisCrawford rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Atletismo ;
+      :temNome "DennisCrawford" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OliverMcleod
+:OliverMcleod rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "OliverMcleod" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TamekaOrr
+:TamekaOrr rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "TamekaOrr" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#FosterStrickland
+:FosterStrickland rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Patinagem ;
+      :temNome "FosterStrickland" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MarleneRodgers
+:MarleneRodgers rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "MarleneRodgers" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ShariMathews
+:ShariMathews rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "ShariMathews" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#JosieRasmussen
+:JosieRasmussen rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Badminton ;
+      :temNome "JosieRasmussen" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SheltonWalton
+:SheltonWalton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "SheltonWalton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#OdonnellRussell
+:OdonnellRussell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "OdonnellRussell" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ElbaLe
+:ElbaLe rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "ElbaLe" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SweetWoodward
+:SweetWoodward rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "SweetWoodward" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#WilkinsCummings
+:WilkinsCummings rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Dança ;
+      :temNome "WilkinsCummings" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#RogersNoel
+:RogersNoel rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "RogersNoel" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#HodgesAshley
+:HodgesAshley rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Andebol ;
+      :temNome "HodgesAshley" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CurtisDillon
+:CurtisDillon rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "CurtisDillon" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#LeliaOliver
+:LeliaOliver rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "LeliaOliver" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#FuentesRogers
+:FuentesRogers rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "FuentesRogers" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CaroleLindsey
+:CaroleLindsey rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "CaroleLindsey" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MartinezJohns
+:MartinezJohns rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :SUP ;
+      :temNome "MartinezJohns" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KellieHolland
+:KellieHolland rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "KellieHolland" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#MathisKirk
+:MathisKirk rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "MathisKirk" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BerthaShelton
+:BerthaShelton rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Orientação ;
+      :temNome "BerthaShelton" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BonnieDiaz
+:BonnieDiaz rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ténis ;
+      :temNome "BonnieDiaz" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BeckerTalley
+:BeckerTalley rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "BeckerTalley" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#ZelmaBell
+:ZelmaBell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "ZelmaBell" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#StantonCox
+:StantonCox rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :BTT ;
+      :temNome "StantonCox" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CindyShepherd
+:CindyShepherd rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Ciclismo ;
+      :temNome "CindyShepherd" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#KnappBuckner
+:KnappBuckner rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "KnappBuckner" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CallahanMitchell
+:CallahanMitchell rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Parapente ;
+      :temNome "CallahanMitchell" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#AllieLyons
+:AllieLyons rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Equitação ;
+      :temNome "AllieLyons" ;
+      :temResultado "NaoSaudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#TammyBryant
+:TammyBryant rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Futebol ;
+      :temNome "TammyBryant" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#CarissaRosario
+:CarissaRosario rdf:type owl:NamedIndividual ,
+               :Pessoa ;
+      :Pratica :Esgrima ;
+      :temNome "CarissaRosario" ;
+      :temResultado "Saudavel".
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Patinagem
+:Patinagem rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Patinagem" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Parapente
+:Parapente rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Parapente" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#SUP
+:SUP rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "SUP" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Andebol
+:Andebol rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Andebol" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Atletismo
+:Atletismo rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Atletismo" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Orientação
+:Orientação rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Orientação" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Dança
+:Dança rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Dança" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Equitação
+:Equitação rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Equitação" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Triatlo
+:Triatlo rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Triatlo" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Esgrima
+:Esgrima rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Esgrima" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Karaté
+:Karaté rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Karaté" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Futebol
+:Futebol rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Futebol" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Ciclismo
+:Ciclismo rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Ciclismo" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#BTT
+:BTT rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "BTT" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Basquetebol
+:Basquetebol rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Basquetebol" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Ténis
+:Ténis rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Ténis" .
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/desporto#Badminton
+:Badminton rdf:type owl:NamedIndividual ,
+                 :Modalidade ;
+        :temNome "Badminton" .
