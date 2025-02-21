@@ -1,0 +1,2505 @@
+{
+  "head" : {
+    "vars" : [
+      "s",
+      "p",
+      "o"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#TransitiveProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#TransitiveProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#SymmetricProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#TransitiveProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentClass"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#SymmetricProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentClass"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#TransitiveProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#SymmetricProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#differentFrom"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#SymmetricProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#Ontology"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Pessoa"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Pessoa"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Pessoa"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Pessoa"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Pessoa"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Pessoa"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentClass"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#member"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2001/XMLSchema#string"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#comment"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentClass"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://proton.semanticweb.org/protonsys#transitiveOver"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentClass"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentClass"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#equivalentClass"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#differentFrom"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#differentFrom"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/dir"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/esq"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "cão"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "peixe"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "pássaro"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "réptil"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Animal"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "gato"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "gás"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "telemóvel"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "luz"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "água"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Conta"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "telefone"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "vermelho"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "amarelo"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "verde"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "branco"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Cor"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "azul"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Volei"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "basquetebol"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "natação"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "ciclismo"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Desporto"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Futebol"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Alfredo"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Ronaldo"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Samuel"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Augusto"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Nome"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "José"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P1"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "fotográfo"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P2"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Informático"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P3"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Detetive"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P4"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Bombeiro"
+        }
+      },
+      {
+        "s" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/P5"
+        },
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.semanticweb.org/ajr/ontologies/2025/banco/Profissão"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Veterinário"
+        }
+      }
+    ]
+  }
+}
