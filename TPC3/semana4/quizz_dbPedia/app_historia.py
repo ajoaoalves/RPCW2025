@@ -37,13 +37,14 @@ SELECT distinct ?n ?o ?c
 sparql_query_presidentes = """
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
-select distinct ?s ?n ?d (count (?m) as ?contamandatos)  where {
+select distinct ?s ?n ?d ?p (count (?m) as ?contamandatos)  where {
     ?s a :Presidente .
     ?s :nome ?n.
     ?s :nascimento ?d.
-    ?s :mandato ?m            
+    ?s :mandato ?m. 
+    ?s :partido/:nome ?p
 } 
-group by ?s ?n ?d
+group by ?s ?n ?d ?p
 order by desc(?contamandatos)
 """
 
@@ -55,6 +56,7 @@ select distinct ?s ?n ?d ?r where {
     ?s :nome ?n.
     ?s :data ?d.
     ?s :temReinado/:temMonarca/:nome ?r
+    
 }
 """
 
@@ -70,12 +72,15 @@ for r in result['results']['bindings']:
 
 presidents =  query_graphdb(endpoint, sparql_query_presidentes)
 infoPresidentes = []
+infoPartidos = []
 for r in presidents['results']['bindings']:
     p = {
             'nome': r['n']['value'].split('#')[-1], 
-            'mandatos': r['contamandatos']['value'].split('#')[-1]
+            'mandatos': r['contamandatos']['value'].split('#')[-1],
+            'partido' : r['p']['value'].split('#')[-1]
     }
     infoPresidentes.append(p)
+    infoPartidos.append(p['partido'])  
 
 conquistas =  query_graphdb(endpoint, sparql_query_conquistas)
 infoConquistas = []
@@ -88,6 +93,7 @@ for r in conquistas['results']['bindings']:
     infoConquistas.append(c)
 
 
+
 @app.route('/')
 def home():
     session['score'] = 0
@@ -98,11 +104,10 @@ def generate_question():
             reis = random.choices(infoReis, k=4)
             presidentes = random.choices(infoPresidentes, k=4)
             conquistas = random.choices(infoConquistas, k=4)
-        
+
             reiSel = reis[random.randrange(0,4)]
             presidenteSel = presidentes[random.randrange(0,4)]
             conquistaSel = conquistas[random.randrange(0,4)]
-
 
             question1 = {
                 "question": f"Quando nasceu o rei {reiSel['nome']}?",
@@ -143,18 +148,62 @@ def generate_question():
                 "answer": "Verdadeiro" if (conquistaSel['dataConq'] == conqData and conquistaSel['rei'] == conqRei) else "Falso"
 
             }
+            print(infoPartidos)
+            infoPartidos.remove(presidenteSel['partido'])
+            set_partidos = set(infoPartidos)
+            partidos = random.sample(list(set_partidos), k=3)
+            partidos.append(presidenteSel['partido'])
 
-            selected_question = random.choice([question1, question2, question3, question4, question5])
+
+            question6 = {
+                "question": f"A que partido pertenceu o presidente {presidenteSel['nome']} ?",
+                "options": partidos,
+                "answer": presidenteSel['partido']
+            }
+
+            selected_question = random.choice([question1, question2, question3, question4, question5, question6])
             return render_template('quiz.html', question=selected_question)
 
+@app.route('/quiz_matching', methods=['GET'])
+def generate_matching(): 
+        reis = random.choices(infoReis, k=4)
+        matching_pairs = {f'{reis[i]['nome']}': reis[i]['cognomes'].split(',')[0] for i in range(len(reis))}
+        print(matching_pairs)
+        reis = list(matching_pairs.keys())
+        print(reis)
+        answer_options = list(matching_pairs.values())
+        random.shuffle(answer_options)
+
+        question = {
+        "question": f"Associe corretamente cada rei ao seu cognome. ",
+        "question_corresp": reis,
+        "options": answer_options,  
+        "answer": list(matching_pairs.values())
+    }
+        
+        return render_template('quiz_matching.html', question=question)
 
 @app.route('/quiz', methods=['POST'])
 def quiz():
     user_answer = request.form.get('answer')
+    print(user_answer)
     answer_correct = request.form.get('answerCorrect')
     correct = answer_correct == user_answer
     session['score'] = session.get('score', 0) + (1 if correct else 0)
     return render_template('result.html', correct=correct, correct_answer=answer_correct, score=session['score'])
+
+@app.route('/quiz_matching', methods=['POST'])
+def quiz_matching():
+    user_answers = {key: request.form.get(key) for key in request.form if key != "question"}  
+    correct_answers = session.get('answerCorrect', {})  
+    
+    correct_count = sum(1 for key in correct_answers if correct_answers[key] == user_answers.get(key))
+    total = len(correct_answers)
+
+    session['score'] = session.get('score', 0) + correct_count  
+
+    return render_template('result.html', correct_count=correct_count, total=total, 
+                           correct_answer=correct_answers, score=session['score'])
 
 @app.route('/score')
 def score():

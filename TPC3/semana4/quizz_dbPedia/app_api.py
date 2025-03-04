@@ -34,6 +34,14 @@ def get_question():
         'options': question['options']
     })
 
+@app.route('/api/quiz_matching', methods=['GET'])
+def get_question_matching():
+    question = random.choice(test_questions)
+    return jsonify({
+        'question': question['question'],
+        'options': question['options']
+    })
+
 @app.route('/api/answer', methods=['POST'])
 def check_answer():
     data = request.json

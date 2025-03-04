@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz de Correspondência</title>
+    <title>Culture Compass Quiz</title>
 </head>
 <body>
-    <h1>Culture Compass Quiz</h1>
-    <p>Score: {{ session.get('score', 0) }}</p>
-    
-    <form method="POST" action="/quiz_matching">
-        <p><strong>{{ question.question }}</strong></p>
-        
-        {% for nome, cognome in question.pairs %}
+    <h1>{{ question.question }}</h1>
+
+    <form method="post">
+        {% for nome in question.question_corresp %}
             <label>{{ nome }}</label>
-            <select name="answer_{{ loop.index }}">
-                <option value="">-- Escolha --</option>
-                {% for option in question.shuffled_answers %}
+            <select name="resposta">
+                <option value="">Selecione...</option>
+                {% for option in question.options %}
                     <option value="{{ option }}">{{ option }}</option>
                 {% endfor %}
             </select>
             <br>
         {% endfor %}
-
-        <button type="submit">Submeter</button>
+        <button type="submit">Submit Answer</button>
     </form>
 </body>
 </html>
+

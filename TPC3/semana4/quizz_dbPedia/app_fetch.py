@@ -72,6 +72,24 @@ def quiz():
     else:
         return redirect(url_for('score'))
 
+@app.route('/quiz_matching', methods=['GET', 'POST'])
+def quiz_matching():
+    if request.method == 'POST':
+        user_answer = request.form.get('answer')
+        question_text = request.form.get('question')
+        
+        for question in session.get('questions', []):
+            if question['question'] == question_text:
+                correct = question['answer'] == user_answer
+                session['score'] = session.get('score', 0) + (1 if correct else 0)
+                return render_template('result.html', correct=correct, correct_answer=question['answer'], score=session['score'])
+    
+    if session.get('questions'):
+        question = session['questions'].pop()
+        return render_template('quiz_matching.html', question=question)
+    else:
+        return redirect(url_for('score'))
+    
 @app.route('/score')
 def score():
     return render_template('score.html', score=session.get('score', 0))

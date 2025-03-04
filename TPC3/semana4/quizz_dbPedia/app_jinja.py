@@ -46,6 +46,27 @@ def quiz():
     question = random.choice(test_questions)
     return render_template('quiz.html', question=question)
 
+
+@app.route('/quiz_matching', methods=['GET', 'POST'])
+def quiz_matching():
+    if request.method == 'POST':
+        user_answers = {key: request.form.get(key) for key in request.form}  # Respostas do usuário
+        print(user_answers)
+        question_text = request.form.get('question')
+
+        for question in test_questions:
+            if question['question'] == question_text:
+                correct_count = sum(1 for key in question['answer'] if question['answer'][key] == user_answers.get(key))
+                total = len(question['answer'])
+                
+                session['score'] = session.get('score', 0) + correct_count
+                
+                return render_template('result.html', correct_count=correct_count, total=total, 
+                                       correct_answer=question['answer'], score=session['score'])
+
+    question = random.choice(test_questions)
+    return render_template('quiz_matching.html', question=question)
+
 @app.route('/score')
 def score():
     return render_template('score.html', score=session.get('score', 0))
