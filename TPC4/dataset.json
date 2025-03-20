@@ -1,0 +1,2246 @@
+[
+    {
+        "id": "http://dbpedia.org/resource/Enemies_of_Youth",
+        "titulo": "Enemies of Youth",
+        "sinopse": "Enemies of Youth is a 1925 American independent silent drama film directed by Arthur Berthelet and starring Mahlon Hamilton, Gladys Leslie and J. Barney Sherry.",
+        "data_Lancamento": "1925-03-06",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Arthur_Berthelet",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Gladys_Leslie",
+                "nome": "Gladys Leslie",
+                "data_nascimento": "1899-03-05",
+                "naturalidade": "New York City, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mahlon_Hamilton",
+                "nome": "Mahlon Hamilton",
+                "data_nascimento": "1880-06-15",
+                "naturalidade": "Baltimore, Maryland, United States"
+            },
+            {
+                "id": "http://dbpedia.org/resource/J._Barney_Sherry",
+                "nome": "J. Barney Sherry",
+                "data_nascimento": "1874-03-04",
+                "naturalidade": "Germantown, Pennsylvania, USA"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enemies_of_the_Law",
+        "titulo": "Enemies of the Law",
+        "sinopse": "Enemies of the Law is a 1931 American crime film directed by Lawrence C. Windom and starring Mary Nolan, Johnnie Walker and Lou Tellegen.",
+        "data_Lancamento": "1931-07-21",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Lawrence_C._Windom",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Johnnie_Walker_(actor)",
+                "nome": "Johnnie Walker",
+                "data_nascimento": "1894-01-07",
+                "naturalidade": "New York City, New York"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mary_Nolan",
+                "nome": "Mary Nolan",
+                "data_nascimento": "1902-12-18",
+                "naturalidade": "Louisville, Kentucky, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Lou_Tellegen",
+                "nome": "Lou Tellegen",
+                "data_nascimento": "1883-11-26",
+                "naturalidade": "Sint-Oedenrode, Netherlands"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enemy_Agent",
+        "titulo": "Enemy Agent",
+        "sinopse": "Enemy Agent is a 1940 American spy thriller film directed by Lew Landers and starring Richard Cromwell, Helen Vinson, and Robert Armstrong. The supporting cast includes Jack La Rue, Jack Carson, Philip Dorn and Milburn Stone. It was produced and distributed by Universal Studios",
+        "data_Lancamento": "1940-04-19",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Lew_Landers",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Richard_Cromwell_(actor)",
+                "nome": "Richard Cromwell",
+                "data_nascimento": "1910-01-08",
+                "naturalidade": "Long Beach, California, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Helen_Vinson",
+                "nome": "Helen Vinson",
+                "data_nascimento": "1907-09-17",
+                "naturalidade": "Beaumont, Texas, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Marjorie_Reynolds",
+                "nome": "Marjorie Reynolds",
+                "data_nascimento": "1917-08-12",
+                "naturalidade": "Buhl, Idaho, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enemy_Gold",
+        "titulo": "Enemy Gold",
+        "sinopse": "Enemy Gold is a 1993 action/adventure film starring Bruce Penhall, Mark Barriere, and Suzi Simpson. It was directed by Christian Drew Sidaris and written by Wess Rahn and Sidaris.",
+        "data_Lancamento": "1994-06-03",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Christian_Drew_Sidaris",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Bruce_Penhall",
+                "nome": "Bruce Penhall",
+                "data_nascimento": "1957-05-10",
+                "naturalidade": "Balboa Island, California, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Energy_Identification_Code",
+        "titulo": "Energy Identification Code",
+        "sinopse": "The Energy Identification Code or EIC is a 16-character identifier (code) used in Europe to uniquely identify market participants and energy resources (entities and objects) related to the electricity and gas sector. EIC codes are used for: \n* Transmission System Operators, Market Participants such as traders, producers, consumers, power exchanges, grid operators, suppliers, agents, service providers, etc. \n* Local grids where metering points are situated, Market Balance Areas consisting of several local grids, Control Areas, Bidding Zones, etc. \n* The physical lines that connect adjacent market (balance) areas or internal lines within an area, including Transmission lines. \n* Metering points \n* Physical or logical places where an identified object or the IT system of an identified object is or could be located. \n* Any object that generates or consumes energy, including Substations, Generation units and Power plants. The EIC codes are used \u2014 among others \u2014 in platforms that support EU regulations on transparency and integrity: \n* ENTSO-E Transparency Platform for electricity \n* ENTSO-G Transparency Platform for gas \n* ARIS platform",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enga_Amma_Rani",
+        "titulo": "Enga Amma Rani",
+        "sinopse": "Enga Amma Rani (transl.\u2009Our mother is a queen) is a 2017 Indian Tamil-language horror film directed by S. Bani. The film stars Dhansika, Yoganathan Maniam (Malaysia), Varnika, and Varsha, while Shankar Srihari, Anil Murali, and Namo Narayana play supporting roles. The film's score and soundtrack were composed by Ilaiyaraaja,. The film's tagline says Enga Amma (our mother), and Sai Dhanshika plays the mother of two daughters (Varnika and Varsha).",
+        "data_Lancamento": "2017-05-05",
+        "pais_origem": "India",
+        "realizador": "S. Bani",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Anil_Murali",
+                "nome": "Anil Murali",
+                "data_nascimento": "1968-08-12",
+                "naturalidade": "http://dbpedia.org/resource/Kerala"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Anil_Murali",
+                "nome": "Anil Murali",
+                "data_nascimento": "1968-08-12",
+                "naturalidade": "http://dbpedia.org/resource/Thiruvananthapuram"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Anil_Murali",
+                "nome": "Anil Murali",
+                "data_nascimento": "1968-08-12",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enga_Ooru_Sippai",
+        "titulo": "Enga Ooru Sippai",
+        "sinopse": "Enga Ooru Sippai (transl. Sepoy of our town) is a 1991 Tamil language drama film directed by K. Manimurugan and written by Sangili Murugan. The film stars Arjun, Sree Bhanu and M. N. Nambiar. The film had a musical score by S. A. Rajkumar and was released on 14 April 1991.",
+        "data_Lancamento": "1991-04-14",
+        "pais_origem": "India",
+        "realizador": "K. Manimurugan",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/M._N._Nambiar",
+                "nome": "M. N. Nambiar",
+                "data_nascimento": "1919-03-07",
+                "naturalidade": "Cannanore, Malabar, British India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enga_Thambi",
+        "titulo": "Enga Thambi",
+        "sinopse": "Enga Thambi (transl.\u2009Our Younger Brother) is a 1993 Indian Tamil-language romantic action film directed by Sabapathy Dekshinamurthy. The film stars Prashanth and Subhashri, with Lakshmi, Nagesh and Nassar in supporting roles. It was released on 9 April 1993.",
+        "data_Lancamento": "1993-04-09",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/Sabapathy_Dekshinamurthy",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Prashanth",
+                "nome": "Prashanth",
+                "data_nascimento": "1973-04-06",
+                "naturalidade": "Chennai, Tamil Nadu, India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Subhashri",
+                "nome": "Subhashri",
+                "data_nascimento": "1975-07-18",
+                "naturalidade": "Chennai, India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enga_Veetu_Velan",
+        "titulo": "Enga Veetu Velan",
+        "sinopse": "Enga Veetu Velan is a 1992 Tamil-language film directed and produced by T. Rajendar. The lead roles are played by Rajeev and Rekha. The film released on 10 April 1992. The film completed a 100-day run.",
+        "data_Lancamento": "1992-04-10",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/T._Rajendar",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Silambarasan",
+                "nome": "Silambarasan",
+                "data_nascimento": "1983-02-03",
+                "naturalidade": "Krishnagiri, Tamil Nadu, India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Engagement_at_Wolfgangsee",
+        "titulo": "Engagement at Wolfgangsee",
+        "sinopse": "Engagement at Wolfgangsee (German: Verlobung am Wolfgangsee) is a 1956 Austrian comedy film directed by Helmut Weiss and starring Ingrid Andree, Wolf Albach-Retty and Maria Andergast. The film was shot in Agfacolor at the Sch\u00f6nbrunn Studios in Vienna and on location around Lake Wolfgang. The film's sets were designed by the art director Wolf Witzemann. It is a remake of the 1943 film Sophienlund which was itself based on a 1941 play of the same title which Weiss co-authored. It was part of a large number of heimatfilm made in Germany and Austria during the decade.",
+        "data_Lancamento": "1956-10-25",
+        "pais_origem": "Austria",
+        "realizador": "http://dbpedia.org/resource/Helmut_Weiss",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Maria_Andergast",
+                "nome": "Maria Andergast",
+                "data_nascimento": "1912-06-04",
+                "naturalidade": "Brunnthal an der Alz, Germany"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ingrid_Andree",
+                "nome": "Ingrid Andree",
+                "data_nascimento": "1931-01-19",
+                "naturalidade": "Hamburg, Germany"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Wolf_Albach-Retty",
+                "nome": "Wolf Albach-Retty",
+                "data_nascimento": "1906-05-28",
+                "naturalidade": "http://dbpedia.org/resource/Austria-Hungary"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Wolf_Albach-Retty",
+                "nome": "Wolf Albach-Retty",
+                "data_nascimento": "1906-05-28",
+                "naturalidade": "http://dbpedia.org/resource/Vienna"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Engal_Anna",
+        "titulo": "Engal Anna",
+        "sinopse": "Engal Anna (transl.\u2009Our Elder Brother) is a 2004 Indian Tamil-language comedy-drama film directed by Siddique. The film stars Vijayakanth in the main lead role with Prabhu Deva, Pandiarajan, Vadivelu, Namitha, Swarnamalya, and Indraja in other roles, while Lal, Manivannan, and Anandaraj playing supporting roles. The music was composed by Deva and the cinematography was by Anandakuttan. The film is the remake of the 2003 Malayalam film Chronic Bachelor. The film released on 14 January 2004. It received positive reviews and became a commercial success.",
+        "data_Lancamento": "2004-01-14",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/Siddique_(director)",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Prabhu_Deva",
+                "nome": "Prabhu Deva",
+                "data_nascimento": "1973-04-03",
+                "naturalidade": "Chennai,Tamil Nadu, India)"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vadivelu",
+                "nome": "Vadivelu",
+                "data_nascimento": "1960-09-12",
+                "naturalidade": "Madurai, Tamil Nadu, India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vijayakanth",
+                "nome": "Vijayakanth",
+                "data_nascimento": "1952-08-25",
+                "naturalidade": "http://dbpedia.org/resource/Madurai"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vijayakanth",
+                "nome": "Vijayakanth",
+                "data_nascimento": "1952-08-25",
+                "naturalidade": "http://dbpedia.org/resource/Madras_State"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vijayakanth",
+                "nome": "Vijayakanth",
+                "data_nascimento": "1952-08-25",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Namitha",
+                "nome": "Namitha",
+                "data_nascimento": "1981-05-10",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Namitha",
+                "nome": "Namitha",
+                "data_nascimento": "1981-05-10",
+                "naturalidade": "http://dbpedia.org/resource/Gujarat"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Namitha",
+                "nome": "Namitha",
+                "data_nascimento": "1981-05-10",
+                "naturalidade": "http://dbpedia.org/resource/Surat"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Pandiarajan",
+                "nome": "Pandiarajan",
+                "data_nascimento": "1959-10-02",
+                "naturalidade": "http://dbpedia.org/resource/Tamil_Nadu"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Pandiarajan",
+                "nome": "Pandiarajan",
+                "data_nascimento": "1959-10-02",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Pandiarajan",
+                "nome": "Pandiarajan",
+                "data_nascimento": "1959-10-02",
+                "naturalidade": "http://dbpedia.org/resource/Chennai"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Pandiarajan",
+                "nome": "Pandiarajan",
+                "data_nascimento": "1959-10-02",
+                "naturalidade": "http://dbpedia.org/resource/Theni"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Swarnamalya",
+                "nome": "Swarnamalya",
+                "data_nascimento": "1981-04-22",
+                "naturalidade": "Chennai, Tamil Nadu, India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Engal_Kural",
+        "titulo": "Engal Kural",
+        "sinopse": "Engal Kural (transl.\u2009Our Voice) is a 1985 Indian Tamil-language film, directed by Rama Narayanan and produced by S. S. Chandran. The film stars Arjun, Suresh, Nalini and Jeevitha. The film had musical score by Vijaya T. Rajendar.",
+        "data_Lancamento": "1985-08-15",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/Rama_Narayanan",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Nalini_(actress)",
+                "nome": "Nalini",
+                "data_nascimento": "1964-08-28",
+                "naturalidade": "http://dbpedia.org/resource/Chennai"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nalini_(actress)",
+                "nome": "Nalini",
+                "data_nascimento": "1964-08-28",
+                "naturalidade": "http://dbpedia.org/resource/Tamil_Nadu"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nalini_(actress)",
+                "nome": "Nalini",
+                "data_nascimento": "1964-08-28",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Suresh_(actor)",
+                "nome": "Suresh",
+                "data_nascimento": "1963-08-23",
+                "naturalidade": "Srikalahasti, Andhra Pradesh, India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Engineer_(film)",
+        "titulo": "Engineer (film)",
+        "sinopse": "Engineer is a shelved Indian Tamil-language film directed by Gandhi Krishna and written by Sujatha originally slated to be released in 1999. Based on the true incidents revolving around the Sardar Sarovar Dam project, the film would had starred Arvind Swamy and Madhuri Dixit, with music composed by A.R. Rahman and cinematography and editing being handled by Jeeva and K. Thanigachalam respectively. It was originally filmed in Tamil with planned versions in Telugu and Hindi. The film was shelved after 80 percent of shooting was completed. Despite reports of a revival in 2004 with a different cast and producer, this has proved to be untrue.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/Gandhi_Krishna",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Madhuri_Dixit",
+                "nome": "Madhuri Dixit Nene",
+                "data_nascimento": "1967-05-15",
+                "naturalidade": "Bombay, Maharashtra, India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Arvind_Swamy",
+                "nome": "Arvind Swamy",
+                "data_nascimento": "1970-06-18",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Arvind_Swamy",
+                "nome": "Arvind Swamy",
+                "data_nascimento": "1970-06-18",
+                "naturalidade": "http://dbpedia.org/resource/Tamil_Nadu"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Arvind_Swamy",
+                "nome": "Arvind Swamy",
+                "data_nascimento": "1970-06-18",
+                "naturalidade": "http://dbpedia.org/resource/Chennai"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Engineer_Kochin's_Error",
+        "titulo": "Engineer Kochin's Error",
+        "sinopse": "Engineer Kochin's Error, (Russian: \u041e\u0448\u0438\u0431\u043a\u0430 \u0438\u043d\u0436\u0435\u043d\u0435\u0440\u0430 \u041a\u043e\u0447\u0438\u043d\u0430) is a 1939 Soviet thriller directed by .",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Soviet Union",
+        "realizador": "http://dbpedia.org/resource/Aleksandr_Macheret",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Lyubov_Orlova",
+                "nome": "Lyubov Orlova",
+                "data_nascimento": "1902-02-11",
+                "naturalidade": "http://dbpedia.org/resource/Zvenigorod"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Lyubov_Orlova",
+                "nome": "Lyubov Orlova",
+                "data_nascimento": "1902-02-11",
+                "naturalidade": "http://dbpedia.org/resource/Russian_Empire"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Lyubov_Orlova",
+                "nome": "Lyubov Orlova",
+                "data_nascimento": "1902-02-11",
+                "naturalidade": "http://dbpedia.org/resource/Moscow_Governorate"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mikhail_Zharov",
+                "nome": "Mikhail Zharov",
+                "data_nascimento": "1899-10-27",
+                "naturalidade": "http://dbpedia.org/resource/Russian_Empire"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mikhail_Zharov",
+                "nome": "Mikhail Zharov",
+                "data_nascimento": "1899-10-27",
+                "naturalidade": "http://dbpedia.org/resource/Moscow"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Engineering_Red",
+        "titulo": "Engineering Red",
+        "sinopse": "Engineering Red (Russian: \u041a\u043e\u043d\u0441\u0442\u0440\u0443\u043a\u0442\u043e\u0440 \u043a\u0440\u0430\u0441\u043d\u043e\u0433\u043e \u0446\u0432\u0435\u0442\u0430) is a Russian surrealist film directed by Andrey Yi and animator Armen Petrosyan. The script is based on Thomas Mann's novel The Magic Mountain (1924) and idea of creating artificial people in the Soviet Union (in the 1940-1950s).",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Russia",
+        "realizador": "Andrey Yi, Armen Petrosyan",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/England_Made_Me_(film)",
+        "titulo": "England Made Me (film)",
+        "sinopse": "England Made Me is a 1973 British drama film directed by Peter Duffell, starring Peter Finch, Michael York, Hildegarde Neil, and Michael Hordern, and based on the 1935 novel England Made Me by Graham Greene. Tony Wollard's art direction was nominated for a British BAFTA Award. The film changes the novel's setting from Sweden to Nazi Germany. Duffel explained that he changed the location due to his lack of knowledge of Sweden in the 1930s, the use of imagery the audience would recognise and the growing menace in Europe of the time.",
+        "data_Lancamento": "1973-11-18",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Peter_Duffell",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Peter_Finch",
+                "nome": "Peter Finch",
+                "data_nascimento": "1916-09-28",
+                "naturalidade": "South Kensington, London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Hildegarde_Neil",
+                "nome": "Hildegarde Neil",
+                "data_nascimento": "1939-07-29",
+                "naturalidade": "London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Michael_York",
+                "nome": "Michael York",
+                "data_nascimento": "1942-03-27",
+                "naturalidade": "Fulmer, Buckinghamshire, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/English_Padam",
+        "titulo": "English Padam",
+        "sinopse": "English Padam (transl.\u2009English Film) is a 2017 Indian Tamil-language horror comedy film directed by Kumaresh kumar, starring Sanjeev, Meenakshi and Ramki.",
+        "data_Lancamento": "2017-11-24",
+        "pais_origem": "India",
+        "realizador": "Realizador Desconhecido",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Meenakshi_(actress)",
+                "nome": "Meenakshi",
+                "data_nascimento": "1982-08-06",
+                "naturalidade": "Kolkata, West Bengal, India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enid_(film)",
+        "titulo": "Enid (film)",
+        "sinopse": "Enid is a 2009 British biographical television film first broadcast on 16 November on BBC Four. Directed by James Hawes it is based on the life of children's writer Enid Blyton, portrayed by Helena Bonham Carter. The film introduced the two main lovers of Blyton's life. Her first husband Hugh Pollock, who was also her publisher, was played by Matthew Macfadyen. Kenneth Darrell Waters, a London surgeon who became Blyton's second husband, was portrayed by Denis Lawson. The film explored how the orderly, reassuringly clear worlds Blyton created within her stories contrasted with the complexity of her own personal life.",
+        "data_Lancamento": "2009-11-16",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/James_Hawes",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Matthew_Macfadyen",
+                "nome": "Matthew Macfadyen",
+                "data_nascimento": "1974-10-17",
+                "naturalidade": "Great Yarmouth, Norfolk, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Helena_Bonham_Carter",
+                "nome": "Helena Bonham Carter",
+                "data_nascimento": "1966-05-26",
+                "naturalidade": "London, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enlarged_to_Show_Detail",
+        "titulo": "Enlarged to Show Detail",
+        "sinopse": "Enlarged to Show Detail is a 1996 documentary created by the multi-genred band 311. The set contains a documentary (first released on VHS in 1996 and in 2001 on DVD) and a bonus CD EP. This was the first video documenting their experiences as a band promoting peace and a positive outlook on life. It features backstage footage, clips of music videos and live concert footage. Enlarged to Show Detail was certified as a Platinum selling video by the RIAA.",
+        "data_Lancamento": "1996-11-05",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Enlighten_Thy_Daughter_(1934_film)",
+        "titulo": "Enlighten Thy Daughter (1934 film)",
+        "sinopse": "Enlighten Thy Daughter is a 1934 American drama film directed by John Varley and starring Herbert Rawlinson, Charles Eaton and Claire Whitney. It was shot at the Photocolor Studios in Hastings-on-Hudson, New York. It is a remake of the 1917 silent film of the same title by Ivan Abramson.",
+        "data_Lancamento": "1934-01-15",
+        "pais_origem": "United States",
+        "realizador": "John Varley",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Claire_Whitney",
+                "nome": "Claire Whitney",
+                "data_nascimento": "1890-05-06",
+                "naturalidade": "New York City, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Herbert_Rawlinson",
+                "nome": "Herbert Rawlinson",
+                "data_nascimento": "1885-11-15",
+                "naturalidade": "New Brighton, Cheshire, England, UK"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Memsaab_(film)",
+        "titulo": "Memsaab (film)",
+        "sinopse": "Memsaab is a 1971 Bollywood drama film directed by Atma Ram. The film stars Vinod Khanna and Yogeeta Bali.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "http://dbpedia.org/resource/India",
+        "realizador": "Atma Ram",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Vinod_Khanna",
+                "nome": "Vinod Khanna",
+                "data_nascimento": "1946-10-06",
+                "naturalidade": "http://dbpedia.org/resource/North-West_Frontier_Province_(1901\u201355)"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vinod_Khanna",
+                "nome": "Vinod Khanna",
+                "data_nascimento": "1946-10-06",
+                "naturalidade": ""
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vinod_Khanna",
+                "nome": "Vinod Khanna",
+                "data_nascimento": "1946-10-06",
+                "naturalidade": "http://dbpedia.org/resource/Peshawar"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vinod_Khanna",
+                "nome": "Vinod Khanna",
+                "data_nascimento": "1946-10-06",
+                "naturalidade": "http://dbpedia.org/resource/British_Raj"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Men_and_Women_(1999_film)",
+        "titulo": "Men and Women (1999 film)",
+        "sinopse": "Men and Women (Chinese: \u7537\u7537\u5973\u5973; pinyin: N\u00e1nn\u00e1n n\u01dan\u01da) is a 1999 Chinese comedy-drama film directed by Liu Bingjian. The film was co-written by Cui Zi'en, one of the few openly gay writers in China. Cui also has a cameo-role in the film, as the host of an underground radio show. One of China's few films touching on LGBT-films, Men and Women was cast with openly gay actors. Unlike earlier films like Zhang Yuan's East Palace, West Palace, Men and Women focused on the daily lives of its characters, rather than their underground existence in Chinese society. The film won a FIPRESCI award at the 1999 Locarno International Film Festival.",
+        "data_Lancamento": "1999-08-12",
+        "pais_origem": "China",
+        "realizador": "http://dbpedia.org/resource/Liu_Bingjian",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Yu_Bo",
+                "nome": "Yu Bo",
+                "data_nascimento": "1976-07-22",
+                "naturalidade": "http://dbpedia.org/resource/Liaoning"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Yu_Bo",
+                "nome": "Yu Bo",
+                "data_nascimento": "1976-07-22",
+                "naturalidade": "http://dbpedia.org/resource/Shenyang"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Men_in_White_(2007_film)",
+        "titulo": "Men in White (2007 film)",
+        "sinopse": "Men in White (Chinese: \u9b3c\u554a\u9b3c\u554a), is a 2007 Singaporean horror comedy film directed by Kelvin Tong. Filming for the film began in late 2006. It is mostly in Mandarin and English, and has some Hokkien. It satirises several aspects of Singaporean life.",
+        "data_Lancamento": "2007-06-06",
+        "pais_origem": "Singapore",
+        "realizador": "http://dbpedia.org/resource/Kelvin_Tong",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Shaun_Chen",
+                "nome": "Shaun Chen",
+                "data_nascimento": "1978-11-03",
+                "naturalidade": "Penang, Malaysia"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Men_of_Steel_(1932_film)",
+        "titulo": "Men of Steel (1932 film)",
+        "sinopse": "Men of Steel is a 1932 British drama film directed by George King and starring John Stuart, Benita Hume and Heather Angel. The screenplay was adapted by Edward Knoblock and Billie Bristow from a novel by Douglas Newton. It was shot at Walton Studios as a quota quickie for distribution by United Artists.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/George_King_(film_director)",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Benita_Hume",
+                "nome": "Benita Hume",
+                "data_nascimento": "1907-10-14",
+                "naturalidade": "London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/John_Stuart_(actor)",
+                "nome": "John Stuart",
+                "data_nascimento": "1898-07-18",
+                "naturalidade": "http://dbpedia.org/resource/Midlothian"
+            },
+            {
+                "id": "http://dbpedia.org/resource/John_Stuart_(actor)",
+                "nome": "John Stuart",
+                "data_nascimento": "1898-07-18",
+                "naturalidade": "http://dbpedia.org/resource/Scotland"
+            },
+            {
+                "id": "http://dbpedia.org/resource/John_Stuart_(actor)",
+                "nome": "John Stuart",
+                "data_nascimento": "1898-07-18",
+                "naturalidade": "http://dbpedia.org/resource/Edinburgh"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Franklin_Dyall",
+                "nome": "Franklin Dyall",
+                "data_nascimento": "1870-02-03",
+                "naturalidade": "http://dbpedia.org/resource/Liverpool"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Franklin_Dyall",
+                "nome": "Franklin Dyall",
+                "data_nascimento": "1870-02-03",
+                "naturalidade": "http://dbpedia.org/resource/England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Franklin_Dyall",
+                "nome": "Franklin Dyall",
+                "data_nascimento": "1870-02-03",
+                "naturalidade": "http://dbpedia.org/resource/Lancashire"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Heather_Angel_(actress)",
+                "nome": "Heather Angel",
+                "data_nascimento": "1909-02-09",
+                "naturalidade": "Headington, Oxford, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Men_of_Tomorrow_(1959_film)",
+        "titulo": "Men of Tomorrow (1959 film)",
+        "sinopse": "Men of Tomorrow is a 1959 British short feature starring Vernon Greeves and David Hemmings. It was directed by Alfred Travers.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Alfred_Travers",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/David_Hemmings",
+                "nome": "David Hemmings",
+                "data_nascimento": "1941-11-18",
+                "naturalidade": "Guildford, Surrey, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Men_of_the_Night_(1926_film)",
+        "titulo": "Men of the Night (1926 film)",
+        "sinopse": "Men of the Night is a 1926 silent crime film directed by Albert S. Rogell and starring Herbert Rawlinson. It was produced and distributed by independent company Sterling Pictures.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "USA",
+        "realizador": "http://dbpedia.org/resource/Albert_S._Rogell",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Herbert_Rawlinson",
+                "nome": "Herbert Rawlinson",
+                "data_nascimento": "1885-11-15",
+                "naturalidade": "New Brighton, Cheshire, England, UK"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Menudo:_La_Pel\u00edcula",
+        "titulo": "Menudo: La Pel\u00edcula",
+        "sinopse": "Menudo: La Pelicula is a 1982 Puerto Rican-Venezuelan film production featuring Puerto Rican boy band Menudo. The film was filmed entirely in Venezuela. It was directed by . also acts in the film.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Venezuela",
+        "realizador": "http://dbpedia.org/resource/Alfredo_Anzola",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mercedes_(1993_film)",
+        "titulo": "Mercedes (1993 film)",
+        "sinopse": "Mercedes is a 1993 Egypt movie directed by Yousry Nasrallah.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Egypt",
+        "realizador": "Yousry Nasrallah",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Metamorphic_code",
+        "titulo": "Metamorphic code",
+        "sinopse": "Metamorphic code is code that when run outputs a logically equivalent version of its own code under some interpretation. This is similar to a quine, except that a quine's source code is exactly equivalent to its own output. Metamorphic code also usually outputs machine code and not its own source code.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Metamorphosis_(illusion)",
+        "titulo": "Metamorphosis (illusion)",
+        "sinopse": "Metamorphosis is the name of a stage illusion invented by John Nevil Maskelyne, but most often associated with famous escape artist Harry Houdini and performed to some renown (for speed) by The Pendragons, among others. It is also known amongst magicians as the Substitution Trunk (often abbreviated to Sub Trunk). In the illusion, an assistant (Houdini employed his wife Bess) is locked inside a large box or trunk, often after being restrained with handcuffs, ropes, bags, etc. The magician stands on the trunk and holds a curtain up to momentarily conceal his entire body. When the curtain is lowered, it is now revealed to be the assistant standing atop the box, the magician and assistant having changed places instantaneously. When the box is opened, it is shown to contain the magician, restrained as the assistant had been. In some acts, the magician is locked in the box first, then appears standing atop the box. Variations include the Aquarian Illusion created in the 1970s by Alan Wakeling for Mark Wilson, who performed it in The Magic Circus series and a HBO special Mumbo Jumbo! It's Magic, and in closing his Las Vegas shows. In this version an acrylic tank filled with water is used and a beautiful swimsuit-clad woman assistant is locked inside underwater. Penn and Teller performed the illusion in an underwater theatre with a female assistant (a Weeki Wachee \"mermaid\") handcuffed and locked in a steel cage on the sea bottom. These variations add an element of peril. The assistant is trapped underwater with no source of air, and if something were to go wrong she could possibly drown. Pictured to the right is \"Suspended Animation\". Called the modern day metamorphosis, the trunk is suspended on a platform above the stage creating an aerial exchange. This evolution of the illusion was invented by Australian Illusionist John Taylor. Illusionist Criss Angel assisted by Klayton and his other assistants has also performed the Metamorphosis trick as part of his \"Amystika\" show. In Angel's version, he was handcuffed, and put into the box with assistant standing on top of it. After the flashes and torches lit the stage, they swapped places. A method for Metamorphosis was exposed by the Masked Magician, Val Valentino, as part of Fox TV series Breaking the Magicians' Code: Magic's Biggest Secrets Finally Revealed. He was assisted by Michelle Berube.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Meth_(film)",
+        "titulo": "Meth (film)",
+        "sinopse": "Meth is a feature-length documentary on drug abuse among gay men, released February 9, 2006. Paul Morris was a primary producer; Todd Ahlberg was the director.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Method_(2004_film)",
+        "titulo": "Method (2004 film)",
+        "sinopse": "Method is a 2004 thriller film directed by Duncan Roy. The international co-production is a film within a film about a cast and crew who are in Romania to make a film about serial killer, Belle Gunness.",
+        "data_Lancamento": "2004-06-24",
+        "pais_origem": "Romania",
+        "realizador": "http://dbpedia.org/resource/Duncan_Roy",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Elizabeth_Hurley",
+                "nome": "Elizabeth Hurley",
+                "data_nascimento": "1965-06-10",
+                "naturalidade": "Basingstoke, Hampshire, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Jeremy_Sisto",
+                "nome": "Jeremy Sisto",
+                "data_nascimento": "1974-10-06",
+                "naturalidade": "Grass Valley, California, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Oliver_Tobias",
+                "nome": "Oliver Tobias",
+                "data_nascimento": "1947-08-06",
+                "naturalidade": "Z\u00fcrich, Switzerland"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Metro_(2016_film)",
+        "titulo": "Metro (2016 film)",
+        "sinopse": "Metro is a 2016 Indian Tamil-language action crime film directed by Anandakrishnan, in his second venture. The film features Shirish, Bobby Simha and Sendrayan in the lead roles. The film is based on the theme of chain snatching in the city of Chennai. Shirish makes his Tamil debut with this film. The film was released on 24 June 2016. The film was dubbed and released in Telugu under the same title in 2017.",
+        "data_Lancamento": "2016-06-24",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/Ananda_Krishnan_(director)",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Bobby_Simha",
+                "nome": "Bobby Simha",
+                "data_nascimento": "1983-11-06",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Bobby_Simha",
+                "nome": "Bobby Simha",
+                "data_nascimento": "1983-11-06",
+                "naturalidade": "http://dbpedia.org/resource/Andhra_Pradesh"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Bobby_Simha",
+                "nome": "Bobby Simha",
+                "data_nascimento": "1983-11-06",
+                "naturalidade": "http://dbpedia.org/resource/Secundrabad"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Shirish_Saravanan",
+                "nome": "Shirish Saravanan",
+                "data_nascimento": "1994-05-31",
+                "naturalidade": "Chennai, Tamil Nadu, India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Sendrayan",
+                "nome": "Senrayan",
+                "data_nascimento": "1982-07-30",
+                "naturalidade": "Bodinayakkanur, Theni, Tamil Nadu, India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Metro_Theatre_(Toronto)",
+        "titulo": "Metro Theatre (Toronto)",
+        "sinopse": "The Metro Theatre was an adult movie theatre in Toronto, Ontario, Canada. Located at 677 Bloor Street, it was open ten hours a day throughout the entire week before its closure in 2013. Built in 1938, it is one of the several Art Deco theatres built in Toronto in the 1930s by architects Kaplan and Sprachman. Metro Theatre opened in 1939 as a neighbourhood theatre showing second run films and B movies and in 1976 started to show adult films. The theatre is stylized for the 1940s, one of its had 286 seats and another 320, there is also a snack bar. The entrance contained signed photos of notable pornographic stars, including Ron Jeremy. In the 1990s, Metro Theatre was used to screen kung-fu films and as a counter-culture performance space. Metro Theatre is featured prominently in scenes in the 2008 film The Lollipop Generation by G. B. Jones, and also briefly in the music video for \"So Strung Out\" by C-Block. The theatre closed at the end of 2013 after being purchased for million by a numbered company directed by Saroj Jain. The building was partitioned to create two commercial spaces: a large indoor area where the theatre used to be, which houses an indoor rock climbing gym and a smaller retail storefront facing Bloor.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mexicana_(film)",
+        "titulo": "Mexicana (film)",
+        "sinopse": "Mexicana is a 1945 American musical film directed by Alfred Santell and starring Tito Gu\u00edzar, Constance Moore and Leo Carrillo. The film was one of three made by Republic Pictures in line with the American government's Good Neighbor policy towards Latin America. Its plot is almost identical to that of another Gu\u00edzar vehicle Brazil (1944).",
+        "data_Lancamento": "1945-11-15",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Alfred_Santell",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Constance_Moore",
+                "nome": "Constance Moore",
+                "data_nascimento": "1920-01-18",
+                "naturalidade": "Sioux City, Iowa, USA"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Tito_Gu\u00edzar",
+                "nome": "Tito Gu\u00edzar",
+                "data_nascimento": "1908-04-08",
+                "naturalidade": "Guadalajara, Jalisco, Mexico."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Estelita_Rodriguez",
+                "nome": "Estelita Rodriguez",
+                "data_nascimento": "1928-07-02",
+                "naturalidade": "Guanajay, Cuba"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Michael_Golden_(actor)",
+        "titulo": "Michael Golden (actor)",
+        "sinopse": "Michael Golden (15 August 1913 \u2013 1983) was an Irish stage, film and television actor, mainly active in England. His stage work encompassed Shakespearean roles at Stratford in 1947; and as police inspectors in the original West End productions of Agatha Christie's plays Verdict and The Unexpected Guest in 1958.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Michael_Josephs",
+        "titulo": "Michael Josephs",
+        "sinopse": "Michael Josephs (born 1959) is an American film and television score composer. He was born in Cleveland, Ohio. He has written and conducted musical scores for many notable films and television programs including Wild Kingdom, National Geographic, and many PBS specials. He received a National Primetime Emmy Award nomination for Outstanding Main Title Theme Music in 2001. He has received numerous other awards.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Michael_Shulman_(actor)",
+        "titulo": "Michael Shulman (actor)",
+        "sinopse": "Michael Shulman is a Tony Award winning American film, stage, television actor and producer. Shulman is the recent founder of Sand & Snow Entertainment, a company formed in 2021, dedicated to artist-driven work that stirs conversation, especially in younger generations. Previously, he was the co-owner of New York and Los Angeles-based production company Starry Night Entertainment alongside Craig Saavedra. Shulman received a Bachelor of Arts degree from Yale University with a major in art history.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Michael_Wright_(actor)",
+        "titulo": "Michael Wright (actor)",
+        "sinopse": "Michael Wright is an American film and television actor, who is best known for his role as Eddie King Jr. in the 1991 Robert Townsend film The Five Heartbeats, Carlyle in Streamers (1983), and Raynathan in Sugar Hill (1994). and known for his television roles such as Elias Taylor in V (The Series) (1984-1985), Omar White in Oz (2001-2003), and Lazarus Prime in Black Lightning (2019).",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Michaelmas_Term_(play)",
+        "titulo": "Michaelmas Term (play)",
+        "sinopse": "Michaelmas Term is a Jacobean comedy by Thomas Middleton. It was first performed in 1604 by the Children of Paul's, and was entered into the Stationers' Register on 15 May 1607, and published in quarto later that year by Arthur Johnson. A second quarto was printed in 1630 by the bookseller Richard Meighen.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Midge_Bosworth",
+        "titulo": "Midge Bosworth",
+        "sinopse": "Midge Bosworth (born 23 June 1941) is a former Australian racing driver. Bosworth raced in the 1960s and is most remembered for winning the 1965 Bathurst 500, co-driving with Barry Seton in a Fairfield Motors entered Ford Cortina GT500. It was Bosworth's second, and last, start in the Bathurst 500, giving him the distinction along with Harry Firth (1967) and Graeme Bailey (1986), of winning the event in his last drive at Mount Panorama. Bosworth was only 24 when he won Bathurst in 1965. He held the honour of being the youngest driver to win the race for no less than 31 years, until Craig Lowndes won the 1996 AMP Bathurst 1000 in a Holden VR Commodore when he was 22.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Midnight_(1931_film)",
+        "titulo": "Midnight (1931 film)",
+        "sinopse": "Midnight is a 1931 British comedy crime film directed by George King and starring Eve Gray, George Bellamy and Ellen Pollock. It was a quota quickie made at Nettlefold Studios for distribution by the British subsidiary of the American Fox Film Company.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/George_King_(film_director)",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/George_Bellamy_(actor)",
+                "nome": "George Bellamy",
+                "data_nascimento": "1866-07-10",
+                "naturalidade": "Bristol, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ellen_Pollock",
+                "nome": "Ellen Pollock",
+                "data_nascimento": "1902-06-29",
+                "naturalidade": "http://dbpedia.org/resource/German_Empire"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ellen_Pollock",
+                "nome": "Ellen Pollock",
+                "data_nascimento": "1902-06-29",
+                "naturalidade": "http://dbpedia.org/resource/Heidelberg"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Eve_Gray",
+                "nome": "Eve Gray",
+                "data_nascimento": "1900-11-27",
+                "naturalidade": "West Bromwich, Staffordshire, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Midnight_Madness_(1918_film)",
+        "titulo": "Midnight Madness (1918 film)",
+        "sinopse": "Midnight Madness is a 1918 American silent mystery film directed by Rupert Julian and starring Ruth Clifford, Kenneth Harlan and Harry von Meter.",
+        "data_Lancamento": "1918-06-08",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Rupert_Julian",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Ruth_Clifford",
+                "nome": "Ruth Clifford",
+                "data_nascimento": "1900-02-17",
+                "naturalidade": "Pawtucket, Rhode Island, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Harry_von_Meter",
+                "nome": "Harry von Meter",
+                "data_nascimento": "1871-03-20",
+                "naturalidade": "http://dbpedia.org/resource/Malta_Bend"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Kenneth_Harlan",
+                "nome": "Kenneth Harlan",
+                "data_nascimento": "1895-07-26",
+                "naturalidade": "Boston, Massachusetts, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Midnight_Madness_(1928_film)",
+        "titulo": "Midnight Madness (1928 film)",
+        "sinopse": "Midnight Madness is a 1928 silent film drama directed by F. Harmon Weight and starring Jacqueline Logan. It was produced by Cecil B. DeMille's DeMille Pictures Corporation and released through Path\u00e9 Exchange. Prints are preserved at the Museum of Modern Art, Library of Congress and New Zealand Film Archive. A video of the preserved film is available for viewing at the website of the National Film Preservation Foundation.",
+        "data_Lancamento": "1928-03-25",
+        "pais_origem": "USA",
+        "realizador": "http://dbpedia.org/resource/F._Harmon_Weight",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Jacqueline_Logan",
+                "nome": "Jacqueline Logan",
+                "data_nascimento": "1902-11-30",
+                "naturalidade": "Corsicana, Texas, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mignon_Has_Come_to_Stay",
+        "titulo": "Mignon Has Come to Stay",
+        "sinopse": "Mignon \u00e8 partita (literally Mignon Has Left, internationally released as Mignon Has Come to Stay) is a 1988 Italian drama film directed by Francesca Archibugi. The film won five David di Donatello awards for Best New Director, Best Screenplay, Best Actress (Stefania Sandrelli), Best Supporting Actor (Massimo Dapporto) and Best Sound. The film centers on a sophisticated young Parisian girl who is forced to move to Rome to live with her extended family after her father runs into criminal charges and her mother has a nervous breakdown.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "http://dbpedia.org/resource/Francesca_Archibugi",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Stefania_Sandrelli",
+                "nome": "Stefania Sandrelli",
+                "data_nascimento": "1946-06-05",
+                "naturalidade": "Viareggio, Tuscany, Italy"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Migration_(film)",
+        "titulo": "Migration (film)",
+        "sinopse": "Migration is a Canadian animated short film, directed by and and released in 2014. Animated in the style of an old Super 8 nature documentary, the film depicts the migration of a strange creature returning to be with the rest of his kind. The film received a Canadian Screen Award nomination for Best Animated Short Film at the 3rd Canadian Screen Awards, and a Jutra Award nomination for Best Animated Short Film at the 17th Jutra Awards.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Canada",
+        "realizador": "Johanne Ste-Marie",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Miguel_Ligero_(Argentine_actor)",
+        "titulo": "Miguel Ligero (Argentine actor)",
+        "sinopse": "Miguel Ligero (1911\u20131989) was a film, television and theater actor from Argentina.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mihaela_Mitrache",
+        "titulo": "Mihaela Mitrache",
+        "sinopse": "Mihaela Mitrache (aka Mihaela Mitraki; July 8, 1955, Bucharest - February 18, 2008, Balote\u0219ti) was a Romanian movie and theatre actress. She graduated from Bucharest Movie and Theatre Institute in 1978, where she was a student in actor Marin Moraru's class.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mike_(1926_film)",
+        "titulo": "Mike (1926 film)",
+        "sinopse": "Mike is a 1926 American drama film directed by Marshall Neilan. The film is a modest production, featuring Sally O'Neil and William Haines.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Marshall_Neilan",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Sally_O'Neil",
+                "nome": "Sally O'Neil",
+                "data_nascimento": "1908-10-23",
+                "naturalidade": "Bayonne, New Jersey, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/William_Haines",
+                "nome": "William Haines",
+                "data_nascimento": "1900-01-02",
+                "naturalidade": "Staunton, Virginia, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mike_(2022_film)",
+        "titulo": "Mike (2022 film)",
+        "sinopse": "'Mike' is a 2022 Malayalam language drama film directed by Vishnu Sivaprasad. The film stars Anaswara Rajan and debutant, Ranjith Sajeev in important roles. The film was produced by John Abraham. This film marks the debut production of John Abraham in Malayalam.",
+        "data_Lancamento": "2022-08-19",
+        "pais_origem": "India",
+        "realizador": "Vishnu Sivaprasad",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Anaswara_Rajan",
+                "nome": "Anaswara Rajan",
+                "data_nascimento": "2002-09-08",
+                "naturalidade": "http://dbpedia.org/resource/Karivellur"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Anaswara_Rajan",
+                "nome": "Anaswara Rajan",
+                "data_nascimento": "2002-09-08",
+                "naturalidade": "http://dbpedia.org/resource/Kannur"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Anaswara_Rajan",
+                "nome": "Anaswara Rajan",
+                "data_nascimento": "2002-09-08",
+                "naturalidade": "http://dbpedia.org/resource/Kerala"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Milan_(1946_film)",
+        "titulo": "Milan (1946 film)",
+        "sinopse": "Milan (transl.\u2009Union) is a 1946 Hindi-language drama film directed by Nitin Bose. The film starred Dilip Kumar, Mira Misra, Ranjana, Pahari Sanyal and Moni Chatterjee. It was an adaptation of Rabindranath Tagore's 1906 Bengali story Noukadubi (The Wreck). The screenplay adaptation was done by Sajanikanta Das with dialogues translated into Hindi by . The film's music was composed by Anil Biswas and the lyrics written by P. L. Santoshi and Arzu Lakhnavi. The story revolves around a young law student who is forced into an arranged marriage though he is in love with another woman. Following the wedding the drama focuses on the bride's mistaken identity and the search for her husband.",
+        "data_Lancamento": "1946-08-09",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/Nitin_Bose",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Dilip_Kumar",
+                "nome": "Dilip Kumar",
+                "data_nascimento": "1922-12-11",
+                "naturalidade": "http://dbpedia.org/resource/British_Raj"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Dilip_Kumar",
+                "nome": "Dilip Kumar",
+                "data_nascimento": "1922-12-11",
+                "naturalidade": ""
+            },
+            {
+                "id": "http://dbpedia.org/resource/Dilip_Kumar",
+                "nome": "Dilip Kumar",
+                "data_nascimento": "1922-12-11",
+                "naturalidade": "http://dbpedia.org/resource/Peshawar"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Dilip_Kumar",
+                "nome": "Dilip Kumar",
+                "data_nascimento": "1922-12-11",
+                "naturalidade": "http://dbpedia.org/resource/North-West_Frontier_Province"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mirai_Ninja_(film)",
+        "titulo": "Mirai Ninja (film)",
+        "sinopse": "Mirai Ninja: Keigumo Kinin Gaiden (\u672a\u6765\u5fcd\u8005\uff1a\u6176\u96f2\u6a5f\u5fcd\u5916\u4f1d, lit. \"Future Ninja: Stealth Joy Cloud Device Side Story\"), known as Cyber Ninja in the United States, Warlord in Canada and Robo Ninja in the UK, is a 1988 Japanese science fiction action film directed by Keita Amemiya, which was co-produced and released by Namco that premiered on October 1988 at the Tokyo International Fantastic Film Festival. Two months later, it was released as a direct-to-video film on December 2, 1988. The film is based on the arcade game of the same name which was also developed and released by Namco.",
+        "data_Lancamento": "1988-12-02",
+        "pais_origem": "http://dbpedia.org/resource/Japan",
+        "realizador": "http://dbpedia.org/resource/Keita_Amemiya",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mirka_(film)",
+        "titulo": "Mirka (film)",
+        "sinopse": "Mirka is a 2000 drama film starring Vanessa Redgrave and G\u00e9rard Depardieu. The international co-production was written and directed by Algerian-born filmmaker Rachid Benhadj. Although countries are unnamed, several publications make reference to the film as a document of Bosnian Genocide. It was released in Italy on 10 March 2000 and received its international premiere at the Thessaloniki International Film Festival on 21 November 2005.",
+        "data_Lancamento": "2000-03-10",
+        "pais_origem": "Italy",
+        "realizador": "Rachid Benhadj",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Vanessa_Redgrave",
+                "nome": "Vanessa Redgrave",
+                "data_nascimento": "1937-01-30",
+                "naturalidade": "Blackheath, London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vanessa_Redgrave",
+                "nome": "",
+                "data_nascimento": "1937-01-30",
+                "naturalidade": "Blackheath, London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Franco_Nero",
+                "nome": "Franco Nero",
+                "data_nascimento": "1941-11-23",
+                "naturalidade": "http://dbpedia.org/resource/Kingdom_of_Italy"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Franco_Nero",
+                "nome": "Franco Nero",
+                "data_nascimento": "1941-11-23",
+                "naturalidade": "http://dbpedia.org/resource/Parma"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Franco_Nero",
+                "nome": "Franco Nero",
+                "data_nascimento": "1941-11-23",
+                "naturalidade": "http://dbpedia.org/resource/San_Prospero_Parmense"
+            },
+            {
+                "id": "http://dbpedia.org/resource/G\u00e9rard_Depardieu",
+                "nome": "G\u00e9rard Depardieu",
+                "data_nascimento": "1948-12-27",
+                "naturalidade": "Ch\u00e2teauroux, France"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Miroir_(film)",
+        "titulo": "Miroir (film)",
+        "sinopse": "Miroir is a 1947 French film directed by Raymond Lamy. The film starred Jean Gabin.",
+        "data_Lancamento": "1947-05-02",
+        "pais_origem": "France",
+        "realizador": "http://dbpedia.org/resource/Raymond_Lamy",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Jean_Gabin",
+                "nome": "Jean Gabin",
+                "data_nascimento": "1904-05-17",
+                "naturalidade": "Paris, France"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Miroslava_(film)",
+        "titulo": "Miroslava (film)",
+        "sinopse": "Miroslava is a 1993 Mexican drama film directed by Alejandro Pelayo and starring Arielle Dombasle, Claudio Brook and Milosh Trnka. The film portrays the life of the Czech-born actress Miroslava, who became one of the biggest stars in Mexico before her suicide in 1955.",
+        "data_Lancamento": "1993-04-08",
+        "pais_origem": "Mexico",
+        "realizador": "Alejandro Pelayo",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Arielle_Dombasle",
+                "nome": "Arielle Dombasle",
+                "data_nascimento": "1953-04-27",
+                "naturalidade": "http://dbpedia.org/resource/United_States"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Arielle_Dombasle",
+                "nome": "Arielle Dombasle",
+                "data_nascimento": "1953-04-27",
+                "naturalidade": "http://dbpedia.org/resource/Hartford,_Connecticut"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mirror_Images_2",
+        "titulo": "Mirror Images 2",
+        "sinopse": "Mirror Images 2 is a 1993 American erotic thriller drama film directed by Gregory Dark and produced by Andrew W. Garroni. The film stars Shannon Whirry, Luca Bercovici, Tom Reilly, Eva LaRue and Ken Steadman in the lead roles. The film's music score was composed by Ashley Irwin.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Gregory_Dark",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Tom_Reilly_(actor)",
+                "nome": "Tom Reilly",
+                "data_nascimento": "1959-06-18",
+                "naturalidade": "http://dbpedia.org/resource/United_States"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Tom_Reilly_(actor)",
+                "nome": "Tom Reilly",
+                "data_nascimento": "1959-06-18",
+                "naturalidade": "http://dbpedia.org/resource/Fort_Riley_(CDP),_Kansas"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Eva_LaRue",
+                "nome": "Eva LaRue",
+                "data_nascimento": "1966-12-27",
+                "naturalidade": "Long Beach, California, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ken_Steadman",
+                "nome": "Ken Steadman",
+                "data_nascimento": "1969-06-26",
+                "naturalidade": "Aberdeen, Washington"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mirza_Ghalib_(film)",
+        "titulo": "Mirza Ghalib (film)",
+        "sinopse": "Mirza Ghalib is a 1954 Indian Hindi and Urdu language biographical film, directed by Sohrab Modi. Based on the life of well-known poet Mirza Ghalib, the film was acclaimed upon release. It stars Bharat Bhushan as Ghalib and Suraiya as his courtesan lover. The film won the President's Gold Medal for the All India Best Feature Film and the President's Silver Medal for Best Feature Film in Hindi in the 2nd National Film Awards for 1954. Suraiya's singing (of Mirza Ghalib's ghazals) and her acting was specially applauded by the Prime Minister, Jawahar Lal Nehru, who remarked to her, \"You have brought back Ghalib to life\", in a special screening of the film at Rashtrapati Bhavan.",
+        "data_Lancamento": "1954-12-10",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/Sohrab_Modi",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Bharat_Bhushan",
+                "nome": "Bharat Bhushan",
+                "data_nascimento": "1920-06-14",
+                "naturalidade": "http://dbpedia.org/resource/Meerut"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Bharat_Bhushan",
+                "nome": "Bharat Bhushan",
+                "data_nascimento": "1920-06-14",
+                "naturalidade": "http://dbpedia.org/resource/United_Provinces_of_Agra_and_Oudh"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Bharat_Bhushan",
+                "nome": "Bharat Bhushan",
+                "data_nascimento": "1920-06-14",
+                "naturalidade": "http://dbpedia.org/resource/British_Raj"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mukri",
+                "nome": "Mohammed Umar Mukri",
+                "data_nascimento": "1922-01-05",
+                "naturalidade": "http://dbpedia.org/resource/British_India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mukri",
+                "nome": "Mohammed Umar Mukri",
+                "data_nascimento": "1922-01-05",
+                "naturalidade": "http://dbpedia.org/resource/Bombay_Presidency"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mukri",
+                "nome": "Mohammed Umar Mukri",
+                "data_nascimento": "1922-01-05",
+                "naturalidade": "http://dbpedia.org/resource/Uran"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Murad_(actor)",
+                "nome": "Murad",
+                "data_nascimento": "1911-09-24",
+                "naturalidade": "http://dbpedia.org/resource/British_India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Murad_(actor)",
+                "nome": "Murad",
+                "data_nascimento": "1911-09-24",
+                "naturalidade": "http://dbpedia.org/resource/Rampur,_Uttar_Pradesh"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Durga_Khote",
+                "nome": "Durga Khote",
+                "data_nascimento": "1905-01-14",
+                "naturalidade": "Bombay, Bombay Presidency, British India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nigar_Sultana_(actress)",
+                "nome": "Nigar Sultana",
+                "data_nascimento": "1932-06-21",
+                "naturalidade": "http://dbpedia.org/resource/British_India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nigar_Sultana_(actress)",
+                "nome": "Nigar Sultana",
+                "data_nascimento": "1932-06-21",
+                "naturalidade": "http://dbpedia.org/resource/Hyderabad"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nigar_Sultana_(actress)",
+                "nome": "Nigar Sultana",
+                "data_nascimento": "1932-06-21",
+                "naturalidade": "http://dbpedia.org/resource/Hyderabad_State"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Suraiya",
+                "nome": "Suraiya",
+                "data_nascimento": "1929-06-15",
+                "naturalidade": "Lahore, Punjab, British India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Iftekhar",
+                "nome": "Iftekhar",
+                "data_nascimento": "1924-02-22",
+                "naturalidade": "http://dbpedia.org/resource/British_Raj"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Iftekhar",
+                "nome": "Iftekhar",
+                "data_nascimento": "1924-02-22",
+                "naturalidade": ""
+            },
+            {
+                "id": "http://dbpedia.org/resource/Iftekhar",
+                "nome": "Iftekhar",
+                "data_nascimento": "1924-02-22",
+                "naturalidade": "http://dbpedia.org/resource/Jalandhar"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Iftekhar",
+                "nome": "Iftekhar",
+                "data_nascimento": "1924-02-22",
+                "naturalidade": "http://dbpedia.org/resource/Punjab_Province_(British_India)"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Kumkum_(actress)",
+                "nome": "Kumkum",
+                "data_nascimento": "1934-06-08",
+                "naturalidade": "Hussainabad of Sheikhpura, Bihar, British India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mischief_(1931_film)",
+        "titulo": "Mischief (1931 film)",
+        "sinopse": "Mischief is a 1931 British comedy film directed by Jack Raymond and starring Ralph Lynn, Winifred Shotter and Jeanne Stuart. It was shot at the Elstree Studios near London. It is based on the 1928 farce Mischief by Ben Travers.",
+        "data_Lancamento": "1931-12-15",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Jack_Raymond",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Jeanne_Stuart",
+                "nome": "Jeanne Stuart",
+                "data_nascimento": "1908-08-13",
+                "naturalidade": "Hampstead, London, England, UK"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Winifred_Shotter",
+                "nome": "Winifred Shotter",
+                "data_nascimento": "1904-11-05",
+                "naturalidade": "London, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Misfit_(1965_film)",
+        "titulo": "Misfit (1965 film)",
+        "sinopse": "Misfit (also known as The Misfit) is a lost 1965 American faith-based educational film directed by Bob O'Donnell. It stars Steven Jones, Warren Day, and Sandra Peabody. It follows a high school drop out (Jones), a drug addict (Peabody), and a \"religious dropout\" (Day) that rekindles his religion and helps the titular \"misfit\" find himself. Produced by Empire Studios, the film was distributed through churches, schools, penal institutions, and military bases before a worldwide release by Youth Films.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "Bob O'Donnell",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Missamma_(2003_film)",
+        "titulo": "Missamma (2003 film)",
+        "sinopse": "Missamma (transl.\u2009Miss madam) is a 2003 Indian Telugu-language film written and directed by Neelakanta. The film stars Bhumika as the title character alongside Sivaji and Laya. The film won four Nandi Awards including the Best Feature Film. It was remade in Kannada as Namaste Madam in 2014.",
+        "data_Lancamento": "2003-11-28",
+        "pais_origem": "India",
+        "realizador": "http://dbpedia.org/resource/G._Neelakanta_Reddy",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Bhumika_Chawla",
+                "nome": "Bhumika Chawla",
+                "data_nascimento": "1978-08-21",
+                "naturalidade": "http://dbpedia.org/resource/New_Delhi"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Bhumika_Chawla",
+                "nome": "Bhumika Chawla",
+                "data_nascimento": "1978-08-21",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Laya_(actress)",
+                "nome": "Laya",
+                "data_nascimento": "1981-10-21",
+                "naturalidade": "Vijayawada, Andhra Pradesh, India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Missile_(1988_film)",
+        "titulo": "Missile (1988 film)",
+        "sinopse": "Missile is a 1988 American documentary film by Frederick Wiseman. It chronicles the 14-week training course for the men and women of the United States Air Force who are charged with manning the ICBM silos in remote places like Minot AFB and Whiteman AFB. The film shows discussions of the ethics of nuclear war, shows scenes from the daily lives of trainees, and shows demonstrations of training exercises such as counterterrorism, the launching of nuclear missiles, the command and control process, and basic military training. Most scenes in the film are of classroom training, interspersed with exercises in training facilities. The film includes a scene of an Air Force church service memorial for the astronauts killed in the Space Shuttle Challenger disaster. In the typical cin\u00e9ma v\u00e9rit\u00e9 style of Wiseman's films, the documentary is unadorned by commentary, narration, or music.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Frederick_Wiseman",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Missing_Daughters_(1924_film)",
+        "titulo": "Missing Daughters (1924 film)",
+        "sinopse": "Missing Daughters is a 1924 American silent crime drama film directed by William H. Clifford and starring Eileen Percy, Pauline Starke and Claire Adams.",
+        "data_Lancamento": "1924-05-25",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/W._H._Clifford",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Claire_Adams",
+                "nome": "Claire Adams",
+                "data_nascimento": "1898-09-24",
+                "naturalidade": "http://dbpedia.org/resource/Winnipeg"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Claire_Adams",
+                "nome": "Claire Adams",
+                "data_nascimento": "1898-09-24",
+                "naturalidade": "http://dbpedia.org/resource/Canada"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Claire_Adams",
+                "nome": "Claire Adams",
+                "data_nascimento": "1898-09-24",
+                "naturalidade": "http://dbpedia.org/resource/Manitoba"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Missing_You_(2008_film)",
+        "titulo": "Missing You (2008 film)",
+        "sinopse": "Missing You... (Chinese: \u60f3\u4f60\u7684\u65f6\u5019; pinyin: xi\u01ceng n\u01d0 d\u00e8 sh\u00ed ho\u00f9) is a 2008 Singaporean romance cum drama film about the highs and lows of the Singaporean getai trade. Directed by Lin Kun Hui, the film stars Joshua Ang, Christina Lim, Dasmond Koh, Hsu Chiung Fang and John Cheng.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Singapore",
+        "realizador": "Lin Kun Hui",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Joshua_Ang",
+                "nome": "Joshua Ang",
+                "data_nascimento": "1989-03-01",
+                "naturalidade": "http://dbpedia.org/resource/Singapore"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Dasmond_Koh",
+                "nome": "Dasmond Koh",
+                "data_nascimento": "1972-02-22",
+                "naturalidade": "Singapore"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mistake_(1953_film)",
+        "titulo": "Mistake (1953 film)",
+        "sinopse": "Mistake (Persian: Eshtebah) is a 1953 Iranian film directed by .",
+        "data_Lancamento": "1953-04-10",
+        "pais_origem": "Iran",
+        "realizador": "http://dbpedia.org/resource/Mansour_Mobini",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mithu_Chakrabarty",
+        "titulo": "Mithu Chakrabarty",
+        "sinopse": "Mithu Chakrabarty is an Indian television actress and theater personality. She is the wife of veteran Bengali actor Sabyasachi Chakrabarty.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moby_Dick_(1978_film)",
+        "titulo": "Moby Dick (1978 film)",
+        "sinopse": "Moby Dick is a 1978 filmed one-man version of Herman Melville's classic 1851 novel Moby Dick. The film starred Jack Aranson, a Shakespearean actor trained in the Old Vic, and was directed by Paul Stanley.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Paul_Stanley_(director)",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Jack_Aranson",
+                "nome": "Jack Aranson",
+                "data_nascimento": "1924-12-29",
+                "naturalidade": "http://dbpedia.org/resource/California"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Jack_Aranson",
+                "nome": "Jack Aranson",
+                "data_nascimento": "1924-12-29",
+                "naturalidade": "http://dbpedia.org/resource/Los_Angeles"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moby_Dick_(unfinished_film)",
+        "titulo": "Moby Dick (unfinished film)",
+        "sinopse": "Moby Dick is an unfinished film by Orson Welles, filmed in 1971. It is not to be confused with the incomplete (and now lost) 1955 film Welles made of his meta-play Moby Dick\u2014Rehearsed, or with the 1956 film Moby Dick, in which Welles played a supporting role. The film consists of readings by Welles from Herman Melville's 1851 novel Moby-Dick, shot against a blue background with various optical illusions to give the impression of being at sea. It was made during a break in the filming of The Other Side of the Wind. There is some ambiguity about what Welles intended to do with the footage, and how he was going to compile it. It remained unedited in his lifetime. After Welles' death in 1985, all of his unfinished films were bequeathed to his long-term companion and mistress Oja Kodar, and she in turn donated many of them (including Moby Dick) to the Munich Film Museum for preservation and restoration. In 1999 the Munich Film Museum then edited together the rushes into a 22-minute cut, which has subsequently been screened at numerous film festivals. The restored footage has never been released on video or DVD, although some unrestored clips can be seen in Vassili Slovic's 1995 documentary Orson Welles: the One Man Band.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Orson_Welles",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Orson_Welles",
+                "nome": "Orson Welles",
+                "data_nascimento": "1915-05-06",
+                "naturalidade": "Kenosha, Wisconsin, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mockery",
+        "titulo": "Mockery",
+        "sinopse": "Mockery or mocking is the act of insulting or making light of a person or other thing, sometimes merely by taunting, but often by making a caricature, purporting to engage in imitation in a way that highlights unflattering characteristics. Mockery can be done in a lighthearted and gentle way, but can also be cruel and hateful, such that it \"conjures images of corrosion, deliberate degradation, even subversion; thus, 'to laugh at in contempt, to make sport of' (OED)\". Mockery appears to be unique to humans, and serves a number of psychological functions, such as reducing the perceived imbalance of power between authority figures and common people. Examples of mockery can be found in literature and the arts.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mockery_(1912_film)",
+        "titulo": "Mockery (1912 film)",
+        "sinopse": "Mockery is an American short silent film directed by Laurence Trimble for Vitagraph. The movie was released on June 5, 1912, beingMarshall P. Wilder's first appearance in a dramatic role.",
+        "data_Lancamento": "1912-06-05",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "http://dbpedia.org/resource/Laurence_Trimble",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Model_Behaviour_(film)",
+        "titulo": "Model Behaviour (film)",
+        "sinopse": "Model Behaviour is an American 1982 romantic comedy film by director , starring Anne Marie Howard and Richard Bekins. The film was produced by in the United States of America.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Modell_Bianka",
+        "titulo": "Modell Bianka",
+        "sinopse": "Modell Bianka is an East German film. It was released in 1951.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "http://dbpedia.org/resource/East_Germany",
+        "realizador": "Richard Groschopp",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Modern_Love_(1918_film)",
+        "titulo": "Modern Love (1918 film)",
+        "sinopse": "Modern Love is a 1918 American silent drama film directed by Robert Z. Leonard and starring Mae Murray, Philo McCullough, and Arthur Shirley.",
+        "data_Lancamento": "1918-09-14",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Robert_Z._Leonard",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Mae_Murray",
+                "nome": "Mae Murray",
+                "data_nascimento": "1885-05-10",
+                "naturalidade": "New York City, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Arthur_Shirley",
+                "nome": "Arthur Shirley",
+                "data_nascimento": "1886-08-31",
+                "naturalidade": "http://dbpedia.org/resource/Hobart,_Tasmania"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Arthur_Shirley",
+                "nome": "Arthur Shirley",
+                "data_nascimento": "1886-08-31",
+                "naturalidade": "http://dbpedia.org/resource/Tasmania"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Philo_McCullough",
+                "nome": "Philo McCullough",
+                "data_nascimento": "1893-01-16",
+                "naturalidade": "San Bernardino, California, US"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Modern_Times_(film)",
+        "titulo": "Modern Times (film)",
+        "sinopse": "Modern Times is a 1936 American part-talkie satirical romantic black comedy film written and directed by Charlie Chaplin in which his iconic Little Tramp character struggles to survive in the modern, industrialized world. The film is a commentary on the desperate employment and financial conditions many people faced during the Great Depression \u2014 conditions created, in Chaplin's view, by the efficiencies of modern industrialization. The movie stars Chaplin, Paulette Goddard, Henry Bergman, Tiny Sandford and Chester Conklin. It is notable for being the last time that Chaplin portrayed the Tramp character and for being the first time Chaplin's voice is heard on film. In 1989, Modern Times was one of the first 25 films selected by the Library of Congress for preservation in the United States National Film Registry for being \"culturally, historically, or aesthetically significant\". In 2003, it was screened \"out of competition\" at the Cannes Film Festival.",
+        "data_Lancamento": "1936-02-05",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Charlie_Chaplin",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Paulette_Goddard",
+                "nome": "Paulette Goddard",
+                "data_nascimento": "1910-06-03",
+                "naturalidade": "New York City, New York, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Tiny_Sandford",
+                "nome": "Tiny Sandford",
+                "data_nascimento": "1894-02-26",
+                "naturalidade": "Osage, Iowa, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Henry_Bergman",
+                "nome": "Henry Bergman",
+                "data_nascimento": "1868-02-23",
+                "naturalidade": "San Francisco, California, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Charlie_Chaplin",
+                "nome": "Charlie Chaplin",
+                "data_nascimento": "1889-04-16",
+                "naturalidade": "London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Chester_Conklin",
+                "nome": "Chester Conklin",
+                "data_nascimento": "1886-01-11",
+                "naturalidade": "Oskaloosa, Iowa, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Modesta",
+        "titulo": "Modesta",
+        "sinopse": "Modesta is a 1956 short film, set in Puerto Rico, in which a peasant woman rebels against her husband's authoritarianism. She and the other women of her community organize the Liberated Women League to fight for their rights. It stars Antonia Hidalgo and Juan Ortiz Jim\u00e9nez. The movie was adapted by Benjamin Doniger, Luis A. Maisonet and Ren\u00e9 Marqu\u00e9s from a story by Domingo Silas Ortiz. It was directed by Doniger. In 1998, Modesta was selected for preservation in the United States National Film Registry by the Library of Congress as being \"culturally, historically, or aesthetically significant\".",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mohabbat_Zindagi_Hai_(1975_film)",
+        "titulo": "Mohabbat Zindagi Hai (1975 film)",
+        "sinopse": "Mohabbat Zindagi Hai is a 1975 Pakistani Urdu colour film directed by Iqbal Akhtar and produced by Begum Riaz. It is a romance film and a musical film. It cast Mohammad Ali, Zeba, Waheed Murad, Mumtaz, Nayyar Sultana, Qavi Khan, Saqi and Lehri. Waheed Murad played a secondary role and Zeba played a lead role against Mohammad Ali.",
+        "data_Lancamento": "1975-06-06",
+        "pais_origem": "http://dbpedia.org/resource/Pakistan",
+        "realizador": "Iqbal Akhtar",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Qavi_Khan",
+                "nome": "Qavi khan",
+                "data_nascimento": "1947-11-13",
+                "naturalidade": "Peshawar, North-West Frontier Province, Pakistan"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Lehri_(actor)",
+                "nome": "Lehri",
+                "data_nascimento": "1929-01-02",
+                "naturalidade": "Kanpur, erstwhile British India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Zeba",
+                "nome": "Zeba",
+                "data_nascimento": "1945-09-10",
+                "naturalidade": "http://dbpedia.org/resource/Punjab_(British_India)"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Zeba",
+                "nome": "Zeba",
+                "data_nascimento": "1945-09-10",
+                "naturalidade": "http://dbpedia.org/resource/British_India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Zeba",
+                "nome": "Zeba",
+                "data_nascimento": "1945-09-10",
+                "naturalidade": "http://dbpedia.org/resource/Ambala"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Waheed_Murad",
+                "nome": "Waheed Murad",
+                "data_nascimento": "1938-10-02",
+                "naturalidade": "http://dbpedia.org/resource/Sialkot"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Waheed_Murad",
+                "nome": "Waheed Murad",
+                "data_nascimento": "1938-10-02",
+                "naturalidade": ""
+            },
+            {
+                "id": "http://dbpedia.org/resource/Waheed_Murad",
+                "nome": "Waheed Murad",
+                "data_nascimento": "1938-10-02",
+                "naturalidade": "http://dbpedia.org/resource/Punjab,_Pakistan"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Waheed_Murad",
+                "nome": "Waheed Murad",
+                "data_nascimento": "1938-10-02",
+                "naturalidade": "http://dbpedia.org/resource/British_India"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moll_Flanders_(1996_film)",
+        "titulo": "Moll Flanders (1996 film)",
+        "sinopse": "Moll Flanders is a 1996 American period drama film starring Robin Wright and Morgan Freeman, loosely based on the 1722 novel of the same name by Daniel Defoe. The film, which vastly differs from the original novel, was written and directed by Pen Densham. The original music score was composed by Mark Mancina.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Pen_Densham",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moloch_(film)",
+        "titulo": "Moloch (film)",
+        "sinopse": "Moloch (Russian: \u041c\u043e\u043b\u043e\u0445) is a 1999 Russian biographical film, directed by Alexander Sokurov. The storyline was conceived from a screenplay written by Yuri Arabov and Marina Koreneva. It portrays Adolf Hitler living life in an unassuming manner during an abrupt journey to the Bavarian Alps. The film stars actors Leonid Mozgovoy, Yelena Rufanova, Vladimir Bogdanov, and Leonid Sokol in principal roles. Moloch explores companionship, intimacy and dictatorship. A joint collective effort to commit to the film's production was made by a number of studios, including Arte, Fabrica, Fusion Product, Goskino and Lenfilm Studio. It was commercially distributed by Koch Lorber Films. Following its release, the film was entered into the 1999 Cannes Film Festival and won other awards selections, including those from the Russian Guild of Film Critics Awards. The film was generally met with mixed critical reviews before its initial screening in 1999.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Russia",
+        "realizador": "http://dbpedia.org/resource/Alexander_Sokurov",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moment_of_Impact_(film)",
+        "titulo": "Moment of Impact (film)",
+        "sinopse": "Moment of Impact is a 1998 American documentary film directed by Julia Loktev.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Julia_Loktev",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moments_(1974_film)",
+        "titulo": "Moments (1974 film)",
+        "sinopse": "Moments is a 1974 British drama film directed by Peter Crane and starring Keith Michell, Angharad Rees and Bill Fraser. The screenplay concerns a man who has lost his wife and daughter in a car crash who returns to a hotel where he had once enjoyed happiness.",
+        "data_Lancamento": "1974-11-21",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Peter_Crane_(director)",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Bill_Fraser",
+                "nome": "Bill Fraser",
+                "data_nascimento": "1908-06-05",
+                "naturalidade": "http://dbpedia.org/resource/Perth,_Scotland"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Angharad_Rees",
+                "nome": "Angharad Rees",
+                "data_nascimento": "1944-07-16",
+                "naturalidade": "Edgware, Middlesex, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Keith_Michell",
+                "nome": "Keith Michell",
+                "data_nascimento": "1926-12-01",
+                "naturalidade": "Adelaide, South Australia, Australia"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Momentum_(IMAX_film)",
+        "titulo": "Momentum (IMAX film)",
+        "sinopse": "Momentum was the first film shot and released in the IMAX HD film format, which ran at 48 frames per second, and was also one of the first films to use Ambisonic surround sound. The film was produced for the Canada pavilion at Seville Expo '92 by National Film Board of Canada, by the same creative team that made the 1986 3D IMAX film Transitions for Expo 86. The film takes viewers across Canada, demonstrating the ability of the 48 frame/s process to portray motion on the giant IMAX screen with reduced strobing.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "http://dbpedia.org/resource/Canada",
+        "realizador": "http://dbpedia.org/resource/Colin_Low_(filmmaker)",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Monad_(Gnosticism)",
+        "titulo": "Monad (Gnosticism)",
+        "sinopse": "The Monad in Gnosticism is an adaptation of concepts of the Monad in Greek philosophy to Christian gnostic belief systems.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mondo_film",
+        "titulo": "Mondo film",
+        "sinopse": "Mondo films are a subgenre of exploitation films and documentary films. Many mondo films are made in a way to resemble a pseudo-documentary and usually depicting sensational topics, scenes, or situations. Common traits of mondo films include portrayals of foreign cultures (which have drawn accusations of ethnocentrism or racism), an emphasis on taboo subjects such as death and sex, and staged sequences presented as genuine documentary footage. Over time, the films have placed increasing emphasis on footage of the dead and dying (both real and fake). The term mondo is derived from the Italian word for \"world\". The term shockumentary is also used to describe the genre. Mondo films began to soar in popularity in the 1960s with the releases of Mondo Cane (1962), Women of the World (1963) and Africa Addio (1966). The genre arguably reached its peak with Faces of Death in 1978, a film that inspired myriad imitators, such as the Traces of Death series, Banned from Television, Death Scenes and series.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mone_Mone",
+        "titulo": "Mone Mone",
+        "sinopse": "Mone Mone is a 1989 Bengali film directed by Partha Pratim Chowdhury and music composed by .",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "http://dbpedia.org/resource/India",
+        "realizador": "http://dbpedia.org/resource/Partha_Pratim_Chowdhury",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Prosenjit_Chatterjee",
+                "nome": "Prosenjit Chatterjee",
+                "data_nascimento": "1962-09-30",
+                "naturalidade": "http://dbpedia.org/resource/West_Bengal"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Prosenjit_Chatterjee",
+                "nome": "Prosenjit Chatterjee",
+                "data_nascimento": "1962-09-30",
+                "naturalidade": "http://dbpedia.org/resource/Calcutta"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Prosenjit_Chatterjee",
+                "nome": "Prosenjit Chatterjee",
+                "data_nascimento": "1962-09-30",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Satabdi_Roy",
+                "nome": "Satabdi Roy",
+                "data_nascimento": "1969-10-05",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Satabdi_Roy",
+                "nome": "Satabdi Roy",
+                "data_nascimento": "1969-10-05",
+                "naturalidade": "http://dbpedia.org/resource/West_Bengal"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Satabdi_Roy",
+                "nome": "Satabdi Roy",
+                "data_nascimento": "1969-10-05",
+                "naturalidade": "http://dbpedia.org/resource/Agarpara"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nirmal_Kumar",
+                "nome": "Nirmal Kumar",
+                "data_nascimento": "1928-12-14",
+                "naturalidade": "http://dbpedia.org/resource/India"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nirmal_Kumar",
+                "nome": "Nirmal Kumar",
+                "data_nascimento": "1928-12-14",
+                "naturalidade": "http://dbpedia.org/resource/Kolkata"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Money_(1921_film)",
+        "titulo": "Money (1921 film)",
+        "sinopse": "Money is a 1921 British silent comedy film directed by Duncan McRae and starring Henry Ainley, Faith Bevan and Margot Drake. It is an adaptation of the 1840 comic play Money by Edward Bulwer-Lytton.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Duncan_McRae_(actor)",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Henry_Ainley",
+                "nome": "Henry Ainley",
+                "data_nascimento": "1879-08-21",
+                "naturalidade": "Morley, West Yorkshire, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Olaf_Hytten",
+                "nome": "Olaf Hytten",
+                "data_nascimento": "1888-03-03",
+                "naturalidade": "Glasgow, Scotland"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Money_Madness_(1917_film)",
+        "titulo": "Money Madness (1917 film)",
+        "sinopse": "Money Madness is a 1917 American silent crime drama film directed by Henry MacRae and starring Charles Hill Mailes, Gayne Whitman and Mary MacLaren.",
+        "data_Lancamento": "1917-05-28",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Henry_MacRae",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Gayne_Whitman",
+                "nome": "Gayne Whitman",
+                "data_nascimento": "1890-03-19",
+                "naturalidade": "http://dbpedia.org/resource/Chicago,_Illinois"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Charles_Hill_Mailes",
+                "nome": "Charles Hill Mailes",
+                "data_nascimento": "1870-05-25",
+                "naturalidade": "http://dbpedia.org/resource/Canada"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Charles_Hill_Mailes",
+                "nome": "Charles Hill Mailes",
+                "data_nascimento": "1870-05-25",
+                "naturalidade": "http://dbpedia.org/resource/City_of_Halifax"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Mary_MacLaren",
+                "nome": "Mary MacLaren",
+                "data_nascimento": "1900-01-19",
+                "naturalidade": "Pittsburgh, Pennsylvania, U.S."
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Money_Means_Nothing_(1932_film)",
+        "titulo": "Money Means Nothing (1932 film)",
+        "sinopse": "Money Means Nothing (also released as Butler's Millions) is a 1932 British comedy film directed by Herbert Wilcox and starring John Loder, Irene Richards and Miles Malleson. It was shot at Elstree Studios as a quota quickie for release by Paramount British.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Herbert_Wilcox",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Gibb_McLaughlin",
+                "nome": "Gibb McLaughlin",
+                "data_nascimento": "1879-07-19",
+                "naturalidade": "Sunderland, County Durham, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/John_Loder_(actor)",
+                "nome": "John Loder",
+                "data_nascimento": "1898-01-03",
+                "naturalidade": "London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Kay_Hammond",
+                "nome": "Kay Hammond",
+                "data_nascimento": "1909-02-18",
+                "naturalidade": "London, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Money_Talks_(1932_film)",
+        "titulo": "Money Talks (1932 film)",
+        "sinopse": "Money Talks is a 1932 British comedy film directed by Norman Lee and starring Julian Rose, Kid Berg and Judy Kelly. It was made at Elstree Studios by British International Pictures. A separate French-language version Lost Money was also released.",
+        "data_Lancamento": "1932-11-15",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Norman_Lee",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Julian_Rose_(entertainer)",
+                "nome": "Julian Rose",
+                "data_nascimento": "1868-09-06",
+                "naturalidade": "New York City, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Judy_Kelly",
+                "nome": "Judy Kelly",
+                "data_nascimento": "1913-11-01",
+                "naturalidade": "http://dbpedia.org/resource/New_South_Wales"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Judy_Kelly",
+                "nome": "Judy Kelly",
+                "data_nascimento": "1913-11-01",
+                "naturalidade": "http://dbpedia.org/resource/Australia"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Judy_Kelly",
+                "nome": "Judy Kelly",
+                "data_nascimento": "1913-11-01",
+                "naturalidade": "http://dbpedia.org/resource/Sydney"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moog_(film)",
+        "titulo": "Moog (film)",
+        "sinopse": "Moog is a 2004 documentary film by Hans Fjellestad about electronic instrument pioneer Dr. Robert Moog. The film features scenes of Dr. Moog interacting with various musical artists who view Moog as an influential figure in the history of electronic music. Moog is not a comprehensive history of electronic music nor does it serve as a chronological history of the development of the Moog synthesizer. There is no narration, rather the scenes feature candid conversation and interviews that serve more as a tribute to Moog than a documentary. The film was shot on location in Hollywood, New York, Tokyo, and Asheville, North Carolina where Moog's company is based. Additional concert performances were filmed in London and San Francisco. The film's 2004 release was designed to coincide with the fiftieth anniversary of Moog Music, Robert Moog's company that was founded as R. A. Moog Co. in 1954.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "http://dbpedia.org/resource/Hans_Fjellestad",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moonchild_(1974_film)",
+        "titulo": "Moonchild (1974 film)",
+        "sinopse": "Moonchild is a 1974 American independent horror/new age film directed and produced by . It was originally shot in 1971 as a student film (a Masters thesis project at the University of Southern California). The film received limited commercial release under the title The Moon Child, but failed to make much of an initial impression on audiences. It has since gained recognition among film enthusiasts who discovered it due to its impressive cast of character actors: John Carradine, Victor Buono, Pat Renella, Janet Landgard and William Challee.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moonlight_(1932_film)",
+        "titulo": "Moonlight (1932 film)",
+        "sinopse": "Moonlight (French: Clair de lune) is a 1932 French comedy film directed by Henri Diamant-Berger and starring Blanche Montel, Claude Dauphin and Henri Rollan. The film was shot on location around Cannes.",
+        "data_Lancamento": "1932-11-14",
+        "pais_origem": "France",
+        "realizador": "http://dbpedia.org/resource/Henri_Diamant-Berger",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Blanche_Montel",
+                "nome": "Blanche Montel",
+                "data_nascimento": "1902-08-14",
+                "naturalidade": "http://dbpedia.org/resource/French_Third_Republic"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Blanche_Montel",
+                "nome": "Blanche Montel",
+                "data_nascimento": "1902-08-14",
+                "naturalidade": "http://dbpedia.org/resource/Tours"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Claude_Dauphin_(actor)",
+                "nome": "Claude Dauphin",
+                "data_nascimento": "1903-08-19",
+                "naturalidade": "Corbeil-Essonnes, Essonne, France"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Henri_Rollan",
+                "nome": "Henri Rollan",
+                "data_nascimento": "1888-03-23",
+                "naturalidade": "Paris, France"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moonlighting_(film)",
+        "titulo": "Moonlighting (film)",
+        "sinopse": "Moonlighting is a 1982 British drama film written and directed by Jerzy Skolimowski. It is set in the early 1980s at the time of the Solidarity protests in Poland. It stars Jeremy Irons as Nowak, a Polish builder leading a team working illegally in London.",
+        "data_Lancamento": "1982-09-26",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Jerzy_Skolimowski",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Jeremy_Irons",
+                "nome": "Jeremy Irons",
+                "data_nascimento": "1948-09-19",
+                "naturalidade": "Cowes, Isle of Wight, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moonwalk_One",
+        "titulo": "Moonwalk One",
+        "sinopse": "Moonwalk One is a 1971 feature-length documentary film about the flight of Apollo 11, which landed the first humans on the Moon. Besides portraying the massive technological achievement of that event, the film places it in some historical context and tries to capture the mood and the feel of the people on Earth when man first walked on another world.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Theo_Kamecke",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Buzz_Aldrin",
+                "nome": "Buzz Aldrin",
+                "data_nascimento": "1930-01-20",
+                "naturalidade": "Glen Ridge, New Jersey, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Michael_Collins_(astronaut)",
+                "nome": "Michael Collins",
+                "data_nascimento": "1930-10-31",
+                "naturalidade": "Rome, Italy"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Moral_(1928_film)",
+        "titulo": "Moral (1928 film)",
+        "sinopse": "Moral is a 1928 German silent comedy film directed by Willi Wolff and starring Ellen Richter, Ralph Arthur Roberts and Jakob Tiedtke. It was shot at the EFA Studios in Berlin. The film's art direction was by Ernst Stern. It was released by the German subsidiary of Universal Pictures.",
+        "data_Lancamento": "1928-01-20",
+        "pais_origem": "Germany",
+        "realizador": "http://dbpedia.org/resource/Willi_Wolff",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Ellen_Richter",
+                "nome": "Ellen Richter",
+                "data_nascimento": "1891-07-21",
+                "naturalidade": "http://dbpedia.org/resource/Austria-Hungary"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ellen_Richter",
+                "nome": "Ellen Richter",
+                "data_nascimento": "1891-07-21",
+                "naturalidade": "http://dbpedia.org/resource/Vienna"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Jakob_Tiedtke",
+                "nome": "Jakob Tiedtke",
+                "data_nascimento": "1875-06-23",
+                "naturalidade": "http://dbpedia.org/resource/German_Empire"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Jakob_Tiedtke",
+                "nome": "Jakob Tiedtke",
+                "data_nascimento": "1875-06-23",
+                "naturalidade": "http://dbpedia.org/resource/Berlin"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ralph_Arthur_Roberts",
+                "nome": "Ralph Arthur Roberts",
+                "data_nascimento": "1884-10-02",
+                "naturalidade": "http://dbpedia.org/resource/Meerane"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ralph_Arthur_Roberts",
+                "nome": "Ralph Arthur Roberts",
+                "data_nascimento": "1884-10-02",
+                "naturalidade": "Germany"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Ralph_Arthur_Roberts",
+                "nome": "Ralph Arthur Roberts",
+                "data_nascimento": "1884-10-02",
+                "naturalidade": "http://dbpedia.org/resource/Saxony"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Mordecai_Lawner",
+        "titulo": "Mordecai Lawner",
+        "sinopse": "Mordecai Lawner (June 9, 1928 \u2013 November 27, 2014) was an American film and theater actor. His film credits included Woody Allen's Annie Hall in 1977, Raw Deal in 1986, Ghostbusters II in 1989, and A Fish in the Bathtub in 1999.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "Pais Desconhecido",
+        "realizador": "Realizador Desconhecido",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Morgan_\u2013_A_Suitable_Case_for_Treatment",
+        "titulo": "Morgan \u2013 A Suitable Case for Treatment",
+        "sinopse": "Morgan \u2013 A Suitable Case for Treatment (also called Morgan!) is a 1966 comedy film made by British Lion. It was directed by Karel Reisz and produced by Leon Clore from a screenplay by David Mercer, based on his BBC television play A Suitable Case for Treatment (1962), the leading role at that time being played by Ian Hendry. The film stars David Warner, Vanessa Redgrave, and Robert Stephens, with Irene Handl and Bernard Bresslaw.",
+        "data_Lancamento": "1966-04-04",
+        "pais_origem": "United Kingdom",
+        "realizador": "http://dbpedia.org/resource/Karel_Reisz",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Robert_Stephens",
+                "nome": "Robert Stephens",
+                "data_nascimento": "1931-07-14",
+                "naturalidade": "Bristol, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Bernard_Bresslaw",
+                "nome": "Bernard Bresslaw",
+                "data_nascimento": "1934-02-25",
+                "naturalidade": "Stepney, London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/David_Warner_(actor)",
+                "nome": "David Warner",
+                "data_nascimento": "1941-07-29",
+                "naturalidade": "Manchester, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vanessa_Redgrave",
+                "nome": "",
+                "data_nascimento": "1937-01-30",
+                "naturalidade": "Blackheath, London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Vanessa_Redgrave",
+                "nome": "Vanessa Redgrave",
+                "data_nascimento": "1937-01-30",
+                "naturalidade": "Blackheath, London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Irene_Handl",
+                "nome": "Irene Handl",
+                "data_nascimento": "1901-12-27",
+                "naturalidade": "Maida Vale, London, England"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Arthur_Mullard",
+                "nome": "Arthur Mullard",
+                "data_nascimento": "1910-09-19",
+                "naturalidade": "Islington, London, England"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Morgana_(documentary)",
+        "titulo": "Morgana (documentary)",
+        "sinopse": "Morgana is a 2019 feature documentary about Morgana Muses, a pornographic film star in her 50s. The film is directed by and , and produced by Karina Astrup of . The film premiered at Melbourne International Film Festival. in August 2019.",
+        "data_Lancamento": "Data desconhecida",
+        "pais_origem": "http://dbpedia.org/resource/Australia",
+        "realizador": "Isabel Peppard",
+        "atores": []
+    },
+    {
+        "id": "http://dbpedia.org/resource/Morgiana_(film)",
+        "titulo": "Morgiana (film)",
+        "sinopse": "Morgiana is a 1972 Czechoslovak Gothic drama film directed by Juraj Herz, based on a novel by Alexander Grin, (1929, Wikisource: \u0414\u0436\u0435\u0441\u0441\u0438 \u0438 \u041c\u043e\u0440\u0433\u0438\u0430\u043d\u0430). The story is about two sisters, Klara and Viktoria, and the jealousy that overcomes Viktoria when her sister inherits most of their father's property. When Klara becomes involved with a man that her sister loves, Viktoria begins to plot her murder. The roles of both sisters are played by the actress Iva Jan\u017eurov\u00e1. Beach scenes were shot in Bulgaria.",
+        "data_Lancamento": "1972-09-01",
+        "pais_origem": "http://dbpedia.org/resource/Czechoslovakia",
+        "realizador": "http://dbpedia.org/resource/Juraj_Herz",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Josef_Abrh\u00e1m",
+                "nome": "Josef Abrh\u00e1m",
+                "data_nascimento": "1939-12-14",
+                "naturalidade": "http://dbpedia.org/resource/Zl\u00edn"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Josef_Abrh\u00e1m",
+                "nome": "Josef Abrh\u00e1m",
+                "data_nascimento": "1939-12-14",
+                "naturalidade": "http://dbpedia.org/resource/Protectorate_of_Bohemia_and_Moravia"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nina_Div\u00ed\u0161kov\u00e1",
+                "nome": "Nina Div\u00ed\u0161kov\u00e1",
+                "data_nascimento": "1936-07-12",
+                "naturalidade": "http://dbpedia.org/resource/Czechoslovakia"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Nina_Div\u00ed\u0161kov\u00e1",
+                "nome": "Nina Div\u00ed\u0161kov\u00e1",
+                "data_nascimento": "1936-07-12",
+                "naturalidade": "http://dbpedia.org/resource/Brno"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Iva_Jan\u017eurov\u00e1",
+                "nome": "Iva Jan\u017eurov\u00e1",
+                "data_nascimento": "1941-05-19",
+                "naturalidade": "http://dbpedia.org/resource/\u017dirovnice"
+            },
+            {
+                "id": "http://dbpedia.org/resource/Iva_Jan\u017eurov\u00e1",
+                "nome": "Iva Jan\u017eurov\u00e1",
+                "data_nascimento": "1941-05-19",
+                "naturalidade": "http://dbpedia.org/resource/Protectorate_of_Bohemia_and_Moravia"
+            }
+        ]
+    },
+    {
+        "id": "http://dbpedia.org/resource/Morning_(film)",
+        "titulo": "Morning (film)",
+        "sinopse": "Morning is a 2010 American drama film written by, directed by and starring Leland Orser. The film also stars Jeanne Tripplehorn, Laura Linney and Elliott Gould. It is Orser's directorial debut. It is also based on Orser's 2007 short film of the same name.",
+        "data_Lancamento": "2010-04-26",
+        "pais_origem": "United States",
+        "realizador": "http://dbpedia.org/resource/Leland_Orser",
+        "atores": [
+            {
+                "id": "http://dbpedia.org/resource/Leland_Orser",
+                "nome": "Leland Orser",
+                "data_nascimento": "1960-08-06",
+                "naturalidade": "San Francisco, California, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Jeanne_Tripplehorn",
+                "nome": "Jeanne Tripplehorn",
+                "data_nascimento": "1963-06-10",
+                "naturalidade": "Tulsa, Oklahoma, U.S."
+            },
+            {
+                "id": "http://dbpedia.org/resource/Laura_Linney",
+                "nome": "Laura Linney",
+                "data_nascimento": "1964-02-05",
+                "naturalidade": "New York City, U.S."
+            }
+        ]
+    }
+]
