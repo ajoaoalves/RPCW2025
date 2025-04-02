@@ -1,0 +1,377 @@
+@prefix : <http://www.example.org/disease-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+
+<http://www.example.org/disease-ontology#> rdf:type owl:Ontology . 
+
+# Classes
+:Disease a owl:Class .
+:Symptom a owl:Class .
+:Treatment a owl:Class .
+:Patient a owl:Class .
+
+# Properties
+:hasSymptom a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Symptom .
+
+:hasTreatment a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Treatment .
+
+:exhibitsSymptom a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Symptom .
+
+:hasDisease a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Disease .
+
+:receivesTreatment a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Treatment .
+
+# Disease instances
+:Flu a :Disease ;
+    :hasSymptom :Fever, :Cough, :SoreThroat ;
+    :hasTreatment :Rest, :Hydration, :AntiviralDrugs .
+
+:Diabetes a :Disease ;
+    :hasSymptom :IncreasedThirst, :FrequentUrination, :Fatigue ;
+    :hasTreatment :InsulinTherapy, :DietModification, :Exercise .
+
+# Symptom instances
+:Fever a :Symptom .
+:Cough a :Symptom .
+:SoreThroat a :Symptom .
+:IncreasedThirst a :Symptom .
+:FrequentUrination a :Symptom .
+:Fatigue a :Symptom .
+
+# Treatment instances
+:Rest a :Treatment .
+:Hydration a :Treatment .
+:AntiviralDrugs a :Treatment .
+:InsulinTherapy a :Treatment .
+:DietModification a :Treatment .
+:Exercise a :Treatment .
+
+
+# Patient instances
+:Patient1 a :Patient ;
+    :name "Paul Harrods" ;
+    :exhibitsSymptom :Fever ;
+    :exhibitsSymptom :Cough ;
+    :exhibitsSymptom :SoreThroat .
+
+:Patient2 a :Patient ;
+    :name "Ana Montana" ;
+    :exhibitsSymptom :IncreasedThirst ;
+    :exhibitsSymptom :FrequentUrination ;
+    :exhibitsSymptom :Fatigue .
+
+
+:Fungal_infection a :Disease . 
+:Fungal_infection a :Disease ;
+             :hasSymptom :Skin_rash, :Itching, :Nodal_skin_eruptions, :Dischromic__patches ;
+             :hasDescription "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi." .
+:Allergy a :Disease . 
+:Allergy a :Disease ;
+             :hasSymptom :Watering_from_eyes, :Shivering, :Continuous_sneezing, :Chills ;
+             :hasDescription "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens." .
+:Gerd a :Disease . 
+:Gerd a :Disease ;
+             :hasSymptom :Cough, :Stomach_pain, :Chest_pain, :Ulcers_on_tongue, :Vomiting, :Acidity ;
+             :hasDescription "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter LES, the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD." .
+:Chronic_cholestasis a :Disease . 
+:Chronic_cholestasis a :Disease ;
+             :hasSymptom :Abdominal_pain, :Loss_of_appetite, :Itching, :Yellowing_of_eyes, :Yellowish_skin, :Nausea, :Vomiting ;
+             :hasDescription "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases" .
+:Drug_reaction a :Disease . 
+:Drug_reaction a :Disease ;
+             :hasSymptom :Burning_micturition, :Stomach_pain, :Itching, :Spotting__urination, :Skin_rash ;
+             :hasDescription "An adverse drug reaction ADR is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs." .
+:Peptic_ulcer_diseae a :Disease . 
+:Peptic_ulcer_diseae a :Disease ;
+             :hasSymptom :Abdominal_pain, :Internal_itching, :Passage_of_gases, :Loss_of_appetite, :Indigestion, :Vomiting ;
+             :hasDescription "Peptic ulcer disease PUD is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer." .
+:Aids a :Disease . 
+:Aids a :Disease ;
+             :hasSymptom :Muscle_wasting, :Extra_marital_contacts, :Patches_in_throat, :High_fever ;
+             :hasDescription "Acquired immunodeficiency syndrome AIDS is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus HIV. By damaging your immune system, HIV interferes with your body's ability to fight infection and disease." .
+:Diabetes a :Disease . 
+:Diabetes a :Disease ;
+             :hasSymptom :Lethargy, :Blurred_and_distorted_vision, :Irregular_sugar_level, :Excessive_hunger, :Weight_loss, :Restlessness, :Polyuria, :Increased_appetite, :Obesity, :Fatigue ;
+             :hasDescription "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy." .
+:Gastroenteritis a :Disease . 
+:Gastroenteritis a :Disease ;
+             :hasSymptom :Dehydration, :Diarrhoea, :Vomiting, :Sunken_eyes ;
+             :hasDescription "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ." .
+:Bronchial_asthma a :Disease . 
+:Bronchial_asthma a :Disease ;
+             :hasSymptom :Family_history, :Cough, :High_fever, :Breathlessness, :Mucoid_sputum, :Fatigue ;
+             :hasDescription "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working." .
+:Hypertension a :Disease . 
+:Hypertension a :Disease ;
+             :hasSymptom :Loss_of_balance, :Dizziness, :Chest_pain, :Headache, :Lack_of_concentration ;
+             :hasDescription "Hypertension HTN or HT, also known as high blood pressure HBP, is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms." .
+:Migraine a :Disease . 
+:Migraine a :Disease ;
+             :hasSymptom :Depression, :Blurred_and_distorted_vision, :Irritability, :Indigestion, :Excessive_hunger, :Visual_disturbances, :Stiff_neck, :Acidity, :Headache ;
+             :hasDescription "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities." .
+:Cervical_spondylosis a :Disease . 
+:Cervical_spondylosis a :Disease ;
+             :hasSymptom :Loss_of_balance, :Dizziness, :Neck_pain, :Weakness_in_limbs, :Back_pain ;
+             :hasDescription "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones bone spurs." .
+:Paralysis_brain_hemorrhage a :Disease . 
+:Paralysis_brain_hemorrhage a :Disease ;
+             :hasSymptom :Altered_sensorium, :Weakness_of_one_body_side, :Vomiting, :Headache ;
+             :hasDescription "Intracerebral hemorrhage ICH is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body." .
+:Jaundice a :Disease . 
+:Jaundice a :Disease ;
+             :hasSymptom :Abdominal_pain, :Itching, :Dark_urine, :Weight_loss, :High_fever, :Yellowish_skin, :Vomiting, :Fatigue ;
+             :hasDescription "Yellow staining of the skin and sclerae the whites of the eyes by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the morbus regius the regal disease in the belief that only the touch of a king could cure it" .
+:Malaria a :Disease . 
+:Malaria a :Disease ;
+             :hasSymptom :Muscle_pain, :High_fever, :Diarrhoea, :Nausea, :Sweating, :Vomiting, :Chills, :Headache ;
+             :hasDescription "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type." .
+:Chicken_pox a :Disease . 
+:Chicken_pox a :Disease ;
+             :hasSymptom :Swelled_lymph_nodes, :Lethargy, :Loss_of_appetite, :Itching, :Mild_fever, :Red_spots_over_body, :Malaise, :High_fever, :Skin_rash, :Fatigue, :Headache ;
+             :hasDescription "Chickenpox is a highly contagious disease caused by the varicella-zoster virus VZV. It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters." .
+:Dengue a :Disease . 
+:Dengue a :Disease ;
+             :hasSymptom :Joint_pain, :Loss_of_appetite, :Chills, :Red_spots_over_body, :Muscle_pain, :High_fever, :Malaise, :Skin_rash, :Pain_behind_the_eyes, :Nausea, :Back_pain, :Vomiting, :Fatigue, :Headache ;
+             :hasDescription "an acute infectious disease caused by a flavivirus species Dengue virus of the genus Flavivirus, transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. — called also breakbone fever, dengue fever." .
+:Typhoid a :Disease . 
+:Typhoid a :Disease ;
+             :hasSymptom :Belly_pain, :Abdominal_pain, :Headache, :Chills, :Toxic_look_typhos, :High_fever, :Diarrhoea, :Nausea, :Vomiting, :Fatigue, :Constipation ;
+             :hasDescription "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe." .
+:Hepatitis_a a :Disease . 
+:Hepatitis_a a :Disease ;
+             :hasSymptom :Abdominal_pain, :Joint_pain, :Loss_of_appetite, :Dark_urine, :Mild_fever, :Yellowing_of_eyes, :Muscle_pain, :Yellowish_skin, :Diarrhoea, :Nausea, :Vomiting ;
+             :hasDescription "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function." .
+:Hepatitis_b a :Disease . 
+:Hepatitis_b a :Disease ;
+             :hasSymptom :Abdominal_pain, :Lethargy, :Receiving_blood_transfusion, :Loss_of_appetite, :Dark_urine, :Itching, :Yellowing_of_eyes, :Malaise, :Yellowish_skin, :Yellow_urine, :Receiving_unsterile_injections, :Fatigue ;
+             :hasDescription "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus." .
+:Hepatitis_c a :Disease . 
+:Hepatitis_c a :Disease ;
+             :hasSymptom :Family_history, :Loss_of_appetite, :Yellowing_of_eyes, :Yellowish_skin, :Nausea, :Fatigue ;
+             :hasDescription "Inflammation of the liver due to the hepatitis C virus HCV, which is usually spread via blood transfusion rare, hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer." .
+:Hepatitis_d a :Disease . 
+:Hepatitis_d a :Disease ;
+             :hasSymptom :Abdominal_pain, :Joint_pain, :Loss_of_appetite, :Dark_urine, :Yellowing_of_eyes, :Yellowish_skin, :Nausea, :Vomiting, :Fatigue ;
+             :hasDescription "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus HDV." .
+:Hepatitis_e a :Disease . 
+:Hepatitis_e a :Disease ;
+             :hasSymptom :Acute_liver_failure, :Abdominal_pain, :Joint_pain, :Loss_of_appetite, :Dark_urine, :Yellowing_of_eyes, :High_fever, :Yellowish_skin, :Coma, :Stomach_bleeding, :Nausea, :Vomiting, :Fatigue ;
+             :hasDescription "A rare form of liver inflammation caused by infection with the hepatitis E virus HEV. It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease." .
+:Alcoholic_hepatitis a :Disease . 
+:Alcoholic_hepatitis a :Disease ;
+             :hasSymptom :Abdominal_pain, :Distention_of_abdomen, :Fluid_overload, :Swelling_of_stomach, :Yellowish_skin, :History_of_alcohol_consumption, :Vomiting ;
+             :hasDescription "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol" .
+:Tuberculosis a :Disease . 
+:Tuberculosis a :Disease ;
+             :hasSymptom :Swelled_lymph_nodes, :Cough, :Loss_of_appetite, :Chest_pain, :Chills, :Mild_fever, :Blood_in_sputum, :Weight_loss, :Yellowing_of_eyes, :High_fever, :Breathlessness, :Malaise, :Phlegm, :Sweating, :Vomiting, :Fatigue ;
+             :hasDescription "Tuberculosis TB is an infectious disease usually caused by Mycobacterium tuberculosis MTB bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis." .
+:Common_cold a :Disease . 
+:Common_cold a :Disease ;
+             :hasSymptom :Swelled_lymph_nodes, :Sinus_pressure, :Redness_of_eyes, :Cough, :Runny_nose, :Chest_pain, :Continuous_sneezing, :Chills, :Malaise, :High_fever, :Throat_irritation, :Congestion, :Loss_of_smell, :Muscle_pain, :Phlegm, :Fatigue, :Headache ;
+             :hasDescription "The common cold is a viral infection of your nose and throat upper respiratory tract. It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold." .
+:Pneumonia a :Disease . 
+:Pneumonia a :Disease ;
+             :hasSymptom :Cough, :Fast_heart_rate, :Chest_pain, :Chills, :Malaise, :High_fever, :Breathlessness, :Phlegm, :Rusty_sputum, :Sweating, :Fatigue ;
+             :hasDescription "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe." .
+:Dimorphic_hemmorhoidspiles a :Disease . 
+:Dimorphic_hemmorhoidspiles a :Disease ;
+             :hasSymptom :Bloody_stool, :Irritation_in_anus, :Pain_during_bowel_movements, :Pain_in_anal_region, :Constipation ;
+             :hasDescription "" .
+:Heart_attack a :Disease . 
+:Heart_attack a :Disease ;
+             :hasSymptom :Chest_pain, :Breathlessness, :Sweating, :Vomiting ;
+             :hasDescription "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle." .
+:Varicose_veins a :Disease . 
+:Varicose_veins a :Disease ;
+             :hasSymptom :Cramps, :Swollen_blood_vessels, :Swollen_legs, :Bruising, :Prominent_veins_on_calf, :Obesity, :Fatigue ;
+             :hasDescription "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs." .
+:Hypothyroidism a :Disease . 
+:Hypothyroidism a :Disease ;
+             :hasSymptom :Depression, :Abnormal_menstruation, :Dizziness, :Cold_hands_and_feets, :Lethargy, :Irritability, :Swollen_extremeties, :Enlarged_thyroid, :Brittle_nails, :Mood_swings, :Puffy_face_and_eyes, :Weight_gain, :Fatigue ;
+             :hasDescription "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone." .
+:Hyperthyroidism a :Disease . 
+:Hyperthyroidism a :Disease ;
+             :hasSymptom :Abnormal_menstruation, :Fast_heart_rate, :Irritability, :Excessive_hunger, :Weight_loss, :Mood_swings, :Restlessness, :Diarrhoea, :Sweating, :Muscle_weakness, :Fatigue ;
+             :hasDescription "Hyperthyroidism overactive thyroid occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat." .
+:Hypoglycemia a :Disease . 
+:Hypoglycemia a :Disease ;
+             :hasSymptom :Anxiety, :Drying_and_tingling_lips, :Blurred_and_distorted_vision, :Irritability, :Palpitations, :Slurred_speech, :Excessive_hunger, :Nausea, :Sweating, :Vomiting, :Fatigue, :Headache ;
+             :hasDescription "Hypoglycemia is a condition in which your blood sugar glucose level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions — many rare — can cause low blood sugar in people who don't have diabetes." .
+:Osteoarthristis a :Disease . 
+:Osteoarthristis a :Disease ;
+             :hasSymptom :Joint_pain, :Swelling_joints, :Hip_joint_pain, :Knee_pain, :Neck_pain, :Painful_walking ;
+             :hasDescription "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time." .
+:Arthritis a :Disease . 
+:Arthritis a :Disease ;
+             :hasSymptom :Movement_stiffness, :Swelling_joints, :Stiff_neck, :Painful_walking, :Muscle_weakness ;
+             :hasDescription "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis." .
+:Vertigo_paroymsal__positional_vertigo a :Disease . 
+:Vertigo_paroymsal__positional_vertigo a :Disease ;
+             :hasSymptom :Loss_of_balance, :Spinning_movements, :Unsteadiness, :Nausea, :Vomiting, :Headache ;
+             :hasDescription "Benign paroxysmal positional vertigo BPPV is one of the most common causes of vertigo — the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness." .
+:Acne a :Disease . 
+:Acne a :Disease ;
+             :hasSymptom :Scurring, :Skin_rash, :Blackheads, :Pus_filled_pimples ;
+             :hasDescription "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units hair follicles and their accompanying sebaceous gland. Acne develops on the face and upper trunk. It most often affects adolescents." .
+:Urinary_tract_infection a :Disease . 
+:Urinary_tract_infection a :Disease ;
+             :hasSymptom :Burning_micturition, :Bladder_discomfort, :Continuous_feel_of_urine, :Foul_smell_of_urine ;
+             :hasDescription "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating." .
+:Psoriasis a :Disease . 
+:Psoriasis a :Disease ;
+             :hasSymptom :Joint_pain, :Silver_like_dusting, :Skin_peeling, :Skin_rash, :Small_dents_in_nails, :Inflammatory_nails ;
+             :hasDescription "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family." .
+:Impetigo a :Disease . 
+:Impetigo a :Disease ;
+             :hasSymptom :Yellow_crust_ooze, :Red_sore_around_nose, :High_fever, :Skin_rash, :Blister ;
+             :hasDescription "Impetigo im-puh-TIE-go is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts." .
+:Dimorphic_hemorrhoidspiles a :Disease . 
+:Dimorphic_hemorrhoidspiles a :Disease ;
+             :hasSymptom  :Joint_pain;
+             :hasDescription "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease ." .
+:Irregular_sugar_level a :Symptom .
+:Pus_filled_pimples a :Symptom .
+:Burning_micturition a :Symptom .
+:Dizziness a :Symptom .
+:Blurred_and_distorted_vision a :Symptom .
+:Cough a :Symptom .
+:Red_spots_over_body a :Symptom .
+:Yellowing_of_eyes a :Symptom .
+:Muscle_wasting a :Symptom .
+:Visual_disturbances a :Symptom .
+:Spinning_movements a :Symptom .
+:Weight_gain a :Symptom .
+:Swelled_lymph_nodes a :Symptom .
+:Redness_of_eyes a :Symptom .
+:Red_sore_around_nose a :Symptom .
+:Distention_of_abdomen a :Symptom .
+:Malaise a :Symptom .
+:Toxic_look_typhos a :Symptom .
+:Skin_rash a :Symptom .
+:Phlegm a :Symptom .
+:Prominent_veins_on_calf a :Symptom .
+:Increased_appetite a :Symptom .
+:Runny_nose a :Symptom .
+:Family_history a :Symptom .
+:Loss_of_appetite a :Symptom .
+:Silver_like_dusting a :Symptom .
+:Enlarged_thyroid a :Symptom .
+:Dark_urine a :Symptom .
+:Swollen_legs a :Symptom .
+:Yellow_urine a :Symptom .
+:Stomach_bleeding a :Symptom .
+:Dehydration a :Symptom .
+:History_of_alcohol_consumption a :Symptom .
+:Sunken_eyes a :Symptom .
+:Loss_of_balance a :Symptom .
+:Chest_pain a :Symptom .
+:Skin_peeling a :Symptom .
+:Congestion a :Symptom .
+:Diarrhoea a :Symptom .
+:Small_dents_in_nails a :Symptom .
+:Inflammatory_nails a :Symptom .
+:Internal_itching a :Symptom .
+:Extra_marital_contacts a :Symptom .
+:Loss_of_smell a :Symptom .
+:Watering_from_eyes a :Symptom .
+:Continuous_feel_of_urine a :Symptom .
+:Sweating a :Symptom .
+:Blackheads a :Symptom .
+:Chills a :Symptom .
+:Depression a :Symptom .
+:Belly_pain a :Symptom .
+:Cold_hands_and_feets a :Symptom .
+:Blood_in_sputum a :Symptom .
+:Dischromic__patches a :Symptom .
+:Coma a :Symptom .
+:Back_pain a :Symptom .
+:Obesity a :Symptom .
+:Abnormal_menstruation a :Symptom .
+:Joint_pain a :Symptom .
+:Palpitations a :Symptom .
+:Brittle_nails a :Symptom .
+:Swelling_joints a :Symptom .
+:Hip_joint_pain a :Symptom .
+:Neck_pain a :Symptom .
+:Unsteadiness a :Symptom .
+:Nodal_skin_eruptions a :Symptom .
+:Drying_and_tingling_lips a :Symptom .
+:Swelling_of_stomach a :Symptom .
+:Puffy_face_and_eyes a :Symptom .
+:Stiff_neck a :Symptom .
+:Muscle_weakness a :Symptom .
+:Pain_in_anal_region a :Symptom .
+:Receiving_blood_transfusion a :Symptom .
+:Stomach_pain a :Symptom .
+:Slurred_speech a :Symptom .
+:Mild_fever a :Symptom .
+:Swollen_blood_vessels a :Symptom .
+:Nausea a :Symptom .
+:Altered_sensorium a :Symptom .
+:Pain_during_bowel_movements a :Symptom .
+:Anxiety a :Symptom .
+:Abdominal_pain a :Symptom .
+:Lethargy a :Symptom .
+:Bladder_discomfort a :Symptom .
+:Weight_loss a :Symptom .
+:Knee_pain a :Symptom .
+:Foul_smell_of_urine a :Symptom .
+:Polyuria a :Symptom .
+:Irritability a :Symptom .
+:Itching a :Symptom .
+:Movement_stiffness a :Symptom .
+:Shivering a :Symptom .
+:Weakness_of_one_body_side a :Symptom .
+:Blister a :Symptom .
+:Vomiting a :Symptom .
+:Constipation a :Symptom .
+:Scurring a :Symptom .
+:Indigestion a :Symptom .
+:Excessive_hunger a :Symptom .
+:Fluid_overload a :Symptom .
+:Throat_irritation a :Symptom .
+:Bloody_stool a :Symptom .
+:Bruising a :Symptom .
+:Mucoid_sputum a :Symptom .
+:Receiving_unsterile_injections a :Symptom .
+:Headache a :Symptom .
+:Lack_of_concentration a :Symptom .
+:Acute_liver_failure a :Symptom .
+:Sinus_pressure a :Symptom .
+:Mood_swings a :Symptom .
+:Yellowish_skin a :Symptom .
+:Restlessness a :Symptom .
+:Rusty_sputum a :Symptom .
+:Acidity a :Symptom .
+:Fast_heart_rate a :Symptom .
+:Swollen_extremeties a :Symptom .
+:Cramps a :Symptom .
+:Continuous_sneezing a :Symptom .
+:Breathlessness a :Symptom .
+:Ulcers_on_tongue a :Symptom .
+:Weakness_in_limbs a :Symptom .
+:Painful_walking a :Symptom .
+:Fatigue a :Symptom .
+:Patches_in_throat a :Symptom .
+:Yellow_crust_ooze a :Symptom .
+:Passage_of_gases a :Symptom .
+:Muscle_pain a :Symptom .
+:Spotting__urination a :Symptom .
+:High_fever a :Symptom .
+:Pain_behind_the_eyes a :Symptom .
+:Irritation_in_anus a :Symptom .
+

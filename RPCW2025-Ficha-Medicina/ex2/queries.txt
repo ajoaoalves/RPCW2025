@@ -1,0 +1,51 @@
+Quantas doenças estão presentes na ontologia?
+
+prefix : <http://www.example.org/disease-ontology#>
+
+SELECT (COUNT(DISTINCT ?class) AS ?count) WHERE {
+  ?class a :Disease .
+}
+
+R:43
+
+Que doenças estão associadas ao sintoma "yellowish_skin"?
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+PREFIX : <http://www.example.org/disease-ontology#>
+
+
+SELECT DISTINCT ?class WHERE {
+  ?class a :Disease .
+  ?class :hasSymptom  :Yellowish_skin .
+}
+
+R: Hepatitis_a, Hepatitis_b, Hepatitis_c, Hepatitis_d, Hepatitis_e, Chronic_cholestasis, Jaundice, Alcoholic_hepatitis
+
+Que doenças estão associadas ao tratamento "exercise"?
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+PREFIX : <http://www.example.org/disease-ontology#>
+
+
+SELECT DISTINCT ?class WHERE {
+  ?class a :Disease .
+  ?class :hasTreatment :Exercise .
+}
+
+R: Paralysis_brain_hemorrhage, Arthritis, Hypothyroidism, Cervical_spondylosis, Diabetes, Gerd
+
+Produz uma lista ordenada alfabeticamente com o nome dos doentes.
+
+PREFIX : <http://www.example.org/disease-ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT  ?nome
+WHERE {
+  ?doente a :Patient ;
+          :name ?nome .
+}
+ORDER BY ?nome

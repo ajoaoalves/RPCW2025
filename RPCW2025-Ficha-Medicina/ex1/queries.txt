@@ -1,0 +1,51 @@
+1- Quantas classes estão definidas na Ontologia?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX: <http://www.semanticweb.org/ajr/ontologies/2025/historia#>
+
+```
+select (count (distinct ?classe) as ?numero) where {
+    ?classe a owl:Class.
+}
+```
+12
+
+2 - Quantas Object Properties estão definidas na Ontologia?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX: <http://www.semanticweb.org/ajr/ontologies/2025/historia#>
+
+```
+select (count (distinct ?obj) as ?numero) where {
+    ?obj a owl:ObjectProperty.
+}
+```
+3 - Quantos indivíduos existem na tua ontologia?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX: <http://www.semanticweb.org/ajr/ontologies/2025/historia#>
+
+select (count (distinct ?obj) as ?numero) where {
+    ?obj a owl:NamedIndividual.
+}
+
+4 - Quem planta tomates?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX: <http://www.semanticweb.org/ajr/ontologies/2025/historia#>
+
+select distinct ?agri where {
+    :Tomate :éCultivadoPor ?agri
+}
+
+Carlos
+
+5 - Quem contrata trabalhadores temporários?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX: <http://www.semanticweb.org/ajr/ontologies/2025/historia#>
+
+select distinct ?patrao where {
+    ?p a:TrabalhadorTemporario . 
+    ?patrao :temTrabalhador ?p
+}

@@ -1,0 +1,1439 @@
+@prefix : <http://www.example.org/disease-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+
+<http://www.example.org/disease-ontology#> rdf:type owl:Ontology . 
+
+# Classes
+:Disease a owl:Class .
+:Symptom a owl:Class .
+:Treatment a owl:Class .
+:Patient a owl:Class .
+
+# Properties
+:hasSymptom a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Symptom .
+
+:hasTreatment a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Treatment .
+
+:exhibitsSymptom a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Symptom .
+
+:hasDisease a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Disease .
+
+:receivesTreatment a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Treatment .
+
+# Disease instances
+:Flu a :Disease ;
+    :hasSymptom :Fever, :Cough, :SoreThroat ;
+    :hasTreatment :Rest, :Hydration, :AntiviralDrugs .
+
+:Diabetes a :Disease ;
+    :hasSymptom :IncreasedThirst, :FrequentUrination, :Fatigue ;
+    :hasTreatment :InsulinTherapy, :DietModification, :Exercise .
+
+# Symptom instances
+:Fever a :Symptom .
+:Cough a :Symptom .
+:SoreThroat a :Symptom .
+:IncreasedThirst a :Symptom .
+:FrequentUrination a :Symptom .
+:Fatigue a :Symptom .
+
+# Treatment instances
+:Rest a :Treatment .
+:Hydration a :Treatment .
+:AntiviralDrugs a :Treatment .
+:InsulinTherapy a :Treatment .
+:DietModification a :Treatment .
+:Exercise a :Treatment .
+
+
+# Patient instances
+:Patient1 a :Patient ;
+    :name "Paul Harrods" ;
+    :exhibitsSymptom :Fever ;
+    :exhibitsSymptom :Cough ;
+    :exhibitsSymptom :SoreThroat .
+
+:Patient2 a :Patient ;
+    :name "Ana Montana" ;
+    :exhibitsSymptom :IncreasedThirst ;
+    :exhibitsSymptom :FrequentUrination ;
+    :exhibitsSymptom :Fatigue .
+
+
+:Fungal_infection a :Disease . 
+:Fungal_infection a :Disease ;
+             :hasSymptom :Dischromic__patches, :Nodal_skin_eruptions, :Itching, :Skin_rash ;
+             :hasDescription "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi." ;
+             :hasTreatment :Use_detol_or_neem_in_bathing_water, :Use_clean_cloths, :Bath_twice, :Keep_infected_area_dry .
+:Allergy a :Disease . 
+:Allergy a :Disease ;
+             :hasSymptom :Watering_from_eyes, :Continuous_sneezing, :Chills, :Shivering ;
+             :hasDescription "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens." ;
+             :hasTreatment :Cover_area_with_bandage, :Use_ice_to_compress_itching, :Apply_calamine .
+:Gerd a :Disease . 
+:Gerd a :Disease ;
+             :hasSymptom :Vomiting, :Cough, :Chest_pain, :Acidity, :Ulcers_on_tongue, :Stomach_pain ;
+             :hasDescription "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter LES, the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD." ;
+             :hasTreatment :Avoid_fatty_spicy_food, :Exercise, :Avoid_lying_down_after_eating, :Maintain_healthy_weight .
+:Chronic_cholestasis a :Disease . 
+:Chronic_cholestasis a :Disease ;
+             :hasSymptom :Vomiting, :Yellowish_skin, :Nausea, :Yellowing_of_eyes, :Abdominal_pain, :Loss_of_appetite, :Itching ;
+             :hasDescription "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases" ;
+             :hasTreatment :Consult_doctor, :Anti_itch_medicine, :Cold_baths, :Eat_healthy .
+:Drug_reaction a :Disease . 
+:Drug_reaction a :Disease ;
+             :hasSymptom :Skin_rash, :Spotting__urination, :Burning_micturition, :Stomach_pain, :Itching ;
+             :hasDescription "An adverse drug reaction ADR is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs." ;
+             :hasTreatment :Consult_nearest_hospital, :Stop_irritation, :Follow_up, :Stop_taking_drug .
+:Peptic_ulcer_diseae a :Disease . 
+:Peptic_ulcer_diseae a :Disease ;
+             :hasSymptom :Vomiting, :Abdominal_pain, :Internal_itching, :Loss_of_appetite, :Indigestion, :Passage_of_gases ;
+             :hasDescription "Peptic ulcer disease PUD is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer." ;
+             :hasTreatment :Limit_alcohol, :Consume_probiotic_food, :Avoid_fatty_spicy_food, :Eliminate_milk .
+:Aids a :Disease . 
+:Aids a :Disease ;
+             :hasSymptom :High_fever, :Muscle_wasting, :Patches_in_throat, :Extra_marital_contacts ;
+             :hasDescription "Acquired immunodeficiency syndrome AIDS is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus HIV. By damaging your immune system, HIV interferes with your body's ability to fight infection and disease." ;
+             :hasTreatment :Avoid_open_cuts, :Consult_doctor, :Wear_ppe_if_possible, :Follow_up .
+:Diabetes a :Disease . 
+:Diabetes a :Disease ;
+             :hasSymptom :Restlessness, :Blurred_and_distorted_vision, :Fatigue, :Weight_loss, :Obesity, :Excessive_hunger, :Lethargy, :Polyuria, :Irregular_sugar_level, :Increased_appetite ;
+             :hasDescription "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy." ;
+             :hasTreatment :Consult_doctor, :Exercise, :Follow_up, :Have_balanced_diet .
+:Gastroenteritis a :Disease . 
+:Gastroenteritis a :Disease ;
+             :hasSymptom :Vomiting, :Diarrhoea, :Dehydration, :Sunken_eyes ;
+             :hasDescription "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ." ;
+             :hasTreatment :Rest, :Ease_back_into_eating, :Try_taking_small_sips_of_water, :Stop_eating_solid_food_for_while .
+:Bronchial_asthma a :Disease . 
+:Bronchial_asthma a :Disease ;
+             :hasSymptom :High_fever, :Cough, :Fatigue, :Breathlessness, :Mucoid_sputum, :Family_history ;
+             :hasDescription "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working." ;
+             :hasTreatment :Take_deep_breaths, :Get_away_from_trigger, :Switch_to_loose_cloothing, :Seek_help .
+:Hypertension a :Disease . 
+:Hypertension a :Disease ;
+             :hasSymptom :Lack_of_concentration, :Chest_pain, :Dizziness, :Loss_of_balance, :Headache ;
+             :hasDescription "Hypertension HTN or HT, also known as high blood pressure HBP, is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms." ;
+             :hasTreatment :Meditation, :Salt_baths, :Reduce_stress, :Get_proper_sleep .
+:Migraine a :Disease . 
+:Migraine a :Disease ;
+             :hasSymptom :Depression, :Acidity, :Stiff_neck, :Blurred_and_distorted_vision, :Irritability, :Excessive_hunger, :Headache, :Indigestion, :Visual_disturbances ;
+             :hasDescription "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities." ;
+             :hasTreatment :Meditation, :Consult_doctor, :Use_poloroid_glasses_in_sun, :Reduce_stress .
+:Cervical_spondylosis a :Disease . 
+:Cervical_spondylosis a :Disease ;
+             :hasSymptom :Dizziness, :Neck_pain, :Loss_of_balance, :Back_pain, :Weakness_in_limbs ;
+             :hasDescription "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones bone spurs." ;
+             :hasTreatment :Consult_doctor, :Take_otc_pain_reliver, :Exercise, :Use_heating_pad_or_cold_pack .
+:Paralysis_brain_hemorrhage a :Disease . 
+:Paralysis_brain_hemorrhage a :Disease ;
+             :hasSymptom :Vomiting, :Weakness_of_one_body_side, :Headache, :Altered_sensorium ;
+             :hasDescription "Intracerebral hemorrhage ICH is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body." ;
+             :hasTreatment :Consult_doctor, :Eat_healthy, :Massage, :Exercise .
+:Jaundice a :Disease . 
+:Jaundice a :Disease ;
+             :hasSymptom :High_fever, :Vomiting, :Yellowish_skin, :Dark_urine, :Fatigue, :Weight_loss, :Abdominal_pain, :Itching ;
+             :hasDescription "Yellow staining of the skin and sclerae the whites of the eyes by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the morbus regius the regal disease in the belief that only the touch of a king could cure it" ;
+             :hasTreatment :Drink_plenty_of_water, :Consume_milk_thistle, :Medication, :Eat_fruits_and_high_fiberous_food .
+:Malaria a :Disease . 
+:Malaria a :Disease ;
+             :hasSymptom :High_fever, :Vomiting, :Nausea, :Chills, :Headache, :Diarrhoea, :Muscle_pain, :Sweating ;
+             :hasDescription "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type." ;
+             :hasTreatment :Keep_mosquitos_out, :Consult_nearest_hospital, :Avoid_non_veg_food, :Avoid_oily_food .
+:Chicken_pox a :Disease . 
+:Chicken_pox a :Disease ;
+             :hasSymptom :High_fever, :Red_spots_over_body, :Skin_rash, :Malaise, :Fatigue, :Swelled_lymph_nodes, :Lethargy, :Headache, :Loss_of_appetite, :Itching, :Mild_fever ;
+             :hasDescription "Chickenpox is a highly contagious disease caused by the varicella-zoster virus VZV. It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters." ;
+             :hasTreatment :Take_vaccine, :Avoid_public_places, :Consume_neem_leaves, :Use_neem_in_bathing .
+:Dengue a :Disease . 
+:Dengue a :Disease ;
+             :hasSymptom :High_fever, :Vomiting, :Red_spots_over_body, :Skin_rash, :Nausea, :Pain_behind_the_eyes, :Malaise, :Fatigue, :Joint_pain, :Chills, :Headache, :Loss_of_appetite, :Back_pain, :Muscle_pain ;
+             :hasDescription "an acute infectious disease caused by a flavivirus species Dengue virus of the genus Flavivirus, transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. — called also breakbone fever, dengue fever." ;
+             :hasTreatment :Keep_hydrated, :Avoid_fatty_spicy_food, :Drink_papaya_leaf_juice, :Keep_mosquitos_away .
+:Typhoid a :Disease . 
+:Typhoid a :Disease ;
+             :hasSymptom :High_fever, :Vomiting, :Nausea, :Fatigue, :Abdominal_pain, :Toxic_look_typhos, :Chills, :Headache, :Belly_pain, :Diarrhoea, :Constipation ;
+             :hasDescription "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe." ;
+             :hasTreatment :Consult_doctor, :Eat_high_calorie_vegitables, :Antiboitic_therapy, :Medication .
+:Hepatitis_a a :Disease . 
+:Hepatitis_a a :Disease ;
+             :hasSymptom :Vomiting, :Yellowish_skin, :Dark_urine, :Nausea, :Yellowing_of_eyes, :Abdominal_pain, :Joint_pain, :Loss_of_appetite, :Diarrhoea, :Muscle_pain, :Mild_fever ;
+             :hasDescription "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function." ;
+             :hasTreatment :Consult_nearest_hospital, :Wash_hands_through, :Avoid_fatty_spicy_food, :Medication .
+:Hepatitis_b a :Disease . 
+:Hepatitis_b a :Disease ;
+             :hasSymptom :Yellowish_skin, :Dark_urine, :Receiving_blood_transfusion, :Yellowing_of_eyes, :Malaise, :Fatigue, :Abdominal_pain, :Yellow_urine, :Lethargy, :Receiving_unsterile_injections, :Loss_of_appetite, :Itching ;
+             :hasDescription "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus." ;
+             :hasTreatment :Eat_healthy, :Consult_nearest_hospital, :Vaccination, :Medication .
+:Hepatitis_c a :Disease . 
+:Hepatitis_c a :Disease ;
+             :hasSymptom :Yellowish_skin, :Nausea, :Yellowing_of_eyes, :Fatigue, :Loss_of_appetite, :Family_history ;
+             :hasDescription "Inflammation of the liver due to the hepatitis C virus HCV, which is usually spread via blood transfusion rare, hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer." ;
+             :hasTreatment :Eat_healthy, :Consult_nearest_hospital, :Vaccination, :Medication .
+:Hepatitis_d a :Disease . 
+:Hepatitis_d a :Disease ;
+             :hasSymptom :Vomiting, :Yellowish_skin, :Dark_urine, :Nausea, :Yellowing_of_eyes, :Fatigue, :Abdominal_pain, :Joint_pain, :Loss_of_appetite ;
+             :hasDescription "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus HDV." ;
+             :hasTreatment :Consult_doctor, :Follow_up, :Medication, :Eat_healthy .
+:Hepatitis_e a :Disease . 
+:Hepatitis_e a :Disease ;
+             :hasSymptom :High_fever, :Vomiting, :Yellowish_skin, :Dark_urine, :Nausea, :Yellowing_of_eyes, :Stomach_bleeding, :Fatigue, :Abdominal_pain, :Joint_pain, :Coma, :Loss_of_appetite, :Acute_liver_failure ;
+             :hasDescription "A rare form of liver inflammation caused by infection with the hepatitis E virus HEV. It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease." ;
+             :hasTreatment :Rest, :Consult_doctor, :Stop_alcohol_consumption, :Medication .
+:Alcoholic_hepatitis a :Disease . 
+:Alcoholic_hepatitis a :Disease ;
+             :hasSymptom :Vomiting, :Yellowish_skin, :Swelling_of_stomach, :Abdominal_pain, :History_of_alcohol_consumption, :Distention_of_abdomen, :Fluid_overload ;
+             :hasDescription "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol" ;
+             :hasTreatment :Consult_doctor, :Follow_up, :Stop_alcohol_consumption, :Medication .
+:Tuberculosis a :Disease . 
+:Tuberculosis a :Disease ;
+             :hasSymptom :High_fever, :Vomiting, :Phlegm, :Cough, :Chest_pain, :Yellowing_of_eyes, :Malaise, :Fatigue, :Weight_loss, :Breathlessness, :Swelled_lymph_nodes, :Chills, :Blood_in_sputum, :Loss_of_appetite, :Sweating, :Mild_fever ;
+             :hasDescription "Tuberculosis TB is an infectious disease usually caused by Mycobacterium tuberculosis MTB bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis." ;
+             :hasTreatment :Rest, :Consult_doctor, :Cover_mouth, :Medication .
+:Common_cold a :Disease . 
+:Common_cold a :Disease ;
+             :hasSymptom :High_fever, :Phlegm, :Sinus_pressure, :Cough, :Chest_pain, :Loss_of_smell, :Throat_irritation, :Malaise, :Fatigue, :Swelled_lymph_nodes, :Continuous_sneezing, :Chills, :Headache, :Redness_of_eyes, :Runny_nose, :Congestion, :Muscle_pain ;
+             :hasDescription "The common cold is a viral infection of your nose and throat upper respiratory tract. It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold." ;
+             :hasTreatment :Keep_fever_in_check, :Avoid_cold_food, :Take_vapour, :Drink_vitamin_c_rich_drinks .
+:Pneumonia a :Disease . 
+:Pneumonia a :Disease ;
+             :hasSymptom :High_fever, :Phlegm, :Rusty_sputum, :Cough, :Chest_pain, :Malaise, :Fatigue, :Breathlessness, :Fast_heart_rate, :Chills, :Sweating ;
+             :hasDescription "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe." ;
+             :hasTreatment :Rest, :Consult_doctor, :Follow_up, :Medication .
+:Dimorphic_hemmorhoidspiles a :Disease . 
+:Dimorphic_hemmorhoidspiles a :Disease ;
+             :hasSymptom :Irritation_in_anus, :Pain_during_bowel_movements, :Pain_in_anal_region, :Bloody_stool, :Constipation ;
+             :hasDescription "" ;
+             :hasTreatment :Warm_bath_with_epsom_salt, :Avoid_fatty_spicy_food, :Consume_alovera_juice, :Consume_witch_hazel .
+:Heart_attack a :Disease . 
+:Heart_attack a :Disease ;
+             :hasSymptom :Vomiting, :Sweating, :Chest_pain, :Breathlessness ;
+             :hasDescription "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle." ;
+             :hasTreatment :Chew_or_swallow_asprin, :Call_ambulance, :Keep_calm .
+:Varicose_veins a :Disease . 
+:Varicose_veins a :Disease ;
+             :hasSymptom :Bruising, :Swollen_blood_vessels, :Swollen_legs, :Fatigue, :Prominent_veins_on_calf, :Obesity, :Cramps ;
+             :hasDescription "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs." ;
+             :hasTreatment :Use_oinments, :Lie_down_flat_and_raise_the_leg_high, :Dont_stand_still_for_long, :Use_vein_compression .
+:Hypothyroidism a :Disease . 
+:Hypothyroidism a :Disease ;
+             :hasSymptom :Cold_hands_and_feets, :Depression, :Enlarged_thyroid, :Dizziness, :Puffy_face_and_eyes, :Abnormal_menstruation, :Irritability, :Fatigue, :Swollen_extremeties, :Lethargy, :Weight_gain, :Mood_swings, :Brittle_nails ;
+             :hasDescription "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone." ;
+             :hasTreatment :Get_proper_sleep, :Eat_healthy, :Reduce_stress, :Exercise .
+:Hyperthyroidism a :Disease . 
+:Hyperthyroidism a :Disease ;
+             :hasSymptom :Restlessness, :Abnormal_menstruation, :Muscle_weakness, :Irritability, :Fast_heart_rate, :Fatigue, :Weight_loss, :Excessive_hunger, :Diarrhoea, :Mood_swings, :Sweating ;
+             :hasDescription "Hyperthyroidism overactive thyroid occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat." ;
+             :hasTreatment :Eat_healthy, :Massage, :Use_lemon_balm, :Take_radioactive_iodine_treatment .
+:Hypoglycemia a :Disease . 
+:Hypoglycemia a :Disease ;
+             :hasSymptom :Palpitations, :Vomiting, :Drying_and_tingling_lips, :Nausea, :Blurred_and_distorted_vision, :Irritability, :Fatigue, :Anxiety, :Excessive_hunger, :Headache, :Slurred_speech, :Sweating ;
+             :hasDescription "Hypoglycemia is a condition in which your blood sugar glucose level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions — many rare — can cause low blood sugar in people who don't have diabetes." ;
+             :hasTreatment :Consult_doctor, :Check_in_pulse, :Drink_sugary_drinks, :Lie_down_on_side .
+:Osteoarthristis a :Disease . 
+:Osteoarthristis a :Disease ;
+             :hasSymptom :Knee_pain, :Neck_pain, :Painful_walking, :Swelling_joints, :Joint_pain, :Hip_joint_pain ;
+             :hasDescription "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time." ;
+             :hasTreatment :Consult_nearest_hospital, :Acetaminophen, :Salt_baths, :Follow_up .
+:Arthritis a :Disease . 
+:Arthritis a :Disease ;
+             :hasSymptom :Stiff_neck, :Muscle_weakness, :Painful_walking, :Swelling_joints, :Movement_stiffness ;
+             :hasDescription "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis." ;
+             :hasTreatment :Massage, :Exercise, :Use_hot_and_cold_therapy, :Try_acupuncture .
+:Vertigo_paroymsal__positional_vertigo a :Disease . 
+:Vertigo_paroymsal__positional_vertigo a :Disease ;
+             :hasSymptom :Vomiting, :Nausea, :Loss_of_balance, :Spinning_movements, :Unsteadiness, :Headache ;
+             :hasDescription "Benign paroxysmal positional vertigo BPPV is one of the most common causes of vertigo — the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness." ;
+             :hasTreatment :Relax, :Lie_down, :Avoid_abrupt_head_movment, :Avoid_sudden_change_in_body .
+:Acne a :Disease . 
+:Acne a :Disease ;
+             :hasSymptom :Scurring, :Blackheads, :Pus_filled_pimples, :Skin_rash ;
+             :hasDescription "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units hair follicles and their accompanying sebaceous gland. Acne develops on the face and upper trunk. It most often affects adolescents." ;
+             :hasTreatment :Drink_plenty_of_water, :Avoid_fatty_spicy_food, :Bath_twice, :Avoid_too_many_products .
+:Urinary_tract_infection a :Disease . 
+:Urinary_tract_infection a :Disease ;
+             :hasSymptom :Foul_smell_of_urine, :Bladder_discomfort, :Continuous_feel_of_urine, :Burning_micturition ;
+             :hasDescription "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating." ;
+             :hasTreatment :Drink_plenty_of_water, :Drink_cranberry_juice, :Take_probiotics, :Increase_vitamin_c_intake .
+:Psoriasis a :Disease . 
+:Psoriasis a :Disease ;
+             :hasSymptom :Skin_rash, :Small_dents_in_nails, :Joint_pain, :Inflammatory_nails, :Silver_like_dusting, :Skin_peeling ;
+             :hasDescription "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family." ;
+             :hasTreatment :Consult_doctor, :Wash_hands_with_warm_soapy_water, :Salt_baths, :Stop_bleeding_using_pressure .
+:Impetigo a :Disease . 
+:Impetigo a :Disease ;
+             :hasSymptom :High_fever, :Yellow_crust_ooze, :Skin_rash, :Red_sore_around_nose, :Blister ;
+             :hasDescription "Impetigo im-puh-TIE-go is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts." ;
+             :hasTreatment :Use_antibiotics, :Consult_doctor, :Remove_scabs_with_wet_compressed_cloth, :Soak_affected_area_in_warm_water .
+:Dimorphic_hemorrhoidspiles a :Disease . 
+:Dimorphic_hemorrhoidspiles a :Disease ;
+             :hasSymptom :Yellow_crust_ooze, :High_fever ;
+             :hasDescription "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease ." ;
+             :hasTreatment :Remove_scabs_with_wet_compressed_cloth .
+:Knee_pain a :Symptom .
+:Sinus_pressure a :Symptom .
+:Cough a :Symptom .
+:Blurred_and_distorted_vision a :Symptom .
+:Stomach_bleeding a :Symptom .
+:Altered_sensorium a :Symptom .
+:Loss_of_appetite a :Symptom .
+:Weakness_of_one_body_side a :Symptom .
+:Fluid_overload a :Symptom .
+:Nodal_skin_eruptions a :Symptom .
+:Visual_disturbances a :Symptom .
+:Brittle_nails a :Symptom .
+:Skin_rash a :Symptom .
+:Enlarged_thyroid a :Symptom .
+:Neck_pain a :Symptom .
+:Pus_filled_pimples a :Symptom .
+:Shivering a :Symptom .
+:Coma a :Symptom .
+:Breathlessness a :Symptom .
+:Swelling_of_stomach a :Symptom .
+:Unsteadiness a :Symptom .
+:Hip_joint_pain a :Symptom .
+:Passage_of_gases a :Symptom .
+:Yellowish_skin a :Symptom .
+:Joint_pain a :Symptom .
+:Continuous_sneezing a :Symptom .
+:Patches_in_throat a :Symptom .
+:Extra_marital_contacts a :Symptom .
+:Family_history a :Symptom .
+:Phlegm a :Symptom .
+:Dizziness a :Symptom .
+:Pain_behind_the_eyes a :Symptom .
+:Swollen_legs a :Symptom .
+:Loss_of_balance a :Symptom .
+:Dischromic__patches a :Symptom .
+:Receiving_unsterile_injections a :Symptom .
+:Slurred_speech a :Symptom .
+:Diarrhoea a :Symptom .
+:Bloody_stool a :Symptom .
+:Red_spots_over_body a :Symptom .
+:Irritation_in_anus a :Symptom .
+:Weight_loss a :Symptom .
+:Blister a :Symptom .
+:Excessive_hunger a :Symptom .
+:Distention_of_abdomen a :Symptom .
+:Inflammatory_nails a :Symptom .
+:Drying_and_tingling_lips a :Symptom .
+:Stiff_neck a :Symptom .
+:Spotting__urination a :Symptom .
+:Throat_irritation a :Symptom .
+:Dehydration a :Symptom .
+:Swollen_extremeties a :Symptom .
+:Redness_of_eyes a :Symptom .
+:Stomach_pain a :Symptom .
+:Back_pain a :Symptom .
+:Runny_nose a :Symptom .
+:Continuous_feel_of_urine a :Symptom .
+:Increased_appetite a :Symptom .
+:Bruising a :Symptom .
+:Rusty_sputum a :Symptom .
+:Pain_during_bowel_movements a :Symptom .
+:Receiving_blood_transfusion a :Symptom .
+:Burning_micturition a :Symptom .
+:Blood_in_sputum a :Symptom .
+:Chills a :Symptom .
+:Mood_swings a :Symptom .
+:Acidity a :Symptom .
+:Malaise a :Symptom .
+:Fatigue a :Symptom .
+:Small_dents_in_nails a :Symptom .
+:Polyuria a :Symptom .
+:Blackheads a :Symptom .
+:Red_sore_around_nose a :Symptom .
+:Yellow_urine a :Symptom .
+:Lethargy a :Symptom .
+:Skin_peeling a :Symptom .
+:Indigestion a :Symptom .
+:Weight_gain a :Symptom .
+:High_fever a :Symptom .
+:Cold_hands_and_feets a :Symptom .
+:Loss_of_smell a :Symptom .
+:Puffy_face_and_eyes a :Symptom .
+:Swelling_joints a :Symptom .
+:Muscle_wasting a :Symptom .
+:Belly_pain a :Symptom .
+:Congestion a :Symptom .
+:Itching a :Symptom .
+:Constipation a :Symptom .
+:Dark_urine a :Symptom .
+:Muscle_weakness a :Symptom .
+:Fast_heart_rate a :Symptom .
+:Abdominal_pain a :Symptom .
+:Movement_stiffness a :Symptom .
+:Mild_fever a :Symptom .
+:Nausea a :Symptom .
+:Restlessness a :Symptom .
+:Yellowing_of_eyes a :Symptom .
+:Anxiety a :Symptom .
+:Toxic_look_typhos a :Symptom .
+:Scurring a :Symptom .
+:Depression a :Symptom .
+:Obesity a :Symptom .
+:Mucoid_sputum a :Symptom .
+:Watering_from_eyes a :Symptom .
+:Lack_of_concentration a :Symptom .
+:Yellow_crust_ooze a :Symptom .
+:Chest_pain a :Symptom .
+:Sunken_eyes a :Symptom .
+:Abnormal_menstruation a :Symptom .
+:Ulcers_on_tongue a :Symptom .
+:Irritability a :Symptom .
+:Painful_walking a :Symptom .
+:Swelled_lymph_nodes a :Symptom .
+:Internal_itching a :Symptom .
+:Headache a :Symptom .
+:Weakness_in_limbs a :Symptom .
+:Cramps a :Symptom .
+:Palpitations a :Symptom .
+:Vomiting a :Symptom .
+:Spinning_movements a :Symptom .
+:Silver_like_dusting a :Symptom .
+:Pain_in_anal_region a :Symptom .
+:Muscle_pain a :Symptom .
+:Foul_smell_of_urine a :Symptom .
+:Swollen_blood_vessels a :Symptom .
+:Bladder_discomfort a :Symptom .
+:History_of_alcohol_consumption a :Symptom .
+:Prominent_veins_on_calf a :Symptom .
+:Irregular_sugar_level a :Symptom .
+:Sweating a :Symptom .
+:Acute_liver_failure a :Symptom .
+:Ease_back_into_eating a :Treatment .
+:Avoid_too_many_products a :Treatment .
+:Keep_mosquitos_away a :Treatment .
+:Cold_baths a :Treatment .
+:Keep_fever_in_check a :Treatment .
+:Take_vaccine a :Treatment .
+:Avoid_abrupt_head_movment a :Treatment .
+:Take_vapour a :Treatment .
+:Try_acupuncture a :Treatment .
+:Consult_doctor a :Treatment .
+:Massage a :Treatment .
+:Consume_witch_hazel a :Treatment .
+:Antiboitic_therapy a :Treatment .
+:Rest a :Treatment .
+:Keep_hydrated a :Treatment .
+:Exercise a :Treatment .
+:Warm_bath_with_epsom_salt a :Treatment .
+:Use_neem_in_bathing a :Treatment .
+:Remove_scabs_with_wet_compressed_cloth a :Treatment .
+:Use_antibiotics a :Treatment .
+:Wash_hands_with_warm_soapy_water a :Treatment .
+:Stop_bleeding_using_pressure a :Treatment .
+:Eliminate_milk a :Treatment .
+:Use_hot_and_cold_therapy a :Treatment .
+:Use_ice_to_compress_itching a :Treatment .
+:Take_probiotics a :Treatment .
+:Drink_plenty_of_water a :Treatment .
+:Limit_alcohol a :Treatment .
+:Consult_nearest_hospital a :Treatment .
+:Meditation a :Treatment .
+:Lie_down a :Treatment .
+:Eat_fruits_and_high_fiberous_food a :Treatment .
+:Drink_cranberry_juice a :Treatment .
+:Bath_twice a :Treatment .
+:Follow_up a :Treatment .
+:Consume_alovera_juice a :Treatment .
+:Call_ambulance a :Treatment .
+:Dont_stand_still_for_long a :Treatment .
+:Increase_vitamin_c_intake a :Treatment .
+:Use_oinments a :Treatment .
+:Get_proper_sleep a :Treatment .
+:Consume_probiotic_food a :Treatment .
+:Use_vein_compression a :Treatment .
+:Use_lemon_balm a :Treatment .
+:Use_clean_cloths a :Treatment .
+:Medication a :Treatment .
+:Eat_healthy a :Treatment .
+:Anti_itch_medicine a :Treatment .
+:Acetaminophen a :Treatment .
+:Get_away_from_trigger a :Treatment .
+:Have_balanced_diet a :Treatment .
+:Take_radioactive_iodine_treatment a :Treatment .
+:Apply_calamine a :Treatment .
+:Wear_ppe_if_possible a :Treatment .
+:Seek_help a :Treatment .
+:Avoid_non_veg_food a :Treatment .
+:Relax a :Treatment .
+:Take_otc_pain_reliver a :Treatment .
+:Use_heating_pad_or_cold_pack a :Treatment .
+:Try_taking_small_sips_of_water a :Treatment .
+:Soak_affected_area_in_warm_water a :Treatment .
+:Check_in_pulse a :Treatment .
+:Use_detol_or_neem_in_bathing_water a :Treatment .
+:Cover_area_with_bandage a :Treatment .
+:Cover_mouth a :Treatment .
+:Drink_papaya_leaf_juice a :Treatment .
+:Avoid_lying_down_after_eating a :Treatment .
+:Maintain_healthy_weight a :Treatment .
+:Lie_down_on_side a :Treatment .
+:Drink_vitamin_c_rich_drinks a :Treatment .
+:Avoid_fatty_spicy_food a :Treatment .
+:Avoid_oily_food a :Treatment .
+:Keep_calm a :Treatment .
+:Consume_milk_thistle a :Treatment .
+:Avoid_sudden_change_in_body a :Treatment .
+:Chew_or_swallow_asprin a :Treatment .
+:Avoid_public_places a :Treatment .
+:Switch_to_loose_cloothing a :Treatment .
+:Reduce_stress a :Treatment .
+:Keep_infected_area_dry a :Treatment .
+:Salt_baths a :Treatment .
+:Stop_alcohol_consumption a :Treatment .
+:Use_poloroid_glasses_in_sun a :Treatment .
+:Avoid_open_cuts a :Treatment .
+:Avoid_cold_food a :Treatment .
+:Take_deep_breaths a :Treatment .
+:Stop_irritation a :Treatment .
+:Keep_mosquitos_out a :Treatment .
+:Stop_eating_solid_food_for_while a :Treatment .
+:Wash_hands_through a :Treatment .
+:Eat_high_calorie_vegitables a :Treatment .
+:Consume_neem_leaves a :Treatment .
+:Lie_down_flat_and_raise_the_leg_high a :Treatment .
+:Stop_taking_drug a :Treatment .
+:Vaccination a :Treatment .
+:Drink_sugary_drinks a :Treatment .
+
+
+:Patient3 a :Patient ;
+                  :name "Dhevin Araujo" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :chest_pain . 
+:Patient4 a :Patient ;
+                  :name "Rúben Micael Cantão" ; 
+                  :exhibitsSymptom :continuous_sneezing ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :throat_irritation ; 
+                  :exhibitsSymptom :redness_of_eyes ; 
+                  :exhibitsSymptom :sinus_pressure ; 
+                  :exhibitsSymptom :runny_nose ; 
+                  :exhibitsSymptom :congestion ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :loss_of_smell ; 
+                  :exhibitsSymptom :muscle_pain . 
+:Patient5 a :Patient ;
+                  :name "Cecília Manoo" ; 
+                  :exhibitsSymptom :muscle_weakness ; 
+                  :exhibitsSymptom :stiff_neck ; 
+                  :exhibitsSymptom :swelling_joints ; 
+                  :exhibitsSymptom :movement_stiffness ; 
+                  :exhibitsSymptom :painful_walking . 
+:Patient6 a :Patient ;
+                  :name "Noelia Raquel Penacho" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :nodal_skin_eruptions ; 
+                  :exhibitsSymptom :dischromic_patches . 
+:Patient7 a :Patient ;
+                  :name "Tomé Filipe Varges" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :fast_heart_rate ; 
+                  :exhibitsSymptom :rusty_sputum . 
+:Patient8 a :Patient ;
+                  :name "Lauane Pedroso" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :indigestion ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :passage_of_gases ; 
+                  :exhibitsSymptom :internal_itching . 
+:Patient9 a :Patient ;
+                  :name "Vítor Salada" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :chest_pain . 
+:Patient10 a :Patient ;
+                  :name "Selton Greu" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :indigestion ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :passage_of_gases ; 
+                  :exhibitsSymptom :internal_itching . 
+:Patient11 a :Patient ;
+                  :name "Neidiane Napoleão" ; 
+                  :exhibitsSymptom :shivering ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :watering_from_eyes . 
+:Patient12 a :Patient ;
+                  :name "Luana Vieira Manga" ; 
+                  :exhibitsSymptom :back_pain ; 
+                  :exhibitsSymptom :weakness_in_limbs ; 
+                  :exhibitsSymptom :neck_pain ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :loss_of_balance . 
+:Patient13 a :Patient ;
+                  :name "Raquel Miriam Maricato" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellowing_of_eyes . 
+:Patient14 a :Patient ;
+                  :name "Yaiden Póvoas" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :diarrhoea ; 
+                  :exhibitsSymptom :mild_fever ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :muscle_pain . 
+:Patient15 a :Patient ;
+                  :name "David Lauro Duraes" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :pus_filled_pimples ; 
+                  :exhibitsSymptom :blackheads . 
+:Patient16 a :Patient ;
+                  :name "Isabela Cristina Morcela" ; 
+                  :exhibitsSymptom :muscle_wasting ; 
+                  :exhibitsSymptom :patches_in_throat ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :extra_marital_contacts . 
+:Patient17 a :Patient ;
+                  :name "Emilly Jordana Padez" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :indigestion ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :passage_of_gases ; 
+                  :exhibitsSymptom :internal_itching . 
+:Patient18 a :Patient ;
+                  :name "Teresa Carromeu" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :acute_liver_failure ; 
+                  :exhibitsSymptom :coma ; 
+                  :exhibitsSymptom :stomach_bleeding . 
+:Patient19 a :Patient ;
+                  :name "Meng Hou Jayden Craveirinha" ; 
+                  :exhibitsSymptom :back_pain ; 
+                  :exhibitsSymptom :weakness_in_limbs ; 
+                  :exhibitsSymptom :neck_pain ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :loss_of_balance . 
+:Patient20 a :Patient ;
+                  :name "Sandro Josué Minga" ; 
+                  :exhibitsSymptom :stomach_pain ; 
+                  :exhibitsSymptom :acidity ; 
+                  :exhibitsSymptom :ulcers_on_tongue ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :chest_pain . 
+:Patient21 a :Patient ;
+                  :name "Fabien Fitas" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :mood_swings ; 
+                  :exhibitsSymptom :weight_loss ; 
+                  :exhibitsSymptom :restlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :diarrhoea ; 
+                  :exhibitsSymptom :fast_heart_rate ; 
+                  :exhibitsSymptom :excessive_hunger ; 
+                  :exhibitsSymptom :muscle_weakness ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :abnormal_menstruation . 
+:Patient22 a :Patient ;
+                  :name "Nikita Oleksandrovich Talho" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellow_urine ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :receiving_blood_transfusion ; 
+                  :exhibitsSymptom :receiving_unsterile_injections . 
+:Patient23 a :Patient ;
+                  :name "Brian James Laranjeira" ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :bladder_discomfort ; 
+                  :exhibitsSymptom :foul_smell_of_urine ; 
+                  :exhibitsSymptom :continuous_feel_of_urine . 
+:Patient24 a :Patient ;
+                  :name "Yasmin Dariana Valadim" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :dehydration ; 
+                  :exhibitsSymptom :diarrhoea . 
+:Patient25 a :Patient ;
+                  :name "Franque Seiça" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cramps ; 
+                  :exhibitsSymptom :bruising ; 
+                  :exhibitsSymptom :obesity ; 
+                  :exhibitsSymptom :swollen_legs ; 
+                  :exhibitsSymptom :swollen_blood_vessels ; 
+                  :exhibitsSymptom :prominent_veins_on_calf . 
+:Patient26 a :Patient ;
+                  :name "Nazir Pequenoo" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellow_urine ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :receiving_blood_transfusion ; 
+                  :exhibitsSymptom :receiving_unsterile_injections . 
+:Patient27 a :Patient ;
+                  :name "Sazim Farzan Romano" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cramps ; 
+                  :exhibitsSymptom :bruising ; 
+                  :exhibitsSymptom :obesity ; 
+                  :exhibitsSymptom :swollen_legs ; 
+                  :exhibitsSymptom :swollen_blood_vessels ; 
+                  :exhibitsSymptom :prominent_veins_on_calf . 
+:Patient28 a :Patient ;
+                  :name "Eluisa Cravinho" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :nodal_skin_eruptions ; 
+                  :exhibitsSymptom :dischromic_patches . 
+:Patient29 a :Patient ;
+                  :name "Kelcio Ernany Mercatudo" ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :loss_of_balance ; 
+                  :exhibitsSymptom :lack_of_concentration . 
+:Patient30 a :Patient ;
+                  :name "Edgar Luís Barroco" ; 
+                  :exhibitsSymptom :stomach_pain ; 
+                  :exhibitsSymptom :acidity ; 
+                  :exhibitsSymptom :ulcers_on_tongue ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :chest_pain . 
+:Patient31 a :Patient ;
+                  :name "Jelany Rocha" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :nodal_skin_eruptions ; 
+                  :exhibitsSymptom :dischromic_patches . 
+:Patient32 a :Patient ;
+                  :name "Roça Marcondes" ; 
+                  :exhibitsSymptom :stomach_pain ; 
+                  :exhibitsSymptom :ulcers_on_tongue ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :chest_pain . 
+:Patient33 a :Patient ;
+                  :name "Brayan Anes" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :skin_peeling ; 
+                  :exhibitsSymptom :silver_like_dusting ; 
+                  :exhibitsSymptom :small_dents_in_nails ; 
+                  :exhibitsSymptom :inflammatory_nails . 
+:Patient34 a :Patient ;
+                  :name "Kassia Bonega" ; 
+                  :exhibitsSymptom :continuous_sneezing ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :throat_irritation ; 
+                  :exhibitsSymptom :redness_of_eyes ; 
+                  :exhibitsSymptom :sinus_pressure ; 
+                  :exhibitsSymptom :runny_nose ; 
+                  :exhibitsSymptom :congestion ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :loss_of_smell ; 
+                  :exhibitsSymptom :muscle_pain . 
+:Patient35 a :Patient ;
+                  :name "Luísa Manuela Cardina" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :weight_gain ; 
+                  :exhibitsSymptom :cold_hands_and_feets ; 
+                  :exhibitsSymptom :mood_swings ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :puffy_face_and_eyes ; 
+                  :exhibitsSymptom :enlarged_thyroid ; 
+                  :exhibitsSymptom :brittle_nails ; 
+                  :exhibitsSymptom :swollen_extremeties ; 
+                  :exhibitsSymptom :depression ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :abnormal_menstruation . 
+:Patient36 a :Patient ;
+                  :name "Waldemar Valentoo" ; 
+                  :exhibitsSymptom :patches_in_throat ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :extra_marital_contacts . 
+:Patient37 a :Patient ;
+                  :name "Alexandre Duarte Brazeto" ; 
+                  :exhibitsSymptom :continuous_sneezing ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :throat_irritation ; 
+                  :exhibitsSymptom :redness_of_eyes ; 
+                  :exhibitsSymptom :sinus_pressure ; 
+                  :exhibitsSymptom :runny_nose ; 
+                  :exhibitsSymptom :congestion ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :loss_of_smell ; 
+                  :exhibitsSymptom :muscle_pain . 
+:Patient38 a :Patient ;
+                  :name "Andrea Preces" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellowing_of_eyes . 
+:Patient39 a :Patient ;
+                  :name "Bianca Camila Externato" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :anxiety ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :blurred_and_distorted_vision ; 
+                  :exhibitsSymptom :excessive_hunger ; 
+                  :exhibitsSymptom :drying_and_tingling_lips ; 
+                  :exhibitsSymptom :slurred_speech ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :palpitations . 
+:Patient40 a :Patient ;
+                  :name "Wilson Catalino" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :weight_gain ; 
+                  :exhibitsSymptom :cold_hands_and_feets ; 
+                  :exhibitsSymptom :mood_swings ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :puffy_face_and_eyes ; 
+                  :exhibitsSymptom :enlarged_thyroid ; 
+                  :exhibitsSymptom :brittle_nails ; 
+                  :exhibitsSymptom :swollen_extremeties ; 
+                  :exhibitsSymptom :depression ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :abnormal_menstruation . 
+:Patient41 a :Patient ;
+                  :name "Lucas Dinis Pite" ; 
+                  :exhibitsSymptom :back_pain ; 
+                  :exhibitsSymptom :weakness_in_limbs ; 
+                  :exhibitsSymptom :neck_pain ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :loss_of_balance . 
+:Patient42 a :Patient ;
+                  :name "Naíma Brousse" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cramps ; 
+                  :exhibitsSymptom :bruising ; 
+                  :exhibitsSymptom :obesity ; 
+                  :exhibitsSymptom :swollen_legs ; 
+                  :exhibitsSymptom :swollen_blood_vessels ; 
+                  :exhibitsSymptom :prominent_veins_on_calf . 
+:Patient43 a :Patient ;
+                  :name "Fatúmata Buraco" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :stomach_pain ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :spotting_urination . 
+:Patient44 a :Patient ;
+                  :name "Bianca Isabel Carrilho" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellowing_of_eyes . 
+:Patient45 a :Patient ;
+                  :name "Lara Ariana Gimenes" ; 
+                  :exhibitsSymptom :weight_gain ; 
+                  :exhibitsSymptom :cold_hands_and_feets ; 
+                  :exhibitsSymptom :mood_swings ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :puffy_face_and_eyes ; 
+                  :exhibitsSymptom :enlarged_thyroid ; 
+                  :exhibitsSymptom :brittle_nails ; 
+                  :exhibitsSymptom :swollen_extremeties ; 
+                  :exhibitsSymptom :depression ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :abnormal_menstruation . 
+:Patient46 a :Patient ;
+                  :name "Emily Patrícia Serdoura" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :restlessness ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :irregular_sugar_level ; 
+                  :exhibitsSymptom :blurred_and_distorted_vision ; 
+                  :exhibitsSymptom :obesity ; 
+                  :exhibitsSymptom :excessive_hunger ; 
+                  :exhibitsSymptom :increased_appetite ; 
+                  :exhibitsSymptom :polyuria . 
+:Patient47 a :Patient ;
+                  :name "Alexandre Salvador Melgueira" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :spotting_urination . 
+:Patient48 a :Patient ;
+                  :name "Leonelson Cachopo" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :anxiety ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :blurred_and_distorted_vision ; 
+                  :exhibitsSymptom :excessive_hunger ; 
+                  :exhibitsSymptom :slurred_speech ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :palpitations . 
+:Patient49 a :Patient ;
+                  :name "Abida Pouzinho" ; 
+                  :exhibitsSymptom :back_pain ; 
+                  :exhibitsSymptom :neck_pain ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :loss_of_balance . 
+:Patient50 a :Patient ;
+                  :name "Alana Yasmine Penedos" ; 
+                  :exhibitsSymptom :muscle_weakness ; 
+                  :exhibitsSymptom :stiff_neck ; 
+                  :exhibitsSymptom :swelling_joints ; 
+                  :exhibitsSymptom :movement_stiffness ; 
+                  :exhibitsSymptom :painful_walking . 
+:Patient51 a :Patient ;
+                  :name "Demelza Carregoso" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :neck_pain ; 
+                  :exhibitsSymptom :knee_pain ; 
+                  :exhibitsSymptom :hip_joint_pain ; 
+                  :exhibitsSymptom :swelling_joints ; 
+                  :exhibitsSymptom :painful_walking . 
+:Patient52 a :Patient ;
+                  :name "Jesus Cristo Vitória" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellowing_of_eyes . 
+:Patient53 a :Patient ;
+                  :name "Anya Alanys Fróes" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :bruising ; 
+                  :exhibitsSymptom :obesity ; 
+                  :exhibitsSymptom :swollen_legs ; 
+                  :exhibitsSymptom :swollen_blood_vessels ; 
+                  :exhibitsSymptom :prominent_veins_on_calf . 
+:Patient54 a :Patient ;
+                  :name "Verita Teotónio" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :weight_loss ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :abdominal_pain . 
+:Patient55 a :Patient ;
+                  :name "Rozalinda Carreto" ; 
+                  :exhibitsSymptom :muscle_weakness ; 
+                  :exhibitsSymptom :stiff_neck ; 
+                  :exhibitsSymptom :swelling_joints ; 
+                  :exhibitsSymptom :movement_stiffness ; 
+                  :exhibitsSymptom :painful_walking . 
+:Patient56 a :Patient ;
+                  :name "Mário Constantino Zuada" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellow_urine ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :receiving_blood_transfusion ; 
+                  :exhibitsSymptom :receiving_unsterile_injections . 
+:Patient57 a :Patient ;
+                  :name "Hillary Tabanes" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :mild_fever ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :red_spots_over_body . 
+:Patient58 a :Patient ;
+                  :name "Ilda Tojeira" ; 
+                  :exhibitsSymptom :muscle_wasting ; 
+                  :exhibitsSymptom :patches_in_throat ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :extra_marital_contacts . 
+:Patient59 a :Patient ;
+                  :name "Aakarshan Potencio" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :fast_heart_rate ; 
+                  :exhibitsSymptom :rusty_sputum . 
+:Patient60 a :Patient ;
+                  :name "Rinoyshka Jua" ; 
+                  :exhibitsSymptom :continuous_sneezing ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :throat_irritation ; 
+                  :exhibitsSymptom :redness_of_eyes ; 
+                  :exhibitsSymptom :sinus_pressure ; 
+                  :exhibitsSymptom :runny_nose ; 
+                  :exhibitsSymptom :congestion ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :loss_of_smell ; 
+                  :exhibitsSymptom :muscle_pain . 
+:Patient61 a :Patient ;
+                  :name "Évelyn Távora" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :pus_filled_pimples ; 
+                  :exhibitsSymptom :blackheads ; 
+                  :exhibitsSymptom :scurring . 
+:Patient62 a :Patient ;
+                  :name "Maria de Assis Berdianço" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :family_history ; 
+                  :exhibitsSymptom :mucoid_sputum . 
+:Patient63 a :Patient ;
+                  :name "Pedro Alexandre Reis" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :pain_behind_the_eyes ; 
+                  :exhibitsSymptom :back_pain ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :muscle_pain ; 
+                  :exhibitsSymptom :red_spots_over_body . 
+:Patient64 a :Patient ;
+                  :name "Rosete Sebadelhe" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :diarrhoea ; 
+                  :exhibitsSymptom :muscle_pain . 
+:Patient65 a :Patient ;
+                  :name "Muhammad Haider Réu" ; 
+                  :exhibitsSymptom :continuous_sneezing ; 
+                  :exhibitsSymptom :shivering ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :watering_from_eyes . 
+:Patient66 a :Patient ;
+                  :name "Marcela Elisa" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :nodal_skin_eruptions ; 
+                  :exhibitsSymptom :dischromic_patches . 
+:Patient67 a :Patient ;
+                  :name "Shannaya Rita Perié" ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :bladder_discomfort ; 
+                  :exhibitsSymptom :continuous_feel_of_urine . 
+:Patient68 a :Patient ;
+                  :name "Ramazan Rondão" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :sunken_eyes ; 
+                  :exhibitsSymptom :dehydration ; 
+                  :exhibitsSymptom :diarrhoea . 
+:Patient69 a :Patient ;
+                  :name "Marilyne Mansa" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :nodal_skin_eruptions ; 
+                  :exhibitsSymptom :dischromic_patches . 
+:Patient70 a :Patient ;
+                  :name "Mayra Luana Assuncão" ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :bladder_discomfort ; 
+                  :exhibitsSymptom :foul_smell_of_urine ; 
+                  :exhibitsSymptom :continuous_feel_of_urine . 
+:Patient71 a :Patient ;
+                  :name "Mátio Maltez" ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :bladder_discomfort ; 
+                  :exhibitsSymptom :foul_smell_of_urine ; 
+                  :exhibitsSymptom :continuous_feel_of_urine . 
+:Patient72 a :Patient ;
+                  :name "Bridget Barraqueiro" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :spinning_movements ; 
+                  :exhibitsSymptom :loss_of_balance ; 
+                  :exhibitsSymptom :unsteadiness . 
+:Patient73 a :Patient ;
+                  :name "Andrada Selena D'eca" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :nodal_skin_eruptions ; 
+                  :exhibitsSymptom :dischromic_patches . 
+:Patient74 a :Patient ;
+                  :name "Márcio Gabriel D'eca" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :distention_of_abdomen ; 
+                  :exhibitsSymptom :history_of_alcohol_consumption ; 
+                  :exhibitsSymptom :fluid_overload . 
+:Patient75 a :Patient ;
+                  :name "Geovani Ataíde" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :mood_swings ; 
+                  :exhibitsSymptom :weight_loss ; 
+                  :exhibitsSymptom :restlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :diarrhoea ; 
+                  :exhibitsSymptom :fast_heart_rate ; 
+                  :exhibitsSymptom :excessive_hunger ; 
+                  :exhibitsSymptom :muscle_weakness ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :abnormal_menstruation . 
+:Patient76 a :Patient ;
+                  :name "Udo Rego" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :weight_loss ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :mild_fever ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :blood_in_sputum . 
+:Patient77 a :Patient ;
+                  :name "Ália Joana Bonito" ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :bladder_discomfort ; 
+                  :exhibitsSymptom :foul_smell_of_urine ; 
+                  :exhibitsSymptom :continuous_feel_of_urine . 
+:Patient78 a :Patient ;
+                  :name "Bruno Rafael Fadiga" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :fast_heart_rate ; 
+                  :exhibitsSymptom :rusty_sputum . 
+:Patient79 a :Patient ;
+                  :name "Lis Maria Aresta" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :skin_peeling ; 
+                  :exhibitsSymptom :silver_like_dusting ; 
+                  :exhibitsSymptom :small_dents_in_nails ; 
+                  :exhibitsSymptom :inflammatory_nails . 
+:Patient80 a :Patient ;
+                  :name "Sófia Sá" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :nodal_skin_eruptions . 
+:Patient81 a :Patient ;
+                  :name "Simão Francisco Euquerio" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :mild_fever ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :red_spots_over_body . 
+:Patient82 a :Patient ;
+                  :name "Zurita Carragoso" ; 
+                  :exhibitsSymptom :continuous_sneezing ; 
+                  :exhibitsSymptom :shivering ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :watering_from_eyes . 
+:Patient83 a :Patient ;
+                  :name "Mateus Valentim Bagoo" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :neck_pain ; 
+                  :exhibitsSymptom :knee_pain ; 
+                  :exhibitsSymptom :swelling_joints ; 
+                  :exhibitsSymptom :painful_walking . 
+:Patient84 a :Patient ;
+                  :name "Osvaldo Adão Ermitoo" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellowing_of_eyes . 
+:Patient85 a :Patient ;
+                  :name "Romão Relvas" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :weight_gain ; 
+                  :exhibitsSymptom :cold_hands_and_feets ; 
+                  :exhibitsSymptom :mood_swings ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :dizziness ; 
+                  :exhibitsSymptom :puffy_face_and_eyes ; 
+                  :exhibitsSymptom :enlarged_thyroid ; 
+                  :exhibitsSymptom :brittle_nails ; 
+                  :exhibitsSymptom :swollen_extremeties ; 
+                  :exhibitsSymptom :depression ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :abnormal_menstruation . 
+:Patient86 a :Patient ;
+                  :name "Leonor Vicente Pádua" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :spotting_urination . 
+:Patient87 a :Patient ;
+                  :name "Qiaoyi Terreiro" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :weakness_of_one_body_side ; 
+                  :exhibitsSymptom :altered_sensorium . 
+:Patient88 a :Patient ;
+                  :name "Ansa Marvoo" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :nodal_skin_eruptions ; 
+                  :exhibitsSymptom :dischromic_patches . 
+:Patient89 a :Patient ;
+                  :name "Rachael Anselmo" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :chest_pain . 
+:Patient90 a :Patient ;
+                  :name "Snigdhita Brojo" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :dark_urine ; 
+                  :exhibitsSymptom :nausea ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :abdominal_pain ; 
+                  :exhibitsSymptom :yellowing_of_eyes . 
+:Patient91 a :Patient ;
+                  :name "Tchimalia Coelhinho" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :weight_loss ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :mild_fever ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :blood_in_sputum . 
+:Patient92 a :Patient ;
+                  :name "Fiana Cravinho" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :blackheads ; 
+                  :exhibitsSymptom :scurring . 
+:Patient93 a :Patient ;
+                  :name "Jersy Sarrudo" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :skin_peeling ; 
+                  :exhibitsSymptom :silver_like_dusting ; 
+                  :exhibitsSymptom :small_dents_in_nails ; 
+                  :exhibitsSymptom :inflammatory_nails . 
+:Patient94 a :Patient ;
+                  :name "Xavi Loja" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :mood_swings ; 
+                  :exhibitsSymptom :weight_loss ; 
+                  :exhibitsSymptom :restlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :diarrhoea ; 
+                  :exhibitsSymptom :fast_heart_rate ; 
+                  :exhibitsSymptom :excessive_hunger ; 
+                  :exhibitsSymptom :muscle_weakness ; 
+                  :exhibitsSymptom :irritability ; 
+                  :exhibitsSymptom :abnormal_menstruation . 
+:Patient95 a :Patient ;
+                  :name "Fabiano Suleimane Eira" ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :pus_filled_pimples ; 
+                  :exhibitsSymptom :blackheads . 
+:Patient96 a :Patient ;
+                  :name "Alexandre Francisco Girões" ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :yellowish_skin ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :family_history . 
+:Patient97 a :Patient ;
+                  :name "Simona Elena Ponticife" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :fast_heart_rate ; 
+                  :exhibitsSymptom :rusty_sputum . 
+:Patient98 a :Patient ;
+                  :name "Noah Lourenço Miranda" ; 
+                  :exhibitsSymptom :chills ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :fatigue ; 
+                  :exhibitsSymptom :weight_loss ; 
+                  :exhibitsSymptom :cough ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :breathlessness ; 
+                  :exhibitsSymptom :sweating ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :mild_fever ; 
+                  :exhibitsSymptom :yellowing_of_eyes ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :phlegm ; 
+                  :exhibitsSymptom :chest_pain ; 
+                  :exhibitsSymptom :blood_in_sputum . 
+:Patient99 a :Patient ;
+                  :name "Leandro José Vintem" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :lethargy ; 
+                  :exhibitsSymptom :high_fever ; 
+                  :exhibitsSymptom :headache ; 
+                  :exhibitsSymptom :loss_of_appetite ; 
+                  :exhibitsSymptom :mild_fever ; 
+                  :exhibitsSymptom :swelled_lymph_nodes ; 
+                  :exhibitsSymptom :malaise ; 
+                  :exhibitsSymptom :red_spots_over_body . 
+:Patient100 a :Patient ;
+                  :name "Milena Leonor Amoedo" ; 
+                  :exhibitsSymptom :itching ; 
+                  :exhibitsSymptom :skin_rash ; 
+                  :exhibitsSymptom :stomach_pain ; 
+                  :exhibitsSymptom :burning_micturition ; 
+                  :exhibitsSymptom :spotting_urination . 
+:Patient101 a :Patient ;
+                  :name "Feliciano José Solipa" ; 
+                  :exhibitsSymptom :vomiting ; 
+                  :exhibitsSymptom :sunken_eyes ; 
+                  :exhibitsSymptom :dehydration ; 
+                  :exhibitsSymptom :diarrhoea . 
+:Patient102 a :Patient ;
+                  :name "Kelcio Ernany Silvares" ; 
+                  :exhibitsSymptom :joint_pain ; 
+                  :exhibitsSymptom :neck_pain ; 
+                  :exhibitsSymptom :knee_pain ; 
+                  :exhibitsSymptom :hip_joint_pain ; 
+                  :exhibitsSymptom :swelling_joints ; 
+                  :exhibitsSymptom :painful_walking . 
+
