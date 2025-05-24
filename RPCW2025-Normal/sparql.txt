@@ -1,0 +1,274 @@
+Pergunta 12 
+
+Quais são os conceitos ensinados por um determinado mestre (arbitra um)?
+
+R :  
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?conceito
+WHERE {
+ :Isaac_Newton :ensina ?conceito .
+}
+
+Pegunta 13 
+
+Que obras explicam o conceito de "Relatividade"?
+
+R: 
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?obra ?titulo
+WHERE {
+  ?obra a :Obra ;
+        :explica :Relatividade ;
+        :titulo ?titulo .
+}
+
+Pergunta 14 
+
+Em que disciplinas se estudam "Ciências Sociais"? 
+
+R:
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?disciplina ?nome
+WHERE {
+  ?disciplina a :Disciplina ;
+              :pertenceA :Ciências_Sociais ;
+              :nome ?nome .
+}
+
+Pergunta 15 
+
+Qual é a aplicação prática dos conhecimentos em "Lógica Formal"?
+
+R:
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?aplicacao
+WHERE {
+  :Lógica_Formal :temAplicacaoEm ?aplicacao .
+}
+
+
+Pergunta 16 
+
+Quais disciplinas pertencem ao tipo de conhecimento "Ciências Exatas"?
+
+R:
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?disciplina 
+WHERE {
+  ?disciplina a :Disciplina ;
+              :pertenceA :Ciências_Exatas ;
+}
+
+
+Pegunta 17 
+
+Que mestres ensinaram no século XIX?
+
+R:
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?mestre 
+WHERE {
+  ?mestre a :Mestre ;
+          :periodoHistorico "Século XIX" ;
+          
+}
+
+Pergunta 18 
+
+Que aprendizes estudam "Programação"?
+
+R:
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?aprendiz ?nome
+WHERE {
+  ?aprendiz a :Aprendiz ;
+            :aprende :Programação ;
+            :nome ?nome .
+}
+
+Pergunta 19 
+
+Qual a distribuição de aprendizes por disciplina? (Resultado será uma lista de pares: Disciplina,
+número de alunos)
+
+R:
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?disciplina (COUNT(?aprendiz) AS ?numAprendizes)
+WHERE {
+  ?aprendiz a :Aprendiz ;
+            :aprende ?disciplina .
+}
+GROUP BY ?disciplina
+ORDER BY DESC(?numAprendizes)
+
+
+Pergunta 20 
+
+Qual a distribuição de conceitos por período histórico? (Resultado será uma lista de pares:
+Período, número de conceitos)
+
+R:
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?periodo (COUNT(?conceito) AS ?numConceitos)
+WHERE {
+  ?conceito a :Conceito ;
+            :periodoHistorico ?periodo .
+}
+GROUP BY ?periodo
+ORDER BY DESC(?numConceitos)
+
+
+Pergunta 21 
+
+Quais os títulos das obras associadas a cada conceito? (Resultado será uma lista de pares:
+Conceito, Lista de títulos de obras) 
+
+R: 
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?conceito ?tituloObra
+WHERE {
+  ?obra a :Obra ;
+        :explica ?conceito ;
+        :titulo ?tituloObra .
+}
+ORDER BY ?conceito ?tituloObra
+
+
+Pergunta 22 
+
+Quais os aprendizes que frequentam cada uma das disciplinas? (Resultado será uma lista de
+pares: Disciplina, Lista dos nomes dos aprendizes que frequentam a disciplina)
+
+
+R: 
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?disciplina (GROUP_CONCAT(?nomeAprendiz; separator=", ") AS ?aprendizes)
+WHERE {
+  ?aprendiz a :Aprendiz ;
+            :aprende ?disciplina ;
+            :nome ?nomeAprendiz .
+}
+GROUP BY ?disciplina
+ORDER BY ?disciplina
+
+Pergunta 23 
+
+Qual a distribuição de aprendizes por escalões etários? (Resultado será uma lista de pares:
+Escalão etário, número aprendizes nesse escalão); Considera os seguintes escalões: [17, 34], [35,
+44], [45, 54], [55, 64], [65, 74], [75, 100].
+
+R: 
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+SELECT ?escalao (COUNT(?aprendiz) AS ?numAprendizes)
+WHERE {
+  ?aprendiz a :Aprendiz ;
+            :idade ?idade .
+  BIND(
+    IF(?idade >= 17 && ?idade <= 34, "[17,34]",
+      IF(?idade >= 35 && ?idade <= 44, "[35,44]",
+        IF(?idade >= 45 && ?idade <= 54, "[45,54]",
+          IF(?idade >= 55 && ?idade <= 64, "[55,64]",
+            IF(?idade >= 65 && ?idade <= 74, "[65,74]",
+              IF(?idade >= 75 && ?idade <= 100, "[75,100]", "Outro")
+            )
+          )
+        )
+      )
+    ) AS ?escalao
+  )
+}
+GROUP BY ?escalao
+ORDER BY ?escalao
+
+
+
+Pergunta 24 e Pergunta 25 
+
+Cria uma nova relação na ontologia, estudaCom, que relaciona um aluno com um mestre;
+
++
+
+Cria uma query CONSTRUCT para calcular os novos triplos da nova relação estudaCom;
+Altera a query para uma query INSERT e acrescenta esses triplos à ontologia;
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+CONSTRUCT {
+  ?aprendiz :estudaCom ?mestre .
+}
+WHERE {
+  ?aprendiz a :Aprendiz ;
+            :aprende ?disciplina .
+  ?mestre a :Mestre ;
+          :ensina ?disciplina .
+}
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+INSERT {
+  ?aprendiz :estudaCom ?mestre .
+}
+WHERE {
+  ?aprendiz a :Aprendiz ;
+            :aprende ?disciplina .
+  ?mestre a :Mestre ;
+          :ensina ?disciplina .
+}
+
+Added 29895 statements. Query took 1.6s, moments ago.
+
+
+Pergunta 26 + Pergunta 27
+
+Cria uma nova relação na ontologia, dáBasesPara, que relaciona uma disciplina com uma
+aplicação;
+
+Cria uma query CONSTRUCT para calcular os novos triplos da nova relação dáBasesPara;
+Altera a query para uma query INSERT e acrescenta esses triplos à ontologia.
+
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+CONSTRUCT {
+  ?disciplina :daBasesPara ?aplicacao .
+}
+WHERE {
+  ?disciplina a :Disciplina ;
+              :éEstudadoEm ?conceito .
+  ?conceito :temAplicaçãoEm ?aplicacao .
+}
+
+PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/> 
+
+INSERT {
+  ?disciplina :daBasesPara ?aplicacao .
+}
+WHERE {
+  ?disciplina a :Disciplina ;
+              :éEstudadoEm ?conceito .
+  ?conceito :temAplicaçãoEm ?aplicacao .
+}
+
+Added statements. Query took 0.1s, moments ago.
+
+
+
+
