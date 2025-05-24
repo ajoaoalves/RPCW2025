@@ -16836,183 +16836,205 @@
 
 :Filosofia a :Disciplina ;
     :nome "Filosofia" ;
-    :pertenceA :Humanidades, :Filosofia  .
+    :pertenceA :Humanidades, :Filosofia ;
+    :éEstudadoEm :Ética, :Metafísica, :Epistemologia, :Filosofia_da_Mente .
 
 :Matemática a :Disciplina ;
     :nome "Matemática" ;
-    :pertenceA :Ciências_Exatas, :Matemática  .
+    :pertenceA :Ciências_Exatas, :Matemática ;
+    :éEstudadoEm :Números, :Álgebra, :Geometria, :Cálculo .
 
 :Física a :Disciplina ;
     :nome "Física" ;
-    :pertenceA :Ciências_Exatas, :Física  .
+    :pertenceA :Ciências_Exatas, :Física ;
+    :éEstudadoEm :Mecânica, :Termodinâmica, :Eletromagnetismo, :Física_Quântica .
 
 :Química a :Disciplina ;
     :nome "Química" ;
-    :pertenceA :Ciências_Exatas, :Química  .
+    :pertenceA :Ciências_Exatas, :Química ;
+    :éEstudadoEm :Tabela_Periódica, :Reações_Químicas, :Química_Orgânica, :Química_Inorgânica .
 
 :Biologia a :Disciplina ;
     :nome "Biologia" ;
-    :pertenceA :Ciências_Biológicas, :Biologia  .
+    :pertenceA :Ciências_Biológicas, :Biologia ;
+    :éEstudadoEm :Células, :Genética, :Evolução, :Ecologia .
 
 :História a :Disciplina ;
     :nome "História" ;
-    :pertenceA :Humanidades, :História  .
+    :pertenceA :Humanidades, :História ;
+    :éEstudadoEm :História_Antiga, :História_Medieval, :História_Moderna, :História_Contemporânea .
 
 :Geografia a :Disciplina ;
     :nome "Geografia" ;
-    :pertenceA :Ciências_Humanas, :Geografia  .
+    :pertenceA :Ciências_Humanas, :Geografia ;
+    :éEstudadoEm :Geografia_Física, :Geografia_Humana, :Geografia_Econômica, :Cartografia .
 
 :Economia a :Disciplina ;
     :nome "Economia" ;
-    :pertenceA :Ciências_Sociais, :Economia  .
+    :pertenceA :Ciências_Sociais, :Economia ;
+    :éEstudadoEm :Microeconomia, :Macroeconomia, :Economia_Internacional, :Desenvolvimento_Econômico .
 
 :Sociologia a :Disciplina ;
     :nome "Sociologia" ;
-    :pertenceA :Ciências_Sociais, :Sociologia  .
+    :pertenceA :Ciências_Sociais, :Sociologia ;
+    :éEstudadoEm :Sociedade, :Cultura, :Desigualdade_Social, :Instituições_Sociais .
 
 :Psicologia a :Disciplina ;
     :nome "Psicologia" ;
-    :pertenceA :Ciências_Humanas, :Psicologia  .
+    :pertenceA :Ciências_Humanas, :Psicologia ;
+    :éEstudadoEm :Psicologia_Cognitiva, :Psicologia_Social, :Psicologia_do_Desenvolvimento, :Psicoterapia .
 
 :Antropologia a :Disciplina ;
     :nome "Antropologia" ;
-    :pertenceA :Ciências_Humanas, :Antropologia  .
+    :pertenceA :Ciências_Humanas, :Antropologia ;
+    :éEstudadoEm :Cultura, :Sociedade, :Etnografia, :Antropologia_Física .
 
 :Línguas a :Disciplina ;
     :nome "Línguas" ;
-    :pertenceA :Humanidades, :Línguas  .
+    :pertenceA :Humanidades, :Línguas ;
+    :éEstudadoEm :Gramática, :Linguística, :Literatura, :Tradução .
 
 :Literatura a :Disciplina ;
     :nome "Literatura" ;
-    :pertenceA :Humanidades, :Literatura  .
+    :pertenceA :Humanidades, :Literatura ;
+    :éEstudadoEm :Teoria_Literária, :Crítica_Literária, :História_da_Literatura, :Análise_de_Texto .
 
 :Artes a :Disciplina ;
     :nome "Artes" ;
-    :pertenceA :Humanidades, :Artes  .
+    :pertenceA :Humanidades, :Artes ;
+    :éEstudadoEm :História_da_Arte, :Teoria_da_Arte, :Crítica_de_Arte, :Técnicas_Artísticas .
 
 :Música a :Disciplina ;
     :nome "Música" ;
-    :pertenceA :Humanidades, :Música  .
+    :pertenceA :Humanidades, :Música ;
+    :éEstudadoEm :Teoria_Musical, :História_da_Música, :Composição_Musical, :Interpretação_Musical .
 
 :Teatro a :Disciplina ;
     :nome "Teatro" ;
-    :pertenceA :Humanidades, :Teatro  .
+    :pertenceA :Humanidades, :Teatro ;
+    :éEstudadoEm :História_do_Teatro, :Teoria_do_Teatro, :Interpretação_Teatral, :Direção_Teatral .
 
 :Dança a :Disciplina ;
     :nome "Dança" ;
-    :pertenceA :Humanidades, :Dança  .
+    :pertenceA :Humanidades, :Dança ;
+    :éEstudadoEm :História_da_Dança, :Teoria_da_Dança, :Técnicas_de_Dança, :Coreografia .
 
 :Engenharia a :Disciplina ;
     :nome "Engenharia" ;
-    :pertenceA :Ciências_Exatas, :Engenharia  .
+    :pertenceA :Ciências_Exatas, :Engenharia ;
+    :éEstudadoEm :Engenharia_Mecânica, :Engenharia_Elétrica, :Engenharia_Civil, :Engenharia_Química .
 
 :Informática a :Disciplina ;
     :nome "Informática" ;
-    :pertenceA :Ciências_Exatas, :Informática  .
+    :pertenceA :Ciências_Exatas, :Informática ;
+    :éEstudadoEm :Programação, :Banco_de_Dados, :Redes_de_Computadores, :Segurança .
 
 :Ciência_da_Computação a :Disciplina ;
     :nome "Ciência da Computação" ;
-    :pertenceA :Ciências_Exatas, :Ciência_da_Computação  .
+    :pertenceA :Ciências_Exatas, :Ciência_da_Computação ;
+    :éEstudadoEm :Algoritmos, :Estruturas_de_Dados, :Inteligência_Artificial, :Sistemas_Operacionais .
 
 :Estatística a :Disciplina ;
     :nome "Estatística" ;
-    :pertenceA :Ciências_Exatas, :Estatística  .
+    :pertenceA :Ciências_Exatas, :Estatística ;
+    :éEstudadoEm :Probabilidade, :Estatística_Descritiva, :Estatística_Inferencial, :Análise_de_Dados .
 
 :Matemática_Aplicada a :Disciplina ;
     :nome "Matemática Aplicada" ;
-    :pertenceA :Ciências_Exatas, :Matemática_Aplicada  .
+    :pertenceA :Ciências_Exatas, :Matemática_Aplicada .
 
 :Física_Aplicada a :Disciplina ;
     :nome "Física Aplicada" ;
-    :pertenceA :Ciências_Exatas, :Física_Aplicada  .
+    :pertenceA :Ciências_Exatas, :Física_Aplicada .
 
 :Química_Aplicada a :Disciplina ;
     :nome "Química Aplicada" ;
-    :pertenceA :Ciências_Exatas, :Química_Aplicada  .
+    :pertenceA :Ciências_Exatas, :Química_Aplicada .
 
 :Biologia_Aplicada a :Disciplina ;
     :nome "Biologia Aplicada" ;
-    :pertenceA :Ciências_Biológicas, :Biologia_Aplicada  .
+    :pertenceA :Ciências_Biológicas, :Biologia_Aplicada .
 
 :Engenharia_Biomédica a :Disciplina ;
     :nome "Engenharia Biomédica" ;
-    :pertenceA :Ciências_Exatas, :Engenharia_Biomédica  .
+    :pertenceA :Ciências_Exatas, :Engenharia_Biomédica .
 
 :Engenharia_Elétrica a :Disciplina ;
     :nome "Engenharia Elétrica" ;
-    :pertenceA :Ciências_Exatas, :Engenharia_Elétrica  .
+    :pertenceA :Ciências_Exatas, :Engenharia_Elétrica ;
+    :éEstudadoEm :Circuitos_Elétricos, :Eletrônica, :Sistemas_de_Controle, :Energia_Elétrica .
 
 :Engenharia_Mecânica a :Disciplina ;
     :nome "Engenharia Mecânica" ;
-    :pertenceA :Ciências_Exatas, :Engenharia_Mecânica  .
+    :pertenceA :Ciências_Exatas, :Engenharia_Mecânica .
 
 :Engenharia_Química a :Disciplina ;
     :nome "Engenharia Química" ;
-    :pertenceA :Ciências_Exatas, :Engenharia_Química  .
+    :pertenceA :Ciências_Exatas, :Engenharia_Química .
 
 :Ciência_dos_Materiais a :Disciplina ;
     :nome "Ciência dos Materiais" ;
-    :pertenceA :Ciências_Exatas, :Ciência_dos_Materiais  .
+    :pertenceA :Ciências_Exatas, :Ciência_dos_Materiais .
 
 :Nanotecnologia a :Disciplina ;
     :nome "Nanotecnologia" ;
-    :pertenceA :Ciências_Exatas, :Nanotecnologia  .
+    :pertenceA :Ciências_Exatas, :Nanotecnologia .
 
 :Biotecnologia a :Disciplina ;
     :nome "Biotecnologia" ;
-    :pertenceA :Ciências_Biológicas, :Biotecnologia  .
+    :pertenceA :Ciências_Biológicas, :Biotecnologia .
 
 :Genética a :Disciplina ;
     :nome "Genética" ;
-    :pertenceA :Ciências_Biológicas, :Genética  .
+    :pertenceA :Ciências_Biológicas, :Genética .
 
 :Microbiologia a :Disciplina ;
     :nome "Microbiologia" ;
-    :pertenceA :Ciências_Biológicas, :Microbiologia  .
+    :pertenceA :Ciências_Biológicas, :Microbiologia .
 
 :Ecologia a :Disciplina ;
     :nome "Ecologia" ;
-    :pertenceA :Ciências_Biológicas, :Ecologia  .
+    :pertenceA :Ciências_Biológicas, :Ecologia .
 
 :Conservação a :Disciplina ;
     :nome "Conservação" ;
-    :pertenceA :Ciências_Biológicas, :Conservação  .
+    :pertenceA :Ciências_Biológicas, :Conservação .
 
 :Educação a :Disciplina ;
     :nome "Educação" ;
-    :pertenceA :Ciências_Humanas, :Educação  .
+    :pertenceA :Ciências_Humanas, :Educação .
 
 :Pedagogia a :Disciplina ;
     :nome "Pedagogia" ;
-    :pertenceA :Ciências_Humanas, :Pedagogia  .
+    :pertenceA :Ciências_Humanas, :Pedagogia .
 
 :Didática a :Disciplina ;
     :nome "Didática" ;
-    :pertenceA :Ciências_Humanas, :Didática  .
+    :pertenceA :Ciências_Humanas, :Didática .
 
 :Metodologia a :Disciplina ;
     :nome "Metodologia" ;
-    :pertenceA :Ciências_Humanas, :Metodologia  .
+    :pertenceA :Ciências_Humanas, :Metodologia .
 
 :Filosofia_da_Educação a :Disciplina ;
     :nome "Filosofia da Educação" ;
-    :pertenceA :Filosofia, :Educação  .
+    :pertenceA :Filosofia, :Educação .
 
 :Psicologia_da_Educação a :Disciplina ;
     :nome "Psicologia da Educação" ;
-    :pertenceA :Psicologia, :Educação  .
+    :pertenceA :Psicologia, :Educação .
 
 :Sociologia_da_Educação a :Disciplina ;
     :nome "Sociologia da Educação" ;
-    :pertenceA :Sociologia, :Educação  .
+    :pertenceA :Sociologia, :Educação .
 
 :Antropologia_da_Educação a :Disciplina ;
     :nome "Antropologia da Educação" ;
-    :pertenceA :Antropologia, :Educação  .
+    :pertenceA :Antropologia, :Educação .
 
 :História_da_Educação a :Disciplina ;
     :nome "História da Educação" ;
-    :pertenceA :História, :Educação  .
+    :pertenceA :História, :Educação .
 
 :Ética_a_Nicômaco a :Obra ;
     :titulo "Ética a Nicômaco" ;

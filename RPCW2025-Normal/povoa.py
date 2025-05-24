@@ -49,11 +49,16 @@ def Povoa(dic_jsonConceitos, dic_jsonDisciplinas, dic_jsonMestres, dic_jsonObras
         nome = disciplina['nome'].strip()
         nome_clean = clean_id(nome)
         tipos = disciplina['tiposDeConhecimento']
+        conceitos = disciplina.get("conceitos", [])
         ttl_data += (
             f":{nome_clean} a :Disciplina ;\n"
             f'    :nome "{nome}" ;\n'
-            f'    :pertenceA {", ".join(f":{clean_id(d)}" for d in tipos)}  .\n\n'
+            f'    :pertenceA {", ".join(f":{clean_id(d)}" for d in tipos)}'
         )
+        if conceitos:
+            ttl_data += ' ;\n'
+            ttl_data += f'    :éEstudadoEm {", ".join(f":{clean_id(c)}" for c in conceitos)}'
+        ttl_data += " .\n\n"
 
     for obra in dic_jsonObras["obras"]:
         titulo = obra['titulo'].strip()

@@ -50,7 +50,7 @@ PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/>
 
 SELECT ?aplicacao
 WHERE {
-  :Lógica_Formal :temAplicacaoEm ?aplicacao .
+  :Lógica_Formal :temAplicaçãoEm ?aplicacao .
 }
 
 
@@ -78,7 +78,7 @@ PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/>
 SELECT ?mestre 
 WHERE {
   ?mestre a :Mestre ;
-          :periodoHistorico "Século XIX" ;
+          :periodo "Século XIX" ;
           
 }
 
@@ -125,7 +125,7 @@ PREFIX : <http://www.semanticweb.org/ajr/ontologies/2025/untitled-ontology-24/>
 SELECT ?periodo (COUNT(?conceito) AS ?numConceitos)
 WHERE {
   ?conceito a :Conceito ;
-            :periodoHistorico ?periodo .
+            :periodo ?periodo .
 }
 GROUP BY ?periodo
 ORDER BY DESC(?numConceitos)
@@ -267,8 +267,4 @@ WHERE {
   ?conceito :temAplicaçãoEm ?aplicacao .
 }
 
-Added statements. Query took 0.1s, moments ago.
-
-
-
-
+Added 14 statements. Query took 0.1s, moments ago.
