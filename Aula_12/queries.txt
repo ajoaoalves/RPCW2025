@@ -1,0 +1,21 @@
+    #quero que a relação temAntepassado seja transitiva
+
+    CONSTRUCT {
+        ?b :temAntepassado ?a.
+    }
+    WHERE {
+        ?b :temProgenitor+ ?a
+
+    }
+
+#___________________________________________
+#___________________________________________
+#Irmao
+
+CONSTRUCT {
+    ?A :temIrmao ?b.
+}
+WHERE {
+    ?a :temProgenitor/:temFilho ?b .
+    filter (?a != ?b)
+}

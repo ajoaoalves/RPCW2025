@@ -1,0 +1,413 @@
+@prefix : <http://www.semanticweb.org/ajr/ontologies/2025/genoa/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ajr/ontologies/2025/genoa/> .
+
+<http://www.semanticweb.org/ajr/ontologies/2025/genoa> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#eAntepassadoDe
+:eAntepassadoDe rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :temRelacao ;
+                owl:inverseOf :temAntepassado .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#eAvoFde
+:eAvoFde rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :eProgenitorGrau2 ;
+         owl:inverseOf :temAvoF .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#eAvoMde
+:eAvoMde rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :eProgenitorGrau2 ;
+         owl:inverseOf :temAvoM .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#eProgenitorGrau2
+:eProgenitorGrau2 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :eAntepassadoDe .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#temAntepassado
+:temAntepassado rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :temRelacao ;
+                rdf:type owl:TransitiveProperty .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#temAvoF
+:temAvoF rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :temProgenitorGrau2 ;
+         owl:propertyChainAxiom ( :temProgenitor
+                                  :temMae
+                                ) .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#temAvoM
+:temAvoM rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :temProgenitorGrau2 ;
+         owl:propertyChainAxiom ( :temProgenitor
+                                  :temPai
+                                ) .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#temProgenitorGrau2
+:temProgenitorGrau2 rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :temAntepassado .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa#temRelacao
+:temRelacao rdf:type owl:ObjectProperty ,
+                     owl:SymmetricProperty .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/eMaeDe
+:eMaeDe rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :eProgenitorDe .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/ePaiDe
+:ePaiDe rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :eProgenitorDe .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/eProgenitorDe
+:eProgenitorDe rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :eAntepassadoDe ;
+               owl:inverseOf :temProgenitor .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/temMae
+:temMae rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :temProgenitor .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/temPai
+:temPai rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :temProgenitor .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/temProgenitor
+:temProgenitor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :temAntepassado .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Abílio_da_Silva_Ramalho
+:Abílio_da_Silva_Ramalho rdf:type owl:NamedIndividual ;
+                         :temMae :Custódia_Azevedo_1867 ;
+                         :temPai :Manuel_da_Silva_Ramalho_1866 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Albina_Esteves_de_Araújo_1910
+:Albina_Esteves_de_Araújo_1910 rdf:type owl:NamedIndividual ;
+                               :temMae :Maria_Araújo_1884 ;
+                               :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Ana_Margarida_Ribeiro_Leite_1980
+:Ana_Margarida_Ribeiro_Leite_1980 rdf:type owl:NamedIndividual ;
+                                  :temMae :Maria_Margarida_Ribeiro_1954 ;
+                                  :temPai :Rui_Alberto_Araújo_Leite_1948 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Ana_da_Silva_Ramalho
+:Ana_da_Silva_Ramalho rdf:type owl:NamedIndividual ;
+                      :temMae :Custódia_Azevedo_1867 ;
+                      :temPai :Manuel_da_Silva_Ramalho_1866 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/António_da_Silva_Ramalho
+:António_da_Silva_Ramalho rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/António_da_Silva_Ramalho_1904
+:António_da_Silva_Ramalho_1904 rdf:type owl:NamedIndividual ;
+                               :temMae :Custódia_Azevedo_1867 ;
+                               :temPai :Manuel_da_Silva_Ramalho_1866 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Arminda_da_Silva_Ramalho
+:Arminda_da_Silva_Ramalho rdf:type owl:NamedIndividual ;
+                          :temMae :Custódia_Azevedo_1867 ;
+                          :temPai :Manuel_da_Silva_Ramalho_1866 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Christina_Rosa_Silva_Santos_1879
+:Christina_Rosa_Silva_Santos_1879 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Custódia_Azevedo_1867
+:Custódia_Azevedo_1867 rdf:type owl:NamedIndividual ;
+                       :temMae :Maria_Gonçalves_de_Azevedo ;
+                       :temPai :José_Francisco_Ramos_Mouco .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Domingos_Couto_Leite
+:Domingos_Couto_Leite rdf:type owl:NamedIndividual ;
+                      :temMae :Flora_Castilho_do_Couto_Leite ;
+                      :temPai :Marçal_da_Costa_Leite .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Emília_Esteves
+:Emília_Esteves rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Emília_Esteves_de_Araújo_1908
+:Emília_Esteves_de_Araújo_1908 rdf:type owl:NamedIndividual ;
+                               :temMae :Maria_Araújo_1884 ;
+                               :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Ezequiel_da_Silva_Ramalho
+:Ezequiel_da_Silva_Ramalho rdf:type owl:NamedIndividual ;
+                           :temMae :Custódia_Azevedo_1867 ;
+                           :temPai :Manuel_da_Silva_Ramalho_1866 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Filomena_Esteves_de_Araújo_1927
+:Filomena_Esteves_de_Araújo_1927 rdf:type owl:NamedIndividual ;
+                                 :temMae :Maria_Araújo_1884 ;
+                                 :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Flora_Castilho_do_Couto_Leite
+:Flora_Castilho_do_Couto_Leite rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Florinda_Alves_dos_Santos
+:Florinda_Alves_dos_Santos rdf:type owl:NamedIndividual ;
+                           :temMae :Christina_Rosa_Silva_Santos_1879 ;
+                           :temPai :Jozé_da_Silva_Santos_1879 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Generosa_da_Silva_Ramalho
+:Generosa_da_Silva_Ramalho rdf:type owl:NamedIndividual ;
+                           :temMae :Custódia_Azevedo_1867 ;
+                           :temPai :Manuel_da_Silva_Ramalho_1866 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Gilberto_Couto_Leite
+:Gilberto_Couto_Leite rdf:type owl:NamedIndividual ;
+                      :temMae :Flora_Castilho_do_Couto_Leite ;
+                      :temPai :Marçal_da_Costa_Leite .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Helena_Couto_Leite
+:Helena_Couto_Leite rdf:type owl:NamedIndividual ;
+                    :temMae :Flora_Castilho_do_Couto_Leite ;
+                    :temPai :Marçal_da_Costa_Leite .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Henrique_Luiz_de_Araújo_1867
+:Henrique_Luiz_de_Araújo_1867 rdf:type owl:NamedIndividual ;
+                              :temMae :Maria_das_Dores_Fernandes_de_Brito ;
+                              :temPai :José_Emílio_de_Araújo .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Henrique_Luís_Esteves_de_Araújo_1924
+:Henrique_Luís_Esteves_de_Araújo_1924 rdf:type owl:NamedIndividual ;
+                                      :temMae :Maria_Araújo_1884 ;
+                                      :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Henrique_Marçal_Araújo_Leite_1943
+:Henrique_Marçal_Araújo_Leite_1943 rdf:type owl:NamedIndividual ;
+                                   :temMae :Maria_Esteves_de_Araújo_1912 ;
+                                   :temPai :Marçal_Aristides_Costa_Leite_1909 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Henrique_Miguel_Cabrita_de_Araújo_Leite_1971
+:Henrique_Miguel_Cabrita_de_Araújo_Leite_1971 rdf:type owl:NamedIndividual ;
+                                              :temMae :Maria_Otília_Araújo_Leite_1944 ;
+                                              :temPai :Henrique_Marçal_Araújo_Leite_1943 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Ilda_dos_Santos_Ramalho_1949
+:Ilda_dos_Santos_Ramalho_1949 rdf:type owl:NamedIndividual ;
+                              :temMae :Maria_Alves_dos_Santos_1906 ;
+                              :temPai :António_da_Silva_Ramalho_1904 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Isabel_Maria_Cabrita_de_Araújo_Leite_1971
+:Isabel_Maria_Cabrita_de_Araújo_Leite_1971 rdf:type owl:NamedIndividual ;
+                                           :temMae :Maria_Otília_Araújo_Leite_1944 ;
+                                           :temPai :Henrique_Marçal_Araújo_Leite_1943 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/José_Carlos_Leite_Ramalho_1967
+:José_Carlos_Leite_Ramalho_1967 rdf:type owl:NamedIndividual ;
+                                :temMae :Maria_Flora_Araújo_Leite_1941 ;
+                                :temPai :José_dos_Santos_Ramalho_1942 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/José_Emílio_Esteves_de_Araújo_1916
+:José_Emílio_Esteves_de_Araújo_1916 rdf:type owl:NamedIndividual ;
+                                    :temMae :Maria_Araújo_1884 ;
+                                    :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/José_Emílio_de_Araújo
+:José_Emílio_de_Araújo rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/José_Francisco_Ramos_Mouco
+:José_Francisco_Ramos_Mouco rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/José_Maria_Esteves
+:José_Maria_Esteves rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/José_dos_Santos_Ramalho_1942
+:José_dos_Santos_Ramalho_1942 rdf:type owl:NamedIndividual ;
+                              :temMae :Maria_Alves_dos_Santos_1906 ;
+                              :temPai :António_da_Silva_Ramalho_1904 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Jozé_da_Silva_Santos_1879
+:Jozé_da_Silva_Santos_1879 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/João_Bernardo_Couto_Leite_1916
+:João_Bernardo_Couto_Leite_1916 rdf:type owl:NamedIndividual ;
+                                :temMae :Flora_Castilho_do_Couto_Leite ;
+                                :temPai :Marçal_da_Costa_Leite .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Luís_Esteves_de_Araújo_1918
+:Luís_Esteves_de_Araújo_1918 rdf:type owl:NamedIndividual ;
+                             :temMae :Maria_Araújo_1884 ;
+                             :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Manuel_Carlos_dos_Santos_Ramalho
+:Manuel_Carlos_dos_Santos_Ramalho rdf:type owl:NamedIndividual ;
+                                  :temMae :Maria_Alves_dos_Santos_1906 ;
+                                  :temPai :António_da_Silva_Ramalho_1904 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Manuel_Fernando_dos_Santos_Ramalho
+:Manuel_Fernando_dos_Santos_Ramalho rdf:type owl:NamedIndividual ;
+                                    :temMae :Maria_Alves_dos_Santos_1906 ;
+                                    :temPai :António_da_Silva_Ramalho_1904 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Manuel_da_Silva_Ramalho_1866
+:Manuel_da_Silva_Ramalho_1866 rdf:type owl:NamedIndividual ;
+                              :temMae :Maria_Dias_dos_Reis ;
+                              :temPai :António_da_Silva_Ramalho .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Alves_dos_Santos_1906
+:Maria_Alves_dos_Santos_1906 rdf:type owl:NamedIndividual ;
+                             :temMae :Christina_Rosa_Silva_Santos_1879 ;
+                             :temPai :Jozé_da_Silva_Santos_1879 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Araújo_1884
+:Maria_Araújo_1884 rdf:type owl:NamedIndividual ;
+                   :temMae :Emília_Esteves ;
+                   :temPai :José_Maria_Esteves .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Dias_dos_Reis
+:Maria_Dias_dos_Reis rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Esteves_de_Araújo_1912
+:Maria_Esteves_de_Araújo_1912 rdf:type owl:NamedIndividual ;
+                              :temMae :Maria_Araújo_1884 ;
+                              :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Flora_Araújo_Leite_1941
+:Maria_Flora_Araújo_Leite_1941 rdf:type owl:NamedIndividual ;
+                               :temMae :Maria_Esteves_de_Araújo_1912 ;
+                               :temPai :Marçal_Aristides_Costa_Leite_1909 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Flora_dos_Santos_Ramalho_
+:Maria_Flora_dos_Santos_Ramalho_ rdf:type owl:NamedIndividual ;
+                                 :temMae :Maria_Alves_dos_Santos_1906 ;
+                                 :temPai :António_da_Silva_Ramalho_1904 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Gonçalves_de_Azevedo
+:Maria_Gonçalves_de_Azevedo rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Helena_Leite_Ramalho_1968
+:Maria_Helena_Leite_Ramalho_1968 rdf:type owl:NamedIndividual ;
+                                 :temMae :Maria_Flora_Araújo_Leite_1941 ;
+                                 :temPai :José_dos_Santos_Ramalho_1942 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Margarida_Ribeiro_1954
+:Maria_Margarida_Ribeiro_1954 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_Otília_Araújo_Leite_1944
+:Maria_Otília_Araújo_Leite_1944 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Maria_das_Dores_Fernandes_de_Brito
+:Maria_das_Dores_Fernandes_de_Brito rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Marçal_Aristides_Costa_Leite_1909
+:Marçal_Aristides_Costa_Leite_1909 rdf:type owl:NamedIndividual ;
+                                   :temMae :Flora_Castilho_do_Couto_Leite ;
+                                   :temPai :Marçal_da_Costa_Leite .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Marçal_da_Costa_Leite
+:Marçal_da_Costa_Leite rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Orlando_Couto_Leite
+:Orlando_Couto_Leite rdf:type owl:NamedIndividual ;
+                     :temMae :Flora_Castilho_do_Couto_Leite ;
+                     :temPai :Marçal_da_Costa_Leite .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Rosa_Couto_Leite
+:Rosa_Couto_Leite rdf:type owl:NamedIndividual ;
+                  :temMae :Flora_Castilho_do_Couto_Leite ;
+                  :temPai :Marçal_da_Costa_Leite .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Rui_Alberto_Araújo_Leite_1948
+:Rui_Alberto_Araújo_Leite_1948 rdf:type owl:NamedIndividual ;
+                               :temMae :Maria_Esteves_de_Araújo_1912 ;
+                               :temPai :Marçal_Aristides_Costa_Leite_1909 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Sara_Esteves_de_Araújo_1914
+:Sara_Esteves_de_Araújo_1914 rdf:type owl:NamedIndividual ;
+                             :temMae :Maria_Araújo_1884 ;
+                             :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Teresa_Maria_Ribeiro_Leite_1985
+:Teresa_Maria_Ribeiro_Leite_1985 rdf:type owl:NamedIndividual ;
+                                 :temMae :Maria_Margarida_Ribeiro_1954 ;
+                                 :temPai :Rui_Alberto_Araújo_Leite_1948 .
+
+
+###  http://www.semanticweb.org/ajr/ontologies/2025/genoa/Virgínia_Esteves_de_Araújo_1921
+:Virgínia_Esteves_de_Araújo_1921 rdf:type owl:NamedIndividual ;
+                                 :temMae :Maria_Araújo_1884 ;
+                                 :temPai :Henrique_Luiz_de_Araújo_1867 .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
